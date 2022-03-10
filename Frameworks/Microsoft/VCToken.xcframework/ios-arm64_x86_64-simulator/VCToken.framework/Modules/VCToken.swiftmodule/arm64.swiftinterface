@@ -1,0 +1,133 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VCToken
+import Foundation
+import Swift
+import VCCrypto
+@_exported import VCToken
+public protocol Claims : Swift.Decodable, Swift.Encodable {
+  var iat: Swift.Double? { get }
+  var exp: Swift.Double? { get }
+  var nbf: Swift.Double? { get }
+}
+extension Claims {
+  public var iat: Swift.Double? {
+    get
+  }
+  public var exp: Swift.Double? {
+    get
+  }
+  public var nbf: Swift.Double? {
+    get
+  }
+}
+public struct ECPublicJwk : Swift.Codable, Swift.Equatable {
+  public let keyType: Swift.String
+  public let keyId: Swift.String?
+  public let use: Swift.String?
+  public let keyOperations: [Swift.String]?
+  public let algorithm: Swift.String?
+  public let curve: Swift.String
+  public let x: Swift.String
+  public let y: Swift.String
+  public init(x: Swift.String, y: Swift.String, keyId: Swift.String)
+  public init(withPublicKey key: VCCrypto.Secp256k1PublicKey, withKeyId kid: Swift.String)
+  public func getThumbprint() throws -> Swift.String
+  public static func == (a: ECPublicJwk, b: ECPublicJwk) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Secp256k1Verifier : TokenVerifying {
+  public init(using algorithm: VCCrypto.Signing = Secp256k1(), andHashAlgorithm hashAlg: VCCrypto.Sha256 = Sha256())
+  public func verify<T>(token: JwsToken<T>, usingPublicKey key: ECPublicJwk) throws -> Swift.Bool where T : Claims
+}
+public struct JwsToken<T> where T : Claims {
+  public let headers: Header
+  public let content: T
+  public let protectedMessage: Swift.String
+  public var rawValue: Swift.String?
+  public init?(headers: Header, content: T, protectedMessage: Swift.String? = nil, signature: Foundation.Data? = nil, rawValue: Swift.String? = nil)
+  public init?(from encodedToken: Swift.String)
+  public init?(from encodedToken: Foundation.Data)
+  public func serialize() throws -> Swift.String
+  public mutating func sign(using signer: TokenSigning, withSecret secret: VCCrypto.VCCryptoSecret) throws
+  public func verify(using verifier: TokenVerifying, withPublicKey key: ECPublicJwk) throws -> Swift.Bool
+}
+public typealias Signature = Foundation.Data
+public struct Header : Swift.Codable {
+  public let type: Swift.String?
+  public let algorithm: Swift.String?
+  public let jsonWebKey: ECPublicJwk?
+  public let keyId: Swift.String?
+  public init(type: Swift.String? = nil, algorithm: Swift.String? = nil, jsonWebKey: ECPublicJwk? = nil, keyId: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case type
+    case algorithm
+    case jsonWebKey
+    case keyId
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum VCTokenError : Swift.Error, Swift.Equatable {
+  case unableToParseData
+  case unableToParseString
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: VCTokenError, b: VCTokenError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol TokenVerifying {
+  func verify<T>(token: JwsToken<T>, usingPublicKey key: ECPublicJwk) throws -> Swift.Bool where T : Claims
+}
+public class JwsDecoder {
+  public init()
+  public func decode<T>(_ type: T.Type, token: Swift.String) throws -> JwsToken<T> where T : Claims
+  @objc deinit
+}
+public struct KeyId : VCCrypto.VCCryptoSecret {
+  public let id: Foundation.UUID
+  public init(id: Foundation.UUID)
+}
+public enum JwsFormat {
+  case compact
+  public static func == (a: JwsFormat, b: JwsFormat) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class JwsEncoder {
+  public init()
+  public func encode<T>(_ token: JwsToken<T>, format: JwsFormat = JwsFormat.compact) throws -> Swift.String where T : Claims
+  @objc deinit
+}
+public struct Secp256k1Signer : TokenSigning {
+  public init(using algorithm: VCCrypto.Signing = Secp256k1(), andHashAlgorithm hashAlg: VCCrypto.Sha256 = Sha256())
+  public func sign<T>(token: JwsToken<T>, withSecret secret: VCCrypto.VCCryptoSecret) throws -> Signature where T : Claims
+  public func getPublicJwk(from secret: VCCrypto.VCCryptoSecret, withKeyId keyId: Swift.String) throws -> ECPublicJwk
+}
+public protocol TokenSigning {
+  func sign<T>(token: JwsToken<T>, withSecret secret: VCCrypto.VCCryptoSecret) throws -> Signature where T : Claims
+  func getPublicJwk(from secret: VCCrypto.VCCryptoSecret, withKeyId keyId: Swift.String) throws -> ECPublicJwk
+}
+extension Header.CodingKeys : Swift.Equatable {}
+extension Header.CodingKeys : Swift.Hashable {}
+extension Header.CodingKeys : Swift.RawRepresentable {}
+extension VCTokenError : Swift.Hashable {}
+extension JwsFormat : Swift.Equatable {}
+extension JwsFormat : Swift.Hashable {}
