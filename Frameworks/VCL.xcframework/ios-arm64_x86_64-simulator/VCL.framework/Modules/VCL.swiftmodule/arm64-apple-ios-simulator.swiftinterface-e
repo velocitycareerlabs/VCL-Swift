@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VCL
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VCL
 import Foundation
 import Swift
 import UIKit
@@ -60,6 +60,9 @@ public class VCLPresentationSubmission : VCL.VCLSubmission {
 }
 public struct VCLCredentialTypes {
   public var all: [VCL.VCLCredentialType]? {
+    get
+  }
+  public var recommendedTypes: [VCL.VCLCredentialType]? {
     get
   }
   public init(all: [VCL.VCLCredentialType]?)
@@ -271,7 +274,8 @@ public struct VCLCredentialType {
   public let createdAt: Swift.String?
   public let schemaName: Swift.String?
   public let credentialType: Swift.String?
-  public init(payload: [Swift.String : Any], id: Swift.String?, schema: Swift.String? = nil, createdAt: Swift.String? = nil, schemaName: Swift.String? = nil, credentialType: Swift.String? = nil)
+  public let recommended: Swift.Bool?
+  public init(payload: [Swift.String : Any], id: Swift.String?, schema: Swift.String? = nil, createdAt: Swift.String? = nil, schemaName: Swift.String? = nil, credentialType: Swift.String? = nil, recommended: Swift.Bool? = nil)
 }
 public func == (lhs: VCL.VCLCredentialType, rhs: VCL.VCLCredentialType) -> Swift.Bool
 public func != (lhs: VCL.VCLCredentialType, rhs: VCL.VCLCredentialType) -> Swift.Bool
