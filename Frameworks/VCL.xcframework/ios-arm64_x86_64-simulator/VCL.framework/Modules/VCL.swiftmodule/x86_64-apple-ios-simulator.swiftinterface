@@ -264,7 +264,7 @@ public enum VCLResult<Value> {
 public struct VCLError : Swift.Error {
   public let code: Swift.Int?
   public let description: Swift.String
-  public init(error: Swift.Error)
+  public init(error: Swift.Error, code: Swift.Int? = nil)
   public init(description: Swift.String, code: Swift.Int? = nil)
 }
 public struct VCLCredentialType {
