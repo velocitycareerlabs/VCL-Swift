@@ -87,6 +87,13 @@ public protocol VCLPlace {
   var code: Swift.String { get }
   var name: Swift.String { get }
 }
+public class VCLCredentialManifestDescriptorRefresh : VCLCredentialManifestDescriptor {
+  public init(service: VCLService, credentialIds: [Swift.String])
+  override public var endpoint: Swift.String {
+    get
+  }
+  @objc deinit
+}
 public struct VCLVerifiedProfile {
   public let payload: [Swift.String : Any]
   public init(payload: [Swift.String : Any])

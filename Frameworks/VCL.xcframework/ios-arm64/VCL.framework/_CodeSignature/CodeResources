@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SPSsgjPH3kmDeaTgssitXS18PRs=
+		zSwVqwOOV4rRmH3+XLXUrEUx86U=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		229uYjgOsRqZyYlZY5ReNvqHws0=
+		LvYQK1xvEkFtezZQRTlxYT0oq9U=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Ty30kqU8KSesmkiNkCx7adgec38=
+		ZSQOsrp22nsQ1r2gbnfmG9Rj490=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -60,14 +60,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JW48yRNF3Du5R9eSUPvis/9QSvm+idRoC01hC30O2VY=
+			qSv/GJojj97eMCDyyYfGhka6MI+ou6/fwtEyeWT9FjU=
 			</data>
 		</dict>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pQilqeewMZr3oLOfl1xRb5bM4DsSCz/I2ukWLY9d938=
+			U7tSIBPizf+aViQTmAf5DrLEKWvYjXKRMH9NF9+vLdw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
