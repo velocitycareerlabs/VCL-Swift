@@ -288,9 +288,13 @@ public func == (lhs: VCL.VCLCredentialType, rhs: VCL.VCLCredentialType) -> Swift
 public func != (lhs: VCL.VCLCredentialType, rhs: VCL.VCLCredentialType) -> Swift.Bool
 public struct VCLDeepLink {
   public let value: Swift.String
-  public let requestUri: Swift.String
-  public let vendorOriginContext: Swift.String?
   public init(value: Swift.String)
+  public var requestUri: Swift.String {
+    get
+  }
+  public var vendorOriginContext: Swift.String? {
+    get
+  }
 }
 public struct VCLGenerateOffersDescriptor {
   public let credentialManifest: VCL.VCLCredentialManifest
