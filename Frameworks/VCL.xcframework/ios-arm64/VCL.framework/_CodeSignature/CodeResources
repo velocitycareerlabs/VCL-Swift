@@ -6,31 +6,39 @@
 	<dict>
 		<key>Headers/VCL-Swift.h</key>
 		<data>
-		qAc6Na6A+cP9qVqGnogI4dQ7Epc=
+		BwmKSWYpqmpe3fOpZdqhpHEocwA=
 		</data>
 		<key>Headers/VCL.h</key>
 		<data>
-		lzNjSZYr0jzCc3klE8djNsmthCA=
+		9ihcIbediikDnMmgCO9KHv1/D2w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zRAunux3xOZ3tcKwt5S9PNtbB0A=
+		KCyWTB1TdaqnA8bKETcwL1NIzys=
+		</data>
+		<key>Modules/VCL.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		gzUtbc9KfsT5NeR9x0oHq/7trpM=
+		</data>
+		<key>Modules/VCL.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		Tr3U6c3dY6rynbP+A4yIwB4/4U8=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		0N5eltv/Kri0t2eiPkxJ+jiVC4E=
+		mX+AniwznGxOeVPZPxsQ84qGeaU=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Qvwzfp9pahAtl7t17rfVvoU+fck=
+		Tr3U6c3dY6rynbP+A4yIwB4/4U8=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HxMNx+GZksDLFyIvZPYUpL2QKIY=
+		mdfkQ6bcMwu2x9jqlvwNFcoeKgw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		PCUTuusFhvrOviOTJvAVurScLTc=
+		l6lHdvMfAwdM55aiVObK8DGYSm8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,42 +47,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zAlFyWd1CnEiKj4uw04IwxVOdrl0Dr00TImmbgJtCFs=
+			fTFzD1v6hMC+8xRh0Uh7Q13P7vkjcBTPGNoAZE4WvDQ=
 			</data>
 		</dict>
 		<key>Headers/VCL.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uoWylBTQLnSXPPsbm7l4THahH9EqblaEdVsmt1InuDw=
+			46vKNHbrKA3I+pe1aCyKc9CsYV075Q0jmq0g6jCXHyk=
+			</data>
+		</dict>
+		<key>Modules/VCL.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fSj0LewlArncq39tEkwGB8tdkBsbYVz0H2fyYI9vgtM=
+			</data>
+		</dict>
+		<key>Modules/VCL.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MTEv4EshTKuWNswCzABuRdWJA6nGEw5FFsgy1NAMmcs=
 			</data>
 		</dict>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O33BaAFKkbrldBbC+nRaIeLv6TyKkQihApyWmltgn84=
+			5dSFhDFhSJOFG0l7SxjExMKOEv4tX/YA8vw0Dx8qeJ8=
 			</data>
 		</dict>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JanVCaGW/8fAkS8tmUYuo9p4QC2Q1mh93WROIW0Nklo=
+			MTEv4EshTKuWNswCzABuRdWJA6nGEw5FFsgy1NAMmcs=
 			</data>
 		</dict>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FGv3YEEmfenaijHO6S/km2vnfTGJ4PQKbBrdm+C0jQw=
+			e+5Q76ntZtckGBSlgdm63rdZqUP1j5kUhl8JGlYJoos=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zgycWKJ7tuPWcAabChN6HiNNqzlRBZwnxFUjvbK7ktU=
+			4kBVOV8Uec5aSsvjSd8Nes3MeT1A2rFF33MT72I6Q5c=
 			</data>
 		</dict>
 	</dict>

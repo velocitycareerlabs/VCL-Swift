@@ -6,6 +6,6 @@ framework module VCL {
 }
 
 module VCL.Swift {
-    header "VCL-Swift.h"
-    requires objc
+  header "VCL-Swift.h"
+  requires objc
 }
