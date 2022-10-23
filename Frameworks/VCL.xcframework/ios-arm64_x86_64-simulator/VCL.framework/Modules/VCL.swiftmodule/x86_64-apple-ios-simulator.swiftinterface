@@ -51,6 +51,11 @@ public class VCLCredentialManifestDescriptor {
   }
   @objc deinit
 }
+public struct VCLInitializationDescriptor {
+  public let environment: VCLEnvironment
+  public let resetCache: Swift.Bool
+  public init(environment: VCLEnvironment = VCLEnvironment.PROD, resetCache: Swift.Bool = false)
+}
 @_hasMissingDesignatedInitializers public class VCLProvider {
   public static func vclInstance() -> VCL
   @objc deinit
@@ -192,7 +197,7 @@ public struct VCLJWT {
   public init(encodedJwt: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class VCLImpl : VCL {
-  public func initialize(environment: VCLEnvironment = VCLEnvironment.PROD, resetCache: Swift.Bool = false, successHandler: @escaping () -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func initialize(initializationDescriptor: VCLInitializationDescriptor, successHandler: @escaping () -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public var countries: VCLCountries? {
     get
   }
@@ -579,7 +584,7 @@ public struct VCLCountries {
   }
 }
 public protocol VCL {
-  func initialize(environment: VCLEnvironment, resetCache: Swift.Bool, successHandler: @escaping () -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func initialize(initializationDescriptor: VCLInitializationDescriptor, successHandler: @escaping () -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   var countries: VCLCountries? { get }
   var credentialTypes: VCLCredentialTypes? { get }
   var credentialTypeSchemas: VCLCredentialTypeSchemas? { get }

@@ -1366,6 +1366,153 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "VCLInitializationDescriptor",
+        "printedName": "VCLInitializationDescriptor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLEnvironment",
+                "printedName": "VCL.VCLEnvironment",
+                "usr": "s:3VCL14VCLEnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL27VCLInitializationDescriptorV11environmentAA14VCLEnvironmentOvp",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environmentAA14VCLEnvironmentOvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLEnvironment",
+                    "printedName": "VCL.VCLEnvironment",
+                    "usr": "s:3VCL14VCLEnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV11environmentAA14VCLEnvironmentOvg",
+                "mangledName": "$s3VCL27VCLInitializationDescriptorV11environmentAA14VCLEnvironmentOvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resetCache",
+            "printedName": "resetCache",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL27VCLInitializationDescriptorV10resetCacheSbvp",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV10resetCacheSbvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV10resetCacheSbvg",
+                "mangledName": "$s3VCL27VCLInitializationDescriptorV10resetCacheSbvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(environment:resetCache:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLInitializationDescriptor",
+                "printedName": "VCL.VCLInitializationDescriptor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLEnvironment",
+                "printedName": "VCL.VCLEnvironment",
+                "hasDefaultArg": true,
+                "usr": "s:3VCL14VCLEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL27VCLInitializationDescriptorV11environment10resetCacheAcA14VCLEnvironmentO_Sbtcfc",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environment10resetCacheAcA14VCLEnvironmentO_Sbtcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:3VCL27VCLInitializationDescriptorV",
+        "mangledName": "$s3VCL27VCLInitializationDescriptorV",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5442,7 +5589,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(environment:resetCache:successHandler:errorHandler:)",
+            "printedName": "initialize(initializationDescriptor:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5451,17 +5598,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLEnvironment",
-                "printedName": "VCL.VCLEnvironment",
-                "hasDefaultArg": true,
-                "usr": "s:3VCL14VCLEnvironmentO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
+                "name": "VCLInitializationDescriptor",
+                "printedName": "VCL.VCLInitializationDescriptor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV"
               },
               {
                 "kind": "TypeFunc",
@@ -5500,8 +5639,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC10initialize11environment10resetCache14successHandler05errorH0yAA14VCLEnvironmentO_SbyycyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC10initialize11environment10resetCache14successHandler05errorH0yAA14VCLEnvironmentO_SbyycyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC10initialize24initializationDescriptor14successHandler05errorG0yAA017VCLInitializationE0V_yycyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC10initialize24initializationDescriptor14successHandler05errorG0yAA017VCLInitializationE0V_yycyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -21855,7 +21994,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(environment:resetCache:successHandler:errorHandler:)",
+            "printedName": "initialize(initializationDescriptor:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21864,15 +22003,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLEnvironment",
-                "printedName": "VCL.VCLEnvironment",
-                "usr": "s:3VCL14VCLEnvironmentO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "VCLInitializationDescriptor",
+                "printedName": "VCL.VCLInitializationDescriptor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV"
               },
               {
                 "kind": "TypeFunc",
@@ -21911,8 +22044,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP10initialize11environment10resetCache14successHandler05errorG0yAA14VCLEnvironmentO_SbyycyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP10initialize11environment10resetCache14successHandler05errorG0yAA14VCLEnvironmentO_SbyycyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP10initialize24initializationDescriptor14successHandler05errorF0yAA017VCLInitializationD0V_yycyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP10initialize24initializationDescriptor14successHandler05errorF0yAA017VCLInitializationD0V_yycyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -26770,6 +26903,13 @@
       "value": "\"{credentialType}\""
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLInitializationDescriptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 415,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceVCLImpl.swift",
       "kind": "StringLiteral",
       "offset": 419,
@@ -27324,15 +27464,8 @@
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1759,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14389,
+      "offset": 14459,
       "length": 2,
       "value": "\"\""
     },
