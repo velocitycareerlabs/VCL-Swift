@@ -1416,19 +1416,19 @@
           },
           {
             "kind": "Var",
-            "name": "resetCache",
-            "printedName": "resetCache",
+            "name": "cacheSequence",
+            "printedName": "cacheSequence",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL27VCLInitializationDescriptorV10resetCacheSbvp",
-            "mangledName": "$s3VCL27VCLInitializationDescriptorV10resetCacheSbvp",
+            "usr": "s:3VCL27VCLInitializationDescriptorV13cacheSequenceSivp",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV13cacheSequenceSivp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -1444,14 +1444,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL27VCLInitializationDescriptorV10resetCacheSbvg",
-                "mangledName": "$s3VCL27VCLInitializationDescriptorV10resetCacheSbvg",
+                "usr": "s:3VCL27VCLInitializationDescriptorV13cacheSequenceSivg",
+                "mangledName": "$s3VCL27VCLInitializationDescriptorV13cacheSequenceSivg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1461,7 +1461,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:resetCache:)",
+            "printedName": "init(environment:cacheSequence:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1478,15 +1478,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
+                "name": "Int",
+                "printedName": "Swift.Int",
                 "hasDefaultArg": true,
-                "usr": "s:Sb"
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL27VCLInitializationDescriptorV11environment10resetCacheAcA14VCLEnvironmentO_Sbtcfc",
-            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environment10resetCacheAcA14VCLEnvironmentO_Sbtcfc",
+            "usr": "s:3VCL27VCLInitializationDescriptorV11environment13cacheSequenceAcA14VCLEnvironmentO_Sitcfc",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environment13cacheSequenceAcA14VCLEnvironmentO_Sitcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -26904,10 +26904,10 @@
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLInitializationDescriptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 415,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 436,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceVCLImpl.swift",
@@ -27465,7 +27465,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14459,
+      "offset": 14477,
       "length": 2,
       "value": "\"\""
     },
@@ -29617,6 +29617,27 @@
       "offset": 11683,
       "length": 4,
       "value": "\"UK\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/db\/CacheServiceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 292,
+      "length": 30,
+      "value": "\"KEY_CACHE_SEQUENCE_COUNTRIES\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/db\/CacheServiceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 384,
+      "length": 37,
+      "value": "\"KEY_CACHE_SEQUENCE_CREDENTIAL_TYPES\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/db\/CacheServiceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 489,
+      "length": 43,
+      "value": "\"KEY_CACHE_SEQUENCE_CREDENTIAL_TYPE_SCHEMA\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptorByService.swift",

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VCL
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -53,8 +53,8 @@ public class VCLCredentialManifestDescriptor {
 }
 public struct VCLInitializationDescriptor {
   public let environment: VCLEnvironment
-  public let resetCache: Swift.Bool
-  public init(environment: VCLEnvironment = VCLEnvironment.PROD, resetCache: Swift.Bool = false)
+  public let cacheSequence: Swift.Int
+  public init(environment: VCLEnvironment = VCLEnvironment.PROD, cacheSequence: Swift.Int = 0)
 }
 @_hasMissingDesignatedInitializers public class VCLProvider {
   public static func vclInstance() -> VCL
