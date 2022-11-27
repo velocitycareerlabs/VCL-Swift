@@ -175,6 +175,14 @@ public class VCLSubmission {
   final public let verifiableCredentials: [VCL.VCLVerifiableCredential]
   final public let vendorOriginContext: Swift.String?
   public init(submitUri: Swift.String, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCL.VCLVerifiableCredential], vendorOriginContext: Swift.String? = nil)
+  public var payload: [Swift.String : Any] {
+    get
+    set
+  }
+  public var id: Swift.String {
+    get
+    set
+  }
   @objc deinit
 }
 public struct VCLJWT {
@@ -656,12 +664,9 @@ public struct VCLOffers {
 public struct VCLSubmissionResult {
   public let token: VCL.VCLToken
   public let exchange: VCL.VCLExchange
-  public init(token: VCL.VCLToken, exchange: VCL.VCLExchange)
+  public let id: Swift.String
+  public init(token: VCL.VCLToken, exchange: VCL.VCLExchange, id: Swift.String)
 }
-extension VCL.VCLSubmissionResult : Swift.Equatable {
-}
-public func == (lhs: VCL.VCLSubmissionResult, rhs: VCL.VCLSubmissionResult) -> Swift.Bool
-public func != (lhs: VCL.VCLSubmissionResult, rhs: VCL.VCLSubmissionResult) -> Swift.Bool
 @_inheritsConvenienceInitializers public class VCLServiceCredentialAgentIssuer : VCL.VCLService {
   override public init(payload: [Swift.String : Any])
   public var credentialTypes: [Swift.String]? {
