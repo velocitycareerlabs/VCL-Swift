@@ -174,11 +174,6 @@ public class VCLSubmission {
   final public let presentationDefinitionId: Swift.String
   final public let verifiableCredentials: [VCL.VCLVerifiableCredential]
   final public let vendorOriginContext: Swift.String?
-  public init(submitUri: Swift.String, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCL.VCLVerifiableCredential], vendorOriginContext: Swift.String? = nil)
-  public var payload: [Swift.String : Any] {
-    get
-    set
-  }
   public var jti: Swift.String {
     get
     set
@@ -186,6 +181,13 @@ public class VCLSubmission {
   public var submissionId: Swift.String {
     get
     set
+  }
+  public init(submitUri: Swift.String, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCL.VCLVerifiableCredential], vendorOriginContext: Swift.String? = nil)
+  public var payload: [Swift.String : Any] {
+    get
+    set
+  }
+  public struct CodingKeys {
   }
   @objc deinit
 }
