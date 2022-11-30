@@ -179,7 +179,11 @@ public class VCLSubmission {
     get
     set
   }
-  public var id: Swift.String {
+  public var jti: Swift.String {
+    get
+    set
+  }
+  public var submissionId: Swift.String {
     get
     set
   }
@@ -664,8 +668,9 @@ public struct VCLOffers {
 public struct VCLSubmissionResult {
   public let token: VCLToken
   public let exchange: VCLExchange
-  public let id: Swift.String
-  public init(token: VCLToken, exchange: VCLExchange, id: Swift.String)
+  public let jti: Swift.String
+  public let submissionId: Swift.String
+  public init(token: VCLToken, exchange: VCLExchange, jti: Swift.String, submissionId: Swift.String)
 }
 @_inheritsConvenienceInitializers public class VCLServiceCredentialAgentIssuer : VCLService {
   override public init(payload: [Swift.String : Any])
