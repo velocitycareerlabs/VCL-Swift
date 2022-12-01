@@ -6694,7 +6694,7 @@
           {
             "kind": "Function",
             "name": "generateSignedJwt",
-            "printedName": "generateSignedJwt(payload:iss:successHandler:errorHandler:)",
+            "printedName": "generateSignedJwt(payload:iss:jti:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6719,6 +6719,12 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -6764,8 +6770,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC17generateSignedJwt7payload3iss14successHandler05errorI0ySDySSypG_SSyAA6VCLJWTVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC17generateSignedJwt7payload3iss14successHandler05errorI0ySDySSypG_SSyAA6VCLJWTVcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC17generateSignedJwt7payload3iss3jti14successHandler05errorJ0ySDySSypG_S2SyAA6VCLJWTVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC17generateSignedJwt7payload3iss3jti14successHandler05errorJ0ySDySSypG_S2SyAA6VCLJWTVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -23117,7 +23123,7 @@
           {
             "kind": "Function",
             "name": "generateSignedJwt",
-            "printedName": "generateSignedJwt(payload:iss:successHandler:errorHandler:)",
+            "printedName": "generateSignedJwt(payload:iss:jti:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23142,6 +23148,12 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -23187,8 +23199,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP17generateSignedJwt7payload3iss14successHandler05errorH0ySDySSypG_SSyAA6VCLJWTVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP17generateSignedJwt7payload3iss14successHandler05errorH0ySDySSypG_SSyAA6VCLJWTVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP17generateSignedJwt7payload3iss3jti14successHandler05errorI0ySDySSypG_S2SyAA6VCLJWTVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP17generateSignedJwt7payload3iss3jti14successHandler05errorI0ySDySSypG_S2SyAA6VCLJWTVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -27666,7 +27678,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14477,
+      "offset": 14508,
       "length": 2,
       "value": "\"\""
     },

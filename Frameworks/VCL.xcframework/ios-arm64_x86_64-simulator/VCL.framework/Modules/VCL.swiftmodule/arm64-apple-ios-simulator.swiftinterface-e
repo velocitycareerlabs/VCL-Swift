@@ -225,7 +225,7 @@ public struct VCLJWT {
   public func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCL.VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCL.VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func verifyJwt(jwt: VCL.VCLJWT, publicKey: VCL.VCLPublicKey, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  public func generateSignedJwt(payload: [Swift.String : Any], iss: Swift.String, successHandler: @escaping (VCL.VCLJWT) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  public func generateSignedJwt(payload: [Swift.String : Any], iss: Swift.String, jti: Swift.String, successHandler: @escaping (VCL.VCLJWT) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   @objc deinit
 }
 public struct VCLExchangeDescriptor {
@@ -606,7 +606,7 @@ public protocol VCL {
   func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCL.VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCL.VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func verifyJwt(jwt: VCL.VCLJWT, publicKey: VCL.VCLPublicKey, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  func generateSignedJwt(payload: [Swift.String : Any], iss: Swift.String, successHandler: @escaping (VCL.VCLJWT) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  func generateSignedJwt(payload: [Swift.String : Any], iss: Swift.String, jti: Swift.String, successHandler: @escaping (VCL.VCLJWT) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
 }
 public class VCLCredentialManifestDescriptorByService : VCL.VCLCredentialManifestDescriptor {
   public init(service: VCL.VCLService, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil)
