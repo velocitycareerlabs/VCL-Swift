@@ -46,6 +46,8 @@ public class VCLCredentialManifestDescriptor {
   final public let credentialTypes: [Swift.String]?
   final public let pushDelegate: VCL.VCLPushDelegate?
   public init(uri: Swift.String, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil)
+  public struct CodingKeys {
+  }
   public var endpoint: Swift.String {
     get
   }
@@ -55,6 +57,14 @@ public struct VCLInitializationDescriptor {
   public let environment: VCL.VCLEnvironment
   public let cacheSequence: Swift.Int
   public init(environment: VCL.VCLEnvironment = VCLEnvironment.PROD, cacheSequence: Swift.Int = 0)
+}
+public class VCLPresentationRequestDescriptor {
+  final public let deepLink: VCL.VCLDeepLink
+  final public let pushDelegate: VCL.VCLPushDelegate?
+  public init(deepLink: VCL.VCLDeepLink, pushDelegate: VCL.VCLPushDelegate? = nil)
+  public struct CodingKeys {
+  }
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VCLProvider {
   public static func vclInstance() -> VCL.VCL
@@ -214,7 +224,7 @@ public struct VCLJWT {
   public var credentialTypeSchemas: VCL.VCLCredentialTypeSchemas? {
     get
   }
-  public func getPresentationRequest(deepLink: VCL.VCLDeepLink, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  public func getPresentationRequest(presentationRequestDescriptor: VCL.VCLPresentationRequestDescriptor, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLPresentationSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func getExchangeProgress(exchangeDescriptor: VCL.VCLExchangeDescriptor, successHandler: @escaping (VCL.VCLExchange) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func searchForOrganizations(organizationsSearchDescriptor: VCL.VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCL.VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
@@ -330,6 +340,8 @@ public struct VCLPresentationRequest {
   }
   public var presentationDefinitionId: Swift.String {
     get
+  }
+  public struct CodingKeys {
   }
 }
 public struct VCLCountries {
@@ -595,7 +607,7 @@ public protocol VCL {
   var countries: VCL.VCLCountries? { get }
   var credentialTypes: VCL.VCLCredentialTypes? { get }
   var credentialTypeSchemas: VCL.VCLCredentialTypeSchemas? { get }
-  func getPresentationRequest(deepLink: VCL.VCLDeepLink, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  func getPresentationRequest(presentationRequestDescriptor: VCL.VCLPresentationRequestDescriptor, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLPresentationSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getExchangeProgress(exchangeDescriptor: VCL.VCLExchangeDescriptor, successHandler: @escaping (VCL.VCLExchange) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func searchForOrganizations(organizationsSearchDescriptor: VCL.VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCL.VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)

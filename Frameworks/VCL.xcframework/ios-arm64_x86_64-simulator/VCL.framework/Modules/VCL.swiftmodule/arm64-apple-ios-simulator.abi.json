@@ -1297,6 +1297,18 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "declKind": "Struct",
+            "usr": "s:3VCL31VCLCredentialManifestDescriptorC10CodingKeysV",
+            "mangledName": "$s3VCL31VCLCredentialManifestDescriptorC10CodingKeysV",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
             "kind": "Var",
             "name": "endpoint",
             "printedName": "endpoint",
@@ -1550,6 +1562,196 @@
         "moduleName": "VCL",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VCLPresentationRequestDescriptor",
+        "printedName": "VCLPresentationRequestDescriptor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "deepLink",
+            "printedName": "deepLink",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLDeepLink",
+                "printedName": "VCL.VCLDeepLink",
+                "usr": "s:3VCL11VCLDeepLinkV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL32VCLPresentationRequestDescriptorC8deepLinkAA07VCLDeepF0Vvp",
+            "mangledName": "$s3VCL32VCLPresentationRequestDescriptorC8deepLinkAA07VCLDeepF0Vvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLDeepLink",
+                    "printedName": "VCL.VCLDeepLink",
+                    "usr": "s:3VCL11VCLDeepLinkV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL32VCLPresentationRequestDescriptorC8deepLinkAA07VCLDeepF0Vvg",
+                "mangledName": "$s3VCL32VCLPresentationRequestDescriptorC8deepLinkAA07VCLDeepF0Vvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pushDelegate",
+            "printedName": "pushDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLPushDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLPushDelegate",
+                    "printedName": "VCL.VCLPushDelegate",
+                    "usr": "s:3VCL15VCLPushDelegateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL32VCLPresentationRequestDescriptorC12pushDelegateAA07VCLPushF0VSgvp",
+            "mangledName": "$s3VCL32VCLPresentationRequestDescriptorC12pushDelegateAA07VCLPushF0VSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "VCL.VCLPushDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLPushDelegate",
+                        "printedName": "VCL.VCLPushDelegate",
+                        "usr": "s:3VCL15VCLPushDelegateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL32VCLPresentationRequestDescriptorC12pushDelegateAA07VCLPushF0VSgvg",
+                "mangledName": "$s3VCL32VCLPresentationRequestDescriptorC12pushDelegateAA07VCLPushF0VSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(deepLink:pushDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLPresentationRequestDescriptor",
+                "printedName": "VCL.VCLPresentationRequestDescriptor",
+                "usr": "s:3VCL32VCLPresentationRequestDescriptorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLDeepLink",
+                "printedName": "VCL.VCLDeepLink",
+                "usr": "s:3VCL11VCLDeepLinkV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLPushDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLPushDelegate",
+                    "printedName": "VCL.VCLPushDelegate",
+                    "usr": "s:3VCL15VCLPushDelegateV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL32VCLPresentationRequestDescriptorC8deepLink12pushDelegateAcA07VCLDeepF0V_AA07VCLPushH0VSgtcfc",
+            "mangledName": "$s3VCL32VCLPresentationRequestDescriptorC8deepLink12pushDelegateAcA07VCLDeepF0V_AA07VCLPushH0VSgtcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "declKind": "Struct",
+            "usr": "s:3VCL32VCLPresentationRequestDescriptorC10CodingKeysV",
+            "mangledName": "$s3VCL32VCLPresentationRequestDescriptorC10CodingKeysV",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3VCL32VCLPresentationRequestDescriptorC",
+        "mangledName": "$s3VCL32VCLPresentationRequestDescriptorC",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -5994,7 +6196,7 @@
           {
             "kind": "Function",
             "name": "getPresentationRequest",
-            "printedName": "getPresentationRequest(deepLink:successHandler:errorHandler:)",
+            "printedName": "getPresentationRequest(presentationRequestDescriptor:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6003,9 +6205,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDeepLink",
-                "printedName": "VCL.VCLDeepLink",
-                "usr": "s:3VCL11VCLDeepLinkV"
+                "name": "VCLPresentationRequestDescriptor",
+                "printedName": "VCL.VCLPresentationRequestDescriptor",
+                "usr": "s:3VCL32VCLPresentationRequestDescriptorC"
               },
               {
                 "kind": "TypeFunc",
@@ -6045,8 +6247,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC22getPresentationRequest8deepLink14successHandler05errorI0yAA07VCLDeepG0V_yAA015VCLPresentationE0VcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC22getPresentationRequest8deepLink14successHandler05errorI0yAA07VCLDeepG0V_yAA015VCLPresentationE0VcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC22getPresentationRequest012presentationE10Descriptor14successHandler05errorI0yAA015VCLPresentationeG0C_yAA0kE0VcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC22getPresentationRequest012presentationE10Descriptor14successHandler05errorI0yAA015VCLPresentationeG0C_yAA0kE0VcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -10121,6 +10323,18 @@
                 "moduleName": "VCL",
                 "accessorKind": "get"
               }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "declKind": "Struct",
+            "usr": "s:3VCL22VCLPresentationRequestV10CodingKeysV",
+            "mangledName": "$s3VCL22VCLPresentationRequestV10CodingKeysV",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
             ]
           }
         ],
@@ -22412,7 +22626,7 @@
           {
             "kind": "Function",
             "name": "getPresentationRequest",
-            "printedName": "getPresentationRequest(deepLink:successHandler:errorHandler:)",
+            "printedName": "getPresentationRequest(presentationRequestDescriptor:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22421,9 +22635,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDeepLink",
-                "printedName": "VCL.VCLDeepLink",
-                "usr": "s:3VCL11VCLDeepLinkV"
+                "name": "VCLPresentationRequestDescriptor",
+                "printedName": "VCL.VCLPresentationRequestDescriptor",
+                "usr": "s:3VCL32VCLPresentationRequestDescriptorC"
               },
               {
                 "kind": "TypeFunc",
@@ -22463,8 +22677,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP22getPresentationRequest8deepLink14successHandler05errorH0yAA07VCLDeepF0V_yAA015VCLPresentationD0VcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP22getPresentationRequest8deepLink14successHandler05errorH0yAA07VCLDeepF0V_yAA015VCLPresentationD0VcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP22getPresentationRequest012presentationD10Descriptor14successHandler05errorH0yAA015VCLPresentationdF0C_yAA0jD0VcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP22getPresentationRequest012presentationD10Descriptor14successHandler05errorH0yAA015VCLPresentationdF0C_yAA0jD0VcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -27069,35 +27283,35 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 738,
+      "offset": 731,
       "length": 18,
       "value": "\"credential_types\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 794,
       "length": 24,
       "value": "\"push_delegate.push_url\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 886,
+      "offset": 865,
       "length": 26,
       "value": "\"push_delegate.push_token\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 966,
+      "offset": 938,
       "length": 14,
       "value": "\"credentialId\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 985,
       "length": 9,
       "value": "\"refresh\""
     },
@@ -27170,6 +27384,27 @@
       "offset": 625,
       "length": 1,
       "value": "\"\/jwt\/sign\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 483,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 24,
+      "value": "\"push_delegate.push_url\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 612,
+      "length": 26,
+      "value": "\"push_delegate.push_token\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationSubmission.swift",
@@ -27678,7 +27913,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14508,
+      "offset": 14602,
       "length": 2,
       "value": "\"\""
     },
@@ -27972,63 +28207,63 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1428,
+      "offset": 1435,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1468,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 1518,
       "length": 22,
       "value": "\"presentation_request\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1568,
+      "offset": 1575,
       "length": 11,
       "value": "\"publicKey\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1615,
+      "offset": 1622,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1714,
+      "offset": 1721,
       "length": 25,
       "value": "\"presentation_definition\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1782,
+      "offset": 1789,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1829,
+      "offset": 1836,
       "length": 14,
       "value": "\"progress_uri\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1890,
+      "offset": 1897,
       "length": 25,
       "value": "\"submit_presentation_uri\""
     },
