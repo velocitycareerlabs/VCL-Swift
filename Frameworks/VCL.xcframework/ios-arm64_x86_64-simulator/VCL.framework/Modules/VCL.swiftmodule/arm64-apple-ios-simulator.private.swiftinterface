@@ -183,10 +183,11 @@ public class VCLSubmission {
   final public let exchangeId: Swift.String
   final public let presentationDefinitionId: Swift.String
   final public let verifiableCredentials: [VCLVerifiableCredential]
+  final public let pushDelegate: VCLPushDelegate?
   final public let vendorOriginContext: Swift.String?
   final public let jti: Swift.String
   final public let submissionId: Swift.String
-  public init(submitUri: Swift.String, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCLVerifiableCredential], vendorOriginContext: Swift.String? = nil)
+  public init(submitUri: Swift.String, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCLVerifiableCredential], pushDelegate: VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil)
   public var payload: [Swift.String : Any] {
     get
   }
@@ -275,7 +276,10 @@ public enum VCLServiceType : Swift.String {
 public struct VCLPushDelegate {
   public let pushUrl: Swift.String
   public let pushToken: Swift.String
-  public init(pushUrl: Swift.String, pushToken: Swift.String)
+  public let proxyDid: Swift.String
+  public init(pushUrl: Swift.String, pushToken: Swift.String, proxyDid: Swift.String)
+  public struct CodingKeys {
+  }
 }
 public typealias VCLPresentationSubmissionResult = VCLSubmissionResult
 public struct VCLRegion : VCLPlace {
@@ -316,6 +320,9 @@ public struct VCLDeepLink {
   public var requestUri: Swift.String {
     get
   }
+  public var proxyDid: Swift.String? {
+    get
+  }
   public var vendorOriginContext: Swift.String? {
     get
   }
@@ -331,7 +338,8 @@ public struct VCLPresentationRequest {
   public let jwt: VCLJWT
   public let publicKey: VCLPublicKey
   public let deepLink: VCLDeepLink
-  public init(jwt: VCLJWT, publicKey: VCLPublicKey, deepLink: VCLDeepLink)
+  public let pushDelegate: VCLPushDelegate?
+  public init(jwt: VCLJWT, publicKey: VCLPublicKey, deepLink: VCLDeepLink, pushDelegate: VCLPushDelegate? = nil)
   public var iss: Swift.String {
     get
   }
