@@ -276,8 +276,7 @@ public enum VCLServiceType : Swift.String {
 public struct VCLPushDelegate {
   public let pushUrl: Swift.String
   public let pushToken: Swift.String
-  public let proxyDid: Swift.String
-  public init(pushUrl: Swift.String, pushToken: Swift.String, proxyDid: Swift.String)
+  public init(pushUrl: Swift.String, pushToken: Swift.String)
   public struct CodingKeys {
   }
 }
@@ -320,11 +319,10 @@ public struct VCLDeepLink {
   public var requestUri: Swift.String {
     get
   }
-  public var proxyDid: Swift.String? {
-    get
-  }
   public var vendorOriginContext: Swift.String? {
     get
+  }
+  public struct CodingKeys {
   }
 }
 public struct VCLGenerateOffersDescriptor {
