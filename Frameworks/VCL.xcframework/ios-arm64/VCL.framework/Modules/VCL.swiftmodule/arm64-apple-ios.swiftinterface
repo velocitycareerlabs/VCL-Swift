@@ -12,7 +12,8 @@ import _Concurrency
 import _StringProcessing
 public struct VCLVerifiedProfileDescriptor {
   public let did: Swift.String
-  public init(did: Swift.String)
+  public let serviceType: VCLServiceType
+  public init(did: Swift.String, serviceType: VCLServiceType)
 }
 public struct VCLCredentialTypeSchema {
   public let payload: [Swift.String : Any]?
@@ -125,6 +126,11 @@ public struct VCLVerifiedProfile {
   }
   public var id: Swift.String? {
     get
+  }
+  public var serviceTypes: VCLServiceTypes {
+    get
+  }
+  public struct CodingKeys {
   }
 }
 public struct VCLExchange {
@@ -261,12 +267,14 @@ public struct VCLExchangeDescriptor {
 public enum VCLServiceType : Swift.String {
   case Issuer
   case Inspector
-  case CredentialAgentOperator
-  case NodeOperator
   case TrustRoot
+  case NodeOperator
   case NotaryIssuer
   case IdentityIssuer
   case HolderAppProvider
+  case CredentialAgentOperator
+  case Undefined
+  public static func fromString(value: Swift.String) -> VCLServiceType
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -296,10 +304,10 @@ public enum VCLResult<Value> {
   case failure(VCLError)
 }
 public struct VCLError : Swift.Error {
+  public let description: Swift.String?
   public let code: Swift.Int?
-  public let description: Swift.String
-  public init(error: Swift.Error, code: Swift.Int? = nil)
-  public init(description: Swift.String, code: Swift.Int? = nil)
+  public init(error: Swift.Error? = nil, code: Swift.Int? = nil)
+  public init(description: Swift.String? = nil, code: Swift.Int? = nil)
 }
 public struct VCLCredentialType {
   public let payload: [Swift.String : Any]
@@ -608,6 +616,15 @@ public struct VCLCountries {
     public static let UK: Swift.String
   }
 }
+public enum VCLErrorCode : Swift.Int {
+  case NetworkError
+  case VerificationError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public protocol VCL {
   func initialize(initializationDescriptor: VCLInitializationDescriptor, successHandler: @escaping () -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   var countries: VCLCountries? { get }
@@ -706,6 +723,12 @@ public struct VCLCountry : VCLPlace {
 }
 public func == (lhs: [Swift.String : Any], rhs: [Swift.String : Any]) -> Swift.Bool
 public func != (lhs: [Swift.String : Any], rhs: [Swift.String : Any]) -> Swift.Bool
+public class VCLServiceTypes {
+  final public let all: [VCLServiceType]
+  public init(all: [VCLServiceType])
+  public func contains(serviceType: VCLServiceType) -> Swift.Bool
+  @objc deinit
+}
 public struct VCLOrganizations {
   public let all: [VCLOrganization]
   public init(all: [VCLOrganization])
@@ -746,3 +769,6 @@ extension VCLEnvironment : Swift.RawRepresentable {}
 extension VCLServiceType : Swift.Equatable {}
 extension VCLServiceType : Swift.Hashable {}
 extension VCLServiceType : Swift.RawRepresentable {}
+extension VCLErrorCode : Swift.Equatable {}
+extension VCLErrorCode : Swift.Hashable {}
+extension VCLErrorCode : Swift.RawRepresentable {}

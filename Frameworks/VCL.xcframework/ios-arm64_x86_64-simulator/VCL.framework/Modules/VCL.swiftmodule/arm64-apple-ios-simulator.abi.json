@@ -108,9 +108,53 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "serviceType",
+            "printedName": "serviceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLServiceType",
+                "printedName": "VCL.VCLServiceType",
+                "usr": "s:3VCL14VCLServiceTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovp",
+            "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovg",
+                "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(did:)",
+            "printedName": "init(did:serviceType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -123,11 +167,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLServiceType",
+                "printedName": "VCL.VCLServiceType",
+                "usr": "s:3VCL14VCLServiceTypeO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL28VCLVerifiedProfileDescriptorV3didACSS_tcfc",
-            "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV3didACSS_tcfc",
+            "usr": "s:3VCL28VCLVerifiedProfileDescriptorV3did11serviceTypeACSS_AA010VCLServiceG0Otcfc",
+            "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV3did11serviceTypeACSS_AA010VCLServiceG0Otcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -3514,6 +3564,58 @@
                 "moduleName": "VCL",
                 "accessorKind": "get"
               }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceTypes",
+            "printedName": "serviceTypes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLServiceTypes",
+                "printedName": "VCL.VCLServiceTypes",
+                "usr": "s:3VCL15VCLServiceTypesC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL18VCLVerifiedProfileV12serviceTypesAA010VCLServiceE0Cvp",
+            "mangledName": "$s3VCL18VCLVerifiedProfileV12serviceTypesAA010VCLServiceE0Cvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceTypes",
+                    "printedName": "VCL.VCLServiceTypes",
+                    "usr": "s:3VCL15VCLServiceTypesC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL18VCLVerifiedProfileV12serviceTypesAA010VCLServiceE0Cvg",
+                "mangledName": "$s3VCL18VCLVerifiedProfileV12serviceTypesAA010VCLServiceE0Cvg",
+                "moduleName": "VCL",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "declKind": "Struct",
+            "usr": "s:3VCL18VCLVerifiedProfileV10CodingKeysV",
+            "mangledName": "$s3VCL18VCLVerifiedProfileV10CodingKeysV",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
             ]
           }
         ],
@@ -7508,8 +7610,8 @@
           },
           {
             "kind": "Var",
-            "name": "CredentialAgentOperator",
-            "printedName": "CredentialAgentOperator",
+            "name": "TrustRoot",
+            "printedName": "TrustRoot",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7539,8 +7641,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:3VCL14VCLServiceTypeO23CredentialAgentOperatoryA2CmF",
-            "mangledName": "$s3VCL14VCLServiceTypeO23CredentialAgentOperatoryA2CmF",
+            "usr": "s:3VCL14VCLServiceTypeO9TrustRootyA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO9TrustRootyA2CmF",
             "moduleName": "VCL"
           },
           {
@@ -7578,43 +7680,6 @@
             "declKind": "EnumElement",
             "usr": "s:3VCL14VCLServiceTypeO12NodeOperatoryA2CmF",
             "mangledName": "$s3VCL14VCLServiceTypeO12NodeOperatoryA2CmF",
-            "moduleName": "VCL"
-          },
-          {
-            "kind": "Var",
-            "name": "TrustRoot",
-            "printedName": "TrustRoot",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VCLServiceType",
-                    "printedName": "VCL.VCLServiceType",
-                    "usr": "s:3VCL14VCLServiceTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "VCL.VCLServiceType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VCLServiceType",
-                        "printedName": "VCL.VCLServiceType",
-                        "usr": "s:3VCL14VCLServiceTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:3VCL14VCLServiceTypeO9TrustRootyA2CmF",
-            "mangledName": "$s3VCL14VCLServiceTypeO9TrustRootyA2CmF",
             "moduleName": "VCL"
           },
           {
@@ -7727,6 +7792,108 @@
             "usr": "s:3VCL14VCLServiceTypeO17HolderAppProvideryA2CmF",
             "mangledName": "$s3VCL14VCLServiceTypeO17HolderAppProvideryA2CmF",
             "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "CredentialAgentOperator",
+            "printedName": "CredentialAgentOperator",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO23CredentialAgentOperatoryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO23CredentialAgentOperatoryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "Undefined",
+            "printedName": "Undefined",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO9UndefinedyA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO9UndefinedyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Function",
+            "name": "fromString",
+            "printedName": "fromString(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLServiceType",
+                "printedName": "VCL.VCLServiceType",
+                "usr": "s:3VCL14VCLServiceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL14VCLServiceTypeO10fromString5valueACSS_tFZ",
+            "mangledName": "$s3VCL14VCLServiceTypeO10fromString5valueACSS_tFZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -8558,6 +8725,66 @@
         "children": [
           {
             "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLErrorV11descriptionSSSgvp",
+            "mangledName": "$s3VCL8VCLErrorV11descriptionSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLErrorV11descriptionSSSgvg",
+                "mangledName": "$s3VCL8VCLErrorV11descriptionSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "code",
             "printedName": "code",
             "children": [
@@ -8617,50 +8844,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:3VCL8VCLErrorV11descriptionSSvp",
-            "mangledName": "$s3VCL8VCLErrorV11descriptionSSvp",
-            "moduleName": "VCL",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:3VCL8VCLErrorV11descriptionSSvg",
-                "mangledName": "$s3VCL8VCLErrorV11descriptionSSvg",
-                "moduleName": "VCL",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(error:code:)",
@@ -8673,9 +8856,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "Swift.Error",
-                "usr": "s:s5ErrorP"
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -8694,8 +8886,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL8VCLErrorV5error4codeACs5Error_p_SiSgtcfc",
-            "mangledName": "$s3VCL8VCLErrorV5error4codeACs5Error_p_SiSgtcfc",
+            "usr": "s:3VCL8VCLErrorV5error4codeACs5Error_pSg_SiSgtcfc",
+            "mangledName": "$s3VCL8VCLErrorV5error4codeACs5Error_pSg_SiSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -8715,9 +8907,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -8736,8 +8937,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL8VCLErrorV11description4codeACSS_SiSgtcfc",
-            "mangledName": "$s3VCL8VCLErrorV11description4codeACSS_SiSgtcfc",
+            "usr": "s:3VCL8VCLErrorV11description4codeACSSSg_SiSgtcfc",
+            "mangledName": "$s3VCL8VCLErrorV11description4codeACSSSg_SiSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -22548,6 +22749,215 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "VCLErrorCode",
+        "printedName": "VCLErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "NetworkError",
+            "printedName": "NetworkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO12NetworkErroryA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO12NetworkErroryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "VerificationError",
+            "printedName": "VerificationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO17VerificationErroryA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO17VerificationErroryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL12VCLErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s3VCL12VCLErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "VCL",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLErrorCodeO8rawValueSivp",
+            "mangledName": "$s3VCL12VCLErrorCodeO8rawValueSivp",
+            "moduleName": "VCL",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLErrorCodeO8rawValueSivg",
+                "mangledName": "$s3VCL12VCLErrorCodeO8rawValueSivg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3VCL12VCLErrorCodeO",
+        "mangledName": "$s3VCL12VCLErrorCodeO",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -26277,6 +26687,156 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "VCLServiceTypes",
+        "printedName": "VCLServiceTypes",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "all",
+            "printedName": "all",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[VCL.VCLServiceType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL15VCLServiceTypesC3allSayAA0B4TypeOGvp",
+            "mangledName": "$s3VCL15VCLServiceTypesC3allSayAA0B4TypeOGvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[VCL.VCLServiceType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL15VCLServiceTypesC3allSayAA0B4TypeOGvg",
+                "mangledName": "$s3VCL15VCLServiceTypesC3allSayAA0B4TypeOGvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(all:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLServiceTypes",
+                "printedName": "VCL.VCLServiceTypes",
+                "usr": "s:3VCL15VCLServiceTypesC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[VCL.VCLServiceType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL15VCLServiceTypesC3allACSayAA0B4TypeOG_tcfc",
+            "mangledName": "$s3VCL15VCLServiceTypesC3allACSayAA0B4TypeOG_tcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "contains",
+            "printedName": "contains(serviceType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLServiceType",
+                "printedName": "VCL.VCLServiceType",
+                "usr": "s:3VCL14VCLServiceTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL15VCLServiceTypesC8contains11serviceTypeSbAA0bF0O_tF",
+            "mangledName": "$s3VCL15VCLServiceTypesC8contains11serviceTypeSbAA0bF0O_tF",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3VCL15VCLServiceTypesC",
+        "mangledName": "$s3VCL15VCLServiceTypesC",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -27671,30 +28231,37 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 827,
+      "offset": 1246,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 885,
+      "offset": 1304,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 921,
+      "offset": 1340,
       "length": 6,
       "value": "\"logo\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 955,
+      "offset": 1374,
       "length": 4,
       "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
+      "kind": "StringLiteral",
+      "offset": 1415,
+      "length": 34,
+      "value": "\"permittedVelocityServiceCategory\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLExchange.swift",
@@ -28091,114 +28658,128 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 242,
+      "offset": 244,
       "length": 8,
       "value": "\"Issuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 272,
+      "offset": 274,
       "length": 11,
       "value": "\"Inspector\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 319,
-      "length": 25,
-      "value": "\"CredentialAgentOperator\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
-      "kind": "StringLiteral",
-      "offset": 369,
-      "length": 14,
-      "value": "\"NodeOperator\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
-      "kind": "StringLiteral",
-      "offset": 405,
+      "offset": 307,
       "length": 11,
       "value": "\"TrustRoot\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 441,
+      "offset": 343,
+      "length": 14,
+      "value": "\"NodeOperator\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
       "length": 14,
       "value": "\"NotaryIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 482,
+      "offset": 423,
       "length": 16,
       "value": "\"IdentityIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 469,
       "length": 19,
       "value": "\"HolderAppProvider\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 242,
+      "offset": 524,
+      "length": 25,
+      "value": "\"CredentialAgentOperator\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 571,
+      "length": 11,
+      "value": "\"Undefined\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
       "length": 8,
       "value": "\"Issuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 272,
+      "offset": 274,
       "length": 11,
       "value": "\"Inspector\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 319,
-      "length": 25,
-      "value": "\"CredentialAgentOperator\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
-      "kind": "StringLiteral",
-      "offset": 369,
-      "length": 14,
-      "value": "\"NodeOperator\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
-      "kind": "StringLiteral",
-      "offset": 405,
+      "offset": 307,
       "length": 11,
       "value": "\"TrustRoot\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 441,
+      "offset": 343,
+      "length": 14,
+      "value": "\"NodeOperator\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
       "length": 14,
       "value": "\"NotaryIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 482,
+      "offset": 423,
       "length": 16,
       "value": "\"IdentityIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 469,
       "length": 19,
       "value": "\"HolderAppProvider\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 524,
+      "length": 25,
+      "value": "\"CredentialAgentOperator\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 571,
+      "length": 11,
+      "value": "\"Undefined\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPushDelegate.swift",
@@ -28255,27 +28836,6 @@
       "offset": 583,
       "length": 6,
       "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 876,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 876,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 876,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
@@ -30229,6 +30789,48 @@
       "offset": 11683,
       "length": 4,
       "value": "\"UK\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 246,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 246,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 246,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 3,
+      "value": "403"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/db\/CacheServiceImpl.swift",
