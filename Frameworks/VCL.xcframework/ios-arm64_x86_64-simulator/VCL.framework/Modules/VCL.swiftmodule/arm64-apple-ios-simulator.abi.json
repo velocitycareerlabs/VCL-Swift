@@ -114,14 +114,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "VCLServiceType",
-                "printedName": "VCL.VCLServiceType",
-                "usr": "s:3VCL14VCLServiceTypeO"
+                "name": "Optional",
+                "printedName": "VCL.VCLServiceType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovp",
-            "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovp",
+            "usr": "s:3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0OSgvp",
+            "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0OSgvp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -137,14 +145,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VCLServiceType",
-                    "printedName": "VCL.VCLServiceType",
-                    "usr": "s:3VCL14VCLServiceTypeO"
+                    "name": "Optional",
+                    "printedName": "VCL.VCLServiceType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovg",
-                "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0Ovg",
+                "usr": "s:3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0OSgvg",
+                "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV11serviceTypeAA010VCLServiceF0OSgvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -170,14 +186,23 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLServiceType",
-                "printedName": "VCL.VCLServiceType",
-                "usr": "s:3VCL14VCLServiceTypeO"
+                "name": "Optional",
+                "printedName": "VCL.VCLServiceType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL28VCLVerifiedProfileDescriptorV3did11serviceTypeACSS_AA010VCLServiceG0Otcfc",
-            "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV3did11serviceTypeACSS_AA010VCLServiceG0Otcfc",
+            "usr": "s:3VCL28VCLVerifiedProfileDescriptorV3did11serviceTypeACSS_AA010VCLServiceG0OSgtcfc",
+            "mangledName": "$s3VCL28VCLVerifiedProfileDescriptorV3did11serviceTypeACSS_AA010VCLServiceG0OSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -7643,6 +7668,43 @@
             "declKind": "EnumElement",
             "usr": "s:3VCL14VCLServiceTypeO9TrustRootyA2CmF",
             "mangledName": "$s3VCL14VCLServiceTypeO9TrustRootyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "CareerIssuer",
+            "printedName": "CareerIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO12CareerIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO12CareerIssueryA2CmF",
             "moduleName": "VCL"
           },
           {
@@ -28681,40 +28743,47 @@
       "kind": "StringLiteral",
       "offset": 343,
       "length": 14,
-      "value": "\"NodeOperator\""
+      "value": "\"CareerIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 14,
+      "value": "\"NodeOperator\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
+      "length": 14,
       "value": "\"NotaryIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 462,
       "length": 16,
       "value": "\"IdentityIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 469,
+      "offset": 508,
       "length": 19,
       "value": "\"HolderAppProvider\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 563,
       "length": 25,
       "value": "\"CredentialAgentOperator\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 571,
+      "offset": 610,
       "length": 11,
       "value": "\"Undefined\""
     },
@@ -28744,40 +28813,47 @@
       "kind": "StringLiteral",
       "offset": 343,
       "length": 14,
-      "value": "\"NodeOperator\""
+      "value": "\"CareerIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 14,
+      "value": "\"NodeOperator\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
+      "length": 14,
       "value": "\"NotaryIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 462,
       "length": 16,
       "value": "\"IdentityIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 469,
+      "offset": 508,
       "length": 19,
       "value": "\"HolderAppProvider\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 563,
       "length": 25,
       "value": "\"CredentialAgentOperator\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 571,
+      "offset": 610,
       "length": 11,
       "value": "\"Undefined\""
     },
