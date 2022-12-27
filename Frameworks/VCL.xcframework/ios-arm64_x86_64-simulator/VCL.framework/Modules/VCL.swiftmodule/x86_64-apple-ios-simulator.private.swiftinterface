@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VCL
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -145,9 +145,9 @@ extension VCLExchange : Swift.Equatable {
 public func == (lhs: VCLExchange, rhs: VCLExchange) -> Swift.Bool
 public func != (lhs: VCLExchange, rhs: VCLExchange) -> Swift.Bool
 public struct VCLCredentialManifest {
-  public let jwt: VCLJWT
+  public let jwt: VCLJwt
   public let vendorOriginContext: Swift.String?
-  public init(jwt: VCLJWT, vendorOriginContext: Swift.String? = nil)
+  public init(jwt: VCLJwt, vendorOriginContext: Swift.String? = nil)
   public var iss: Swift.String {
     get
   }
@@ -201,7 +201,7 @@ public class VCLSubmission {
   }
   @objc deinit
 }
-public struct VCLJWT {
+public struct VCLJwt {
   public var header: [Swift.String : Any]? {
     get
   }
@@ -241,8 +241,9 @@ public struct VCLJWT {
   public func finalizeOffers(finalizeOffersDescriptor: VCLFinalizeOffersDescriptor, token: VCLToken, successHandler: @escaping (VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func getVerifiedProfile(verifiedProfileDescriptor: VCLVerifiedProfileDescriptor, successHandler: @escaping (VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func verifyJwt(jwt: VCLJWT, publicKey: VCLPublicKey, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func generateSignedJwt(payload: [Swift.String : Any], iss: Swift.String, jti: Swift.String, successHandler: @escaping (VCLJWT) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func verifyJwt(jwt: VCLJwt, jwkPublic: VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateDidJwk(successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   @objc deinit
 }
 public struct VCLExchangeDescriptor {
@@ -342,11 +343,11 @@ public struct VCLGenerateOffersDescriptor {
   public init(credentialManifest: VCLCredentialManifest, types: [Swift.String]? = nil, offerHashes: [Swift.String]? = nil, identificationVerifiableCredentials: [VCLVerifiableCredential])
 }
 public struct VCLPresentationRequest {
-  public let jwt: VCLJWT
-  public let publicKey: VCLPublicKey
+  public let jwt: VCLJwt
+  public let jwkPublic: VCLJwkPublic
   public let deepLink: VCLDeepLink
   public let pushDelegate: VCLPushDelegate?
-  public init(jwt: VCLJWT, publicKey: VCLPublicKey, deepLink: VCLDeepLink, pushDelegate: VCLPushDelegate? = nil)
+  public init(jwt: VCLJwt, jwkPublic: VCLJwkPublic, deepLink: VCLDeepLink, pushDelegate: VCLPushDelegate? = nil)
   public var iss: Swift.String {
     get
   }
@@ -626,6 +627,12 @@ public enum VCLErrorCode : Swift.Int {
     get
   }
 }
+public class VCLDidJwk {
+  final public let value: Swift.String
+  public static let DidJwkPrefix: Swift.String
+  public init(value: Swift.String)
+  @objc deinit
+}
 public protocol VCL {
   func initialize(initializationDescriptor: VCLInitializationDescriptor, successHandler: @escaping () -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   var countries: VCLCountries? { get }
@@ -641,8 +648,9 @@ public protocol VCL {
   func finalizeOffers(finalizeOffersDescriptor: VCLFinalizeOffersDescriptor, token: VCLToken, successHandler: @escaping (VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func getVerifiedProfile(verifiedProfileDescriptor: VCLVerifiedProfileDescriptor, successHandler: @escaping (VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func verifyJwt(jwt: VCLJWT, publicKey: VCLPublicKey, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func generateSignedJwt(payload: [Swift.String : Any], iss: Swift.String, jti: Swift.String, successHandler: @escaping (VCLJWT) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func verifyJwt(jwt: VCLJwt, jwkPublic: VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func generateDidJwk(successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
 }
 public class VCLCredentialManifestDescriptorByService : VCLCredentialManifestDescriptor {
   public init(service: VCLService, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
@@ -677,19 +685,19 @@ public struct VCLOrganization {
   }
 }
 public struct VCLJwtVerifiableCredentials {
-  public let all: [VCLJWT]
-  public init(all: [VCLJWT])
+  public let all: [VCLJwt]
+  public init(all: [VCLJwt])
 }
-public struct VCLPublicKey {
-  public let jwkStr: Swift.String
-  public let jwkDict: [Swift.String : Any]
-  public init(jwkDict: [Swift.String : Any])
-  public init(jwkStr: Swift.String)
+public class VCLJwtDescriptor {
+  public init(payload: [Swift.String : Any], iss: Swift.String, jti: Swift.String)
+  @objc deinit
 }
-extension VCLPublicKey : Swift.Equatable {
+public struct VCLJwkPublic {
+  public let valueStr: Swift.String
+  public let valueDict: [Swift.String : Any]
+  public init(valueStr: Swift.String)
+  public init(valueDict: [Swift.String : Any])
 }
-public func == (lhs: VCLPublicKey, rhs: VCLPublicKey) -> Swift.Bool
-public func != (lhs: VCLPublicKey, rhs: VCLPublicKey) -> Swift.Bool
 public struct VCLOffers {
   public let all: [[Swift.String : Any]]
   public let responseCode: Swift.Int
