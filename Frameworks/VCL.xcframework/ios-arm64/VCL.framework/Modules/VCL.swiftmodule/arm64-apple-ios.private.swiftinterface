@@ -43,13 +43,13 @@ public struct VCLFinalizeOffersDescriptor {
   }
 }
 public class VCLCredentialManifestDescriptor {
-  final public let uri: Swift.String
+  final public let uri: Swift.String?
   final public let credentialTypes: [Swift.String]?
   final public let pushDelegate: VCLPushDelegate?
-  public init(uri: Swift.String, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
+  public init(uri: Swift.String?, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
   public struct CodingKeys {
   }
-  public var endpoint: Swift.String {
+  public var endpoint: Swift.String? {
     get
   }
   @objc deinit
@@ -107,7 +107,7 @@ public protocol VCLPlace {
 }
 public class VCLCredentialManifestDescriptorRefresh : VCLCredentialManifestDescriptor {
   public init(service: VCLService, credentialIds: [Swift.String])
-  override public var endpoint: Swift.String {
+  override public var endpoint: Swift.String? {
     get
   }
   @objc deinit
@@ -326,7 +326,10 @@ public func != (lhs: VCLCredentialType, rhs: VCLCredentialType) -> Swift.Bool
 public struct VCLDeepLink {
   public let value: Swift.String
   public init(value: Swift.String)
-  public var requestUri: Swift.String {
+  public var issuer: Swift.String? {
+    get
+  }
+  public var requestUri: Swift.String? {
     get
   }
   public var vendorOriginContext: Swift.String? {
@@ -654,7 +657,7 @@ public protocol VCL {
 }
 public class VCLCredentialManifestDescriptorByService : VCLCredentialManifestDescriptor {
   public init(service: VCLService, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
-  override public var endpoint: Swift.String {
+  override public var endpoint: Swift.String? {
     get
   }
   @objc deinit
