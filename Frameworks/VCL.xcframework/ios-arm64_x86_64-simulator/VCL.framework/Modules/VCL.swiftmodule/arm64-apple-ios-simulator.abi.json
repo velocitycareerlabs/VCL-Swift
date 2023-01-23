@@ -1509,6 +1509,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               },
               {
@@ -2029,6 +2030,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               },
               {
@@ -3251,6 +3253,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               },
               {
@@ -3365,6 +3368,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               },
               {
@@ -24790,6 +24794,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               },
               {
@@ -24929,6 +24934,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               },
               {
@@ -25388,6 +25394,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               }
             ],
@@ -25429,6 +25436,7 @@
                 "kind": "TypeNominal",
                 "name": "VCLServiceType",
                 "printedName": "VCL.VCLServiceType",
+                "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLServiceTypeO"
               },
               {
@@ -28775,42 +28783,42 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 982,
+      "offset": 1006,
       "length": 6,
       "value": "\"did:\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1053,
       "length": 18,
       "value": "\"credential_types\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
+      "offset": 1116,
       "length": 24,
       "value": "\"push_delegate.push_url\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1163,
+      "offset": 1187,
       "length": 26,
       "value": "\"push_delegate.push_token\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1236,
+      "offset": 1260,
       "length": 14,
       "value": "\"credentialId\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1307,
       "length": 9,
       "value": "\"refresh\""
     },
@@ -28838,21 +28846,21 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1421,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1452,
+      "offset": 1479,
       "length": 24,
       "value": "\"push_delegate.push_url\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1523,
+      "offset": 1550,
       "length": 26,
       "value": "\"push_delegate.push_token\""
     },
