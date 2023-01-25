@@ -28837,6 +28837,34 @@
       "value": "\"{credentialType}\""
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
+      "kind": "StringLiteral",
+      "offset": 2537,
+      "length": 15,
+      "value": "\"Authorization\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
+      "kind": "StringLiteral",
+      "offset": 2594,
+      "length": 8,
+      "value": "\"Bearer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
+      "kind": "StringLiteral",
+      "offset": 2640,
+      "length": 24,
+      "value": "\"x-vnf-protocol-version\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
+      "kind": "StringLiteral",
+      "offset": 2728,
+      "length": 5,
+      "value": "\"1.0\""
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLInitializationDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 436,
@@ -29402,20 +29430,6 @@
       "offset": 963,
       "length": 13,
       "value": "\"exchange_id\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLExchangeDescriptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1021,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLExchangeDescriptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1082,
-      "length": 8,
-      "value": "\"Bearer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
