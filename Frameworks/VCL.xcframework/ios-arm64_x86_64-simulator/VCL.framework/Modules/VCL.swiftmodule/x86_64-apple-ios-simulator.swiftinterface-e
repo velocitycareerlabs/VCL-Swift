@@ -235,7 +235,7 @@ public struct VCLJwt {
     get
   }
   public func getPresentationRequest(presentationRequestDescriptor: VCL.VCLPresentationRequestDescriptor, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  public func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLPresentationSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  public func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func getExchangeProgress(exchangeDescriptor: VCL.VCLExchangeDescriptor, successHandler: @escaping (VCL.VCLExchange) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func searchForOrganizations(organizationsSearchDescriptor: VCL.VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCL.VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func getCredentialManifest(credentialManifestDescriptor: VCL.VCLCredentialManifestDescriptor, successHandler: @escaping (VCL.VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
@@ -293,7 +293,6 @@ public struct VCLPushDelegate {
   public struct CodingKeys {
   }
 }
-public typealias VCLPresentationSubmissionResult = VCL.VCLSubmissionResult
 public struct VCLRegion : VCL.VCLPlace {
   public let payload: [Swift.String : Any]
   public let code: Swift.String
@@ -648,7 +647,7 @@ public protocol VCL {
   var credentialTypes: VCL.VCLCredentialTypes? { get }
   var credentialTypeSchemas: VCL.VCLCredentialTypeSchemas? { get }
   func getPresentationRequest(presentationRequestDescriptor: VCL.VCLPresentationRequestDescriptor, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLPresentationSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getExchangeProgress(exchangeDescriptor: VCL.VCLExchangeDescriptor, successHandler: @escaping (VCL.VCLExchange) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func searchForOrganizations(organizationsSearchDescriptor: VCL.VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCL.VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getCredentialManifest(credentialManifestDescriptor: VCL.VCLCredentialManifestDescriptor, successHandler: @escaping (VCL.VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
@@ -780,7 +779,6 @@ public struct VCLCredentialTypesUIFormSchemaDescriptor {
   public let countryCode: Swift.String
   public init(credentialType: Swift.String, countryCode: Swift.String)
 }
-public typealias VCLIdentificationSubmissionResult = VCL.VCLSubmissionResult
 extension VCL.VCLEnvironment : Swift.Equatable {}
 extension VCL.VCLEnvironment : Swift.Hashable {}
 extension VCL.VCLEnvironment : Swift.RawRepresentable {}
