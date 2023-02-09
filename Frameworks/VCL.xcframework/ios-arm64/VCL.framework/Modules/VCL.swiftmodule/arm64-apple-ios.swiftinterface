@@ -40,6 +40,9 @@ public struct VCLFinalizeOffersDescriptor {
   public let rejectedOfferIds: [Swift.String]
   public init(credentialManifest: VCLCredentialManifest, approvedOfferIds: [Swift.String], rejectedOfferIds: [Swift.String])
   public struct CodingKeys {
+    public static let KeyExchangeId: Swift.String
+    public static let KeyApprovedOfferIds: Swift.String
+    public static let KeyRejectedOfferIds: Swift.String
   }
 }
 public class VCLCredentialManifestDescriptor {
@@ -53,6 +56,12 @@ public class VCLCredentialManifestDescriptor {
     get
   }
   public struct CodingKeys {
+    public static let KeyDidPrefix: Swift.String
+    public static let KeyCredentialTypes: Swift.String
+    public static let KeyPushDelegatePushUrl: Swift.String
+    public static let KeyPushDelegatePushToken: Swift.String
+    public static let KeyCredentialId: Swift.String
+    public static let KeyRefresh: Swift.String
   }
   @objc deinit
 }
@@ -67,6 +76,9 @@ public class VCLPresentationRequestDescriptor {
   final public let pushDelegate: VCLPushDelegate?
   public init(deepLink: VCLDeepLink, serviceType: VCLServiceType = VCLServiceType.Inspector, pushDelegate: VCLPushDelegate? = nil)
   public struct CodingKeys {
+    public static let KeyId: Swift.String
+    public static let KeyPushDelegatePushUrl: Swift.String
+    public static let KeyPushDelegatePushToken: Swift.String
   }
   @objc deinit
 }
@@ -134,6 +146,11 @@ public struct VCLVerifiedProfile {
     get
   }
   public struct CodingKeys {
+    public static let KeyCredentialSubject: Swift.String
+    public static let KeyName: Swift.String
+    public static let KeyLogo: Swift.String
+    public static let KeyId: Swift.String
+    public static let KeyServiceType: Swift.String
   }
 }
 public struct VCLExchange {
@@ -143,6 +160,10 @@ public struct VCLExchange {
   public let exchangeComplete: Swift.Bool?
   public init(id: Swift.String? = nil, type: Swift.String? = nil, disclosureComplete: Swift.Bool? = nil, exchangeComplete: Swift.Bool? = nil)
   public struct CodingKeys {
+    public static let KeyId: Swift.String
+    public static let KeyType: Swift.String
+    public static let KeyDisclosureComplete: Swift.String
+    public static let KeyExchangeComplete: Swift.String
   }
 }
 extension VCLExchange : Swift.Equatable {
@@ -175,6 +196,16 @@ public struct VCLCredentialManifest {
     get
   }
   public struct CodingKeys {
+    public static let KeyIssuingRequest: Swift.String
+    public static let KeyId: Swift.String
+    public static let KeyIss: Swift.String
+    public static let KeyIssuer: Swift.String
+    public static let KeyExchangeId: Swift.String
+    public static let KeyPresentationDefinitionId: Swift.String
+    public static let KeyMetadata: Swift.String
+    public static let KeyCheckOffersUri: Swift.String
+    public static let KeyFinalizeOffersUri: Swift.String
+    public static let KeySubmitIdentificationUri: Swift.String
   }
 }
 public struct VCLToken {
@@ -205,6 +236,25 @@ public class VCLSubmission {
     get
   }
   public struct CodingKeys {
+    public static let KeyJti: Swift.String
+    public static let KeyIss: Swift.String
+    public static let KeyId: Swift.String
+    public static let KeyVp: Swift.String
+    public static let KeyDid: Swift.String
+    public static let KeyPushDelegate: Swift.String
+    public static let KeyType: Swift.String
+    public static let KeyPresentationSubmission: Swift.String
+    public static let KeyDefinitionId: Swift.String
+    public static let KeyDescriptorMap: Swift.String
+    public static let KeyExchangeId: Swift.String
+    public static let KeyJwtVp: Swift.String
+    public static let KeyPath: Swift.String
+    public static let KeyFormat: Swift.String
+    public static let KeyVerifiableCredential: Swift.String
+    public static let KeyVendorOriginContext: Swift.String
+    public static let KeyInputDescriptor: Swift.String
+    public static let ValueVerifiablePresentation: Swift.String
+    public static let ValueJwtVcFormat: Swift.String
   }
   @objc deinit
 }
@@ -227,6 +277,15 @@ public struct VCLJwt {
   public init(header: [Swift.String : Any]?, payload: [Swift.String : Any]?, signature: Swift.String?, encodedJwt: Swift.String)
   public init(encodedJwt: Swift.String)
   public struct CodingKeys {
+    public static let KeyTyp: Swift.String
+    public static let KeyAlg: Swift.String
+    public static let KeyKid: Swift.String
+    public static let KeyJwk: Swift.String
+    public static let KeyX: Swift.String
+    public static let KeyY: Swift.String
+    public static let KeyHeader: Swift.String
+    public static let KeyPayload: Swift.String
+    public static let KeySignature: Swift.String
   }
 }
 @_hasMissingDesignatedInitializers public class VCLImpl : VCL {
@@ -272,6 +331,7 @@ public struct VCLExchangeDescriptor {
   }
   public init(presentationSubmission: VCLPresentationSubmission, submissionResult: VCLSubmissionResult)
   public struct CodingKeys {
+    public static let KeyExchangeId: Swift.String
   }
 }
 public enum VCLServiceType : Swift.String {
@@ -297,6 +357,8 @@ public struct VCLPushDelegate {
   public let pushToken: Swift.String
   public init(pushUrl: Swift.String, pushToken: Swift.String)
   public struct CodingKeys {
+    public static let KeyPushUrl: Swift.String
+    public static let KeyPushToken: Swift.String
   }
 }
 public struct VCLRegion : VCLPlace {
@@ -355,6 +417,10 @@ public struct VCLDeepLink {
     get
   }
   public struct CodingKeys {
+    public static let KeyDidPrefix: Swift.String
+    public static let KeyIssuer: Swift.String
+    public static let KeyRequestUri: Swift.String
+    public static let KeyVendorOriginContext: Swift.String
   }
 }
 public struct VCLGenerateOffersDescriptor {
@@ -364,6 +430,10 @@ public struct VCLGenerateOffersDescriptor {
   public let identificationVerifiableCredentials: [VCLVerifiableCredential]
   public init(credentialManifest: VCLCredentialManifest, types: [Swift.String]? = nil, offerHashes: [Swift.String]? = nil, identificationVerifiableCredentials: [VCLVerifiableCredential])
   public struct CodingKeys {
+    public static let KeyDid: Swift.String
+    public static let KeyExchangeId: Swift.String
+    public static let KeyTypes: Swift.String
+    public static let KeyOfferHashes: Swift.String
   }
 }
 public struct VCLPresentationRequest {
@@ -382,6 +452,14 @@ public struct VCLPresentationRequest {
     get
   }
   public struct CodingKeys {
+    public static let KeyId: Swift.String
+    public static let KeyIss: Swift.String
+    public static let KeyPresentationRequest: Swift.String
+    public static let KeyExchangeId: Swift.String
+    public static let KeyPresentationDefinition: Swift.String
+    public static let KeyMetadata: Swift.String
+    public static let KeyProgressUri: Swift.String
+    public static let KeySubmitPresentationUri: Swift.String
   }
 }
 public struct VCLCountries {
@@ -708,6 +786,7 @@ public struct VCLOrganization {
     get
   }
   public struct CodingKeys {
+    public static let KeyService: Swift.String
   }
 }
 public struct VCLJwtVerifiableCredentials {
@@ -737,6 +816,10 @@ public struct VCLSubmissionResult {
   public let submissionId: Swift.String
   public init(token: VCLToken, exchange: VCLExchange, jti: Swift.String, submissionId: Swift.String)
   public struct CodingKeys {
+    public static let KeyToken: Swift.String
+    public static let KeyExchange: Swift.String
+    public static let KeyJti: Swift.String
+    public static let KeySubmissionId: Swift.String
   }
 }
 @_inheritsConvenienceInitializers public class VCLServiceCredentialAgentIssuer : VCLService {
@@ -770,12 +853,17 @@ public struct VCLOrganizations {
   public let all: [VCLOrganization]
   public init(all: [VCLOrganization])
   public struct CodingKeys {
+    public static let KeyResult: Swift.String
   }
 }
 public struct VCLCredentialTypesUIFormSchema {
   public let payload: [Swift.String : Any]
   public init(payload: [Swift.String : Any])
   public struct CodingKeys {
+    public static let KeyAddressRegion: Swift.String
+    public static let KeyAddressCountry: Swift.String
+    public static let KeyUiEnum: Swift.String
+    public static let KeyUiNames: Swift.String
   }
 }
 public struct VCLRegions {
