@@ -142,6 +142,8 @@ public struct VCLExchange {
   public let disclosureComplete: Swift.Bool?
   public let exchangeComplete: Swift.Bool?
   public init(id: Swift.String? = nil, type: Swift.String? = nil, disclosureComplete: Swift.Bool? = nil, exchangeComplete: Swift.Bool? = nil)
+  public struct CodingKeys {
+  }
 }
 extension VCL.VCLExchange : Swift.Equatable {
 }
@@ -171,6 +173,8 @@ public struct VCLCredentialManifest {
   }
   public var submitPresentationUri: Swift.String {
     get
+  }
+  public struct CodingKeys {
   }
 }
 public struct VCLToken {
@@ -222,6 +226,8 @@ public struct VCLJwt {
   }
   public init(header: [Swift.String : Any]?, payload: [Swift.String : Any]?, signature: Swift.String?, encodedJwt: Swift.String)
   public init(encodedJwt: Swift.String)
+  public struct CodingKeys {
+  }
 }
 @_hasMissingDesignatedInitializers public class VCLImpl : VCL.VCL {
   public func initialize(initializationDescriptor: VCL.VCLInitializationDescriptor, successHandler: @escaping () -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
@@ -322,6 +328,14 @@ public struct VCLCredentialType {
   public let credentialType: Swift.String?
   public let recommended: Swift.Bool?
   public init(payload: [Swift.String : Any], id: Swift.String?, schema: Swift.String? = nil, createdAt: Swift.String? = nil, schemaName: Swift.String? = nil, credentialType: Swift.String? = nil, recommended: Swift.Bool? = nil)
+  public struct CodingKeys {
+    public static let KeyId: Swift.String
+    public static let KeySchema: Swift.String
+    public static let KeyCreatedAt: Swift.String
+    public static let KeySchemaName: Swift.String
+    public static let KeyCredentialType: Swift.String
+    public static let KeyRecommended: Swift.String
+  }
 }
 public func == (lhs: VCL.VCLCredentialType, rhs: VCL.VCLCredentialType) -> Swift.Bool
 public func != (lhs: VCL.VCLCredentialType, rhs: VCL.VCLCredentialType) -> Swift.Bool
@@ -349,6 +363,8 @@ public struct VCLGenerateOffersDescriptor {
   public let offerHashes: [Swift.String]?
   public let identificationVerifiableCredentials: [VCL.VCLVerifiableCredential]
   public init(credentialManifest: VCL.VCLCredentialManifest, types: [Swift.String]? = nil, offerHashes: [Swift.String]? = nil, identificationVerifiableCredentials: [VCL.VCLVerifiableCredential])
+  public struct CodingKeys {
+  }
 }
 public struct VCLPresentationRequest {
   public let jwt: VCL.VCLJwt
@@ -691,6 +707,8 @@ public struct VCLOrganization {
   public var serviceCredentialAgentIssuers: [VCL.VCLServiceCredentialAgentIssuer] {
     get
   }
+  public struct CodingKeys {
+  }
 }
 public struct VCLJwtVerifiableCredentials {
   public let all: [VCL.VCLJwt]
@@ -718,6 +736,8 @@ public struct VCLSubmissionResult {
   public let jti: Swift.String
   public let submissionId: Swift.String
   public init(token: VCL.VCLToken, exchange: VCL.VCLExchange, jti: Swift.String, submissionId: Swift.String)
+  public struct CodingKeys {
+  }
 }
 @_inheritsConvenienceInitializers public class VCLServiceCredentialAgentIssuer : VCL.VCLService {
   override public init(payload: [Swift.String : Any])
@@ -749,10 +769,14 @@ public class VCLServiceTypes {
 public struct VCLOrganizations {
   public let all: [VCL.VCLOrganization]
   public init(all: [VCL.VCLOrganization])
+  public struct CodingKeys {
+  }
 }
 public struct VCLCredentialTypesUIFormSchema {
   public let payload: [Swift.String : Any]
   public init(payload: [Swift.String : Any])
+  public struct CodingKeys {
+  }
 }
 public struct VCLRegions {
   public let all: [VCL.VCLRegion]
