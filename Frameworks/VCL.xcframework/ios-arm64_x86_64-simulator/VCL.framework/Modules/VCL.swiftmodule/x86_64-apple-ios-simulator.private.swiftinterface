@@ -12,8 +12,7 @@ import _Concurrency
 import _StringProcessing
 public struct VCLVerifiedProfileDescriptor {
   public let did: Swift.String
-  public let serviceType: VCLServiceType?
-  public init(did: Swift.String, serviceType: VCLServiceType? = nil)
+  public init(did: Swift.String)
 }
 public struct VCLCredentialTypeSchema {
   public let payload: [Swift.String : Any]?
@@ -47,11 +46,11 @@ public struct VCLFinalizeOffersDescriptor {
 }
 public class VCLCredentialManifestDescriptor {
   final public let uri: Swift.String?
-  final public let serviceType: VCLServiceType
+  final public let issuingType: VCLIssuingType
   final public let credentialTypes: [Swift.String]?
   final public let pushDelegate: VCLPushDelegate?
   public var did: Swift.String?
-  public init(uri: Swift.String?, serviceType: VCLServiceType = VCLServiceType.Issuer, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
+  public init(uri: Swift.String?, issuingType: VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
   public var endpoint: Swift.String? {
     get
   }
@@ -72,9 +71,8 @@ public struct VCLInitializationDescriptor {
 }
 public class VCLPresentationRequestDescriptor {
   final public let deepLink: VCLDeepLink
-  final public let serviceType: VCLServiceType
   final public let pushDelegate: VCLPushDelegate?
-  public init(deepLink: VCLDeepLink, serviceType: VCLServiceType = VCLServiceType.Inspector, pushDelegate: VCLPushDelegate? = nil)
+  public init(deepLink: VCLDeepLink, pushDelegate: VCLPushDelegate? = nil)
   public struct CodingKeys {
     public static let KeyId: Swift.String
     public static let KeyPushDelegatePushUrl: Swift.String
@@ -121,7 +119,7 @@ public protocol VCLPlace {
   var name: Swift.String { get }
 }
 public class VCLCredentialManifestDescriptorRefresh : VCLCredentialManifestDescriptor {
-  public init(service: VCLService, serviceType: VCLServiceType = VCLServiceType.Issuer, credentialIds: [Swift.String])
+  public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Refresh, credentialIds: [Swift.String])
   override public var endpoint: Swift.String? {
     get
   }
@@ -335,15 +333,11 @@ public struct VCLExchangeDescriptor {
   }
 }
 public enum VCLServiceType : Swift.String {
-  case Issuer
   case Inspector
-  case TrustRoot
-  case CareerIssuer
-  case NodeOperator
-  case NotaryIssuer
+  case Issuer
   case IdentityIssuer
-  case HolderAppProvider
-  case CredentialAgentOperator
+  case NotaryIssuer
+  case CareerIssuer
   case Undefined
   public static func fromString(value: Swift.String) -> VCLServiceType
   public init?(rawValue: Swift.String)
@@ -755,7 +749,7 @@ public protocol VCL {
   func generateDidJwk(successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
 }
 public class VCLCredentialManifestDescriptorByService : VCLCredentialManifestDescriptor {
-  public init(service: VCLService, serviceType: VCLServiceType = VCLServiceType.Issuer, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
+  public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
   override public var endpoint: Swift.String? {
     get
   }
@@ -775,8 +769,20 @@ public class VCLService {
   }
   @objc deinit
 }
+public enum VCLIssuingType : Swift.String {
+  case Career
+  case Identity
+  case Refresh
+  case Undefined
+  public static func fromString(value: Swift.String) -> VCLIssuingType
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public class VCLCredentialManifestDescriptorByDeepLink : VCLCredentialManifestDescriptor {
-  public init(deepLink: VCLDeepLink, serviceType: VCLServiceType = VCLServiceType.Issuer)
+  public init(deepLink: VCLDeepLink, issuingType: VCLIssuingType = VCLIssuingType.Career)
   @objc deinit
 }
 public struct VCLOrganization {
@@ -846,7 +852,8 @@ public func != (lhs: [Swift.String : Any], rhs: [Swift.String : Any]) -> Swift.B
 public class VCLServiceTypes {
   final public let all: [VCLServiceType]
   public init(all: [VCLServiceType])
-  public func contains(serviceType: VCLServiceType) -> Swift.Bool
+  convenience public init(serviceType: VCLServiceType)
+  convenience public init(issuingType: VCLIssuingType)
   @objc deinit
 }
 public struct VCLOrganizations {
@@ -881,7 +888,7 @@ public struct VCLOrganizationsSearchDescriptor {
   }
 }
 public struct VCLFilter {
-  public init(did: Swift.String? = nil, serviceTypes: [VCLServiceType]? = nil, credentialTypes: [Swift.String]? = nil)
+  public init(did: Swift.String? = nil, serviceTypes: VCLServiceTypes? = nil, credentialTypes: [Swift.String]? = nil)
 }
 public struct VCLPage {
   public init(size: Swift.String?, skip: Swift.String?)
@@ -900,3 +907,6 @@ extension VCLServiceType : Swift.RawRepresentable {}
 extension VCLErrorCode : Swift.Equatable {}
 extension VCLErrorCode : Swift.Hashable {}
 extension VCLErrorCode : Swift.RawRepresentable {}
+extension VCLIssuingType : Swift.Equatable {}
+extension VCLIssuingType : Swift.Hashable {}
+extension VCLIssuingType : Swift.RawRepresentable {}
