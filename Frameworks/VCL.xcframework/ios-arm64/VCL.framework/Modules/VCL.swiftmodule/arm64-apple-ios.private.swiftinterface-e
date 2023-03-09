@@ -19,6 +19,7 @@ public struct VCLError : Swift.Error {
   public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String? = nil, message: Swift.String? = nil, statusCode: Swift.Int? = nil)
   public init(payload: Swift.String)
   public init(error: Swift.Error? = nil, code: Swift.Int? = nil)
+  public func toDictionary() -> [Swift.String : Any?]
   public struct CodingKeys {
     public static let KeyPayload: Swift.String
     public static let KeyError: Swift.String
