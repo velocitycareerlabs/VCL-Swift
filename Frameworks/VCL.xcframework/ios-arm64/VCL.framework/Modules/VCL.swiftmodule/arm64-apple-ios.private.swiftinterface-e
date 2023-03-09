@@ -10,6 +10,23 @@ import VCCrypto
 import VCToken
 import _Concurrency
 import _StringProcessing
+public struct VCLError : Swift.Error {
+  public let payload: Swift.String?
+  public let error: Swift.String?
+  public let errorCode: Swift.String?
+  public let message: Swift.String?
+  public let statusCode: Swift.Int?
+  public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String? = nil, message: Swift.String? = nil, statusCode: Swift.Int? = nil)
+  public init(payload: Swift.String)
+  public init(error: Swift.Error? = nil, code: Swift.Int? = nil)
+  public struct CodingKeys {
+    public static let KeyPayload: Swift.String
+    public static let KeyError: Swift.String
+    public static let KeyErrorCode: Swift.String
+    public static let KeyMessage: Swift.String
+    public static let KeyStatusCode: Swift.String
+  }
+}
 public struct VCLVerifiedProfileDescriptor {
   public let did: Swift.String
   public init(did: Swift.String)
@@ -369,12 +386,6 @@ public enum VCLResult<Value> {
   case success(Value)
   case failure(VCL.VCLError)
 }
-public struct VCLError : Swift.Error {
-  public let description: Swift.String?
-  public let code: Swift.Int?
-  public init(error: Swift.Error? = nil, code: Swift.Int? = nil)
-  public init(description: Swift.String? = nil, code: Swift.Int? = nil)
-}
 public struct VCLCredentialType {
   public let payload: [Swift.String : Any]
   public let id: Swift.String?
@@ -714,9 +725,10 @@ public struct VCLCountries {
     public static let UK: Swift.String
   }
 }
-public enum VCLErrorCode : Swift.Int {
+public enum VCLStatusCode : Swift.Int {
   case NetworkError
   case VerificationError
+  case Undefined
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -904,9 +916,9 @@ extension VCL.VCLEnvironment : Swift.RawRepresentable {}
 extension VCL.VCLServiceType : Swift.Equatable {}
 extension VCL.VCLServiceType : Swift.Hashable {}
 extension VCL.VCLServiceType : Swift.RawRepresentable {}
-extension VCL.VCLErrorCode : Swift.Equatable {}
-extension VCL.VCLErrorCode : Swift.Hashable {}
-extension VCL.VCLErrorCode : Swift.RawRepresentable {}
+extension VCL.VCLStatusCode : Swift.Equatable {}
+extension VCL.VCLStatusCode : Swift.Hashable {}
+extension VCL.VCLStatusCode : Swift.RawRepresentable {}
 extension VCL.VCLIssuingType : Swift.Equatable {}
 extension VCL.VCLIssuingType : Swift.Hashable {}
 extension VCL.VCLIssuingType : Swift.RawRepresentable {}
