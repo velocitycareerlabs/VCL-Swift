@@ -124,6 +124,7 @@ public struct VCLVerifiableCredential {
 public enum VCLEnvironment : Swift.String {
   case PROD
   case STAGING
+  case QA
   case DEV
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
