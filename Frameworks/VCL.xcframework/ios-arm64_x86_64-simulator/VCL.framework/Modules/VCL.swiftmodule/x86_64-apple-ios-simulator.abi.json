@@ -34087,35 +34087,35 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1669,
+      "offset": 1997,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1716,
+      "offset": 2044,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1765,
+      "offset": 2093,
       "length": 11,
       "value": "\"errorCode\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1816,
+      "offset": 2144,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1868,
+      "offset": 2196,
       "length": 12,
       "value": "\"statusCode\""
     },
