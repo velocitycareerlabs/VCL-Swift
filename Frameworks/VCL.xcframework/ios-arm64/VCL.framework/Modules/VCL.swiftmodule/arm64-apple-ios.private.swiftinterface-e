@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VCL
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -18,7 +18,7 @@ public struct VCLError : Swift.Error {
   public let statusCode: Swift.Int?
   public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String? = nil, message: Swift.String? = nil, statusCode: Swift.Int? = nil)
   public init(payload: Swift.String)
-  public init(error: Swift.Error? = nil, code: Swift.Int? = nil)
+  public init(error: (any Swift.Error)? = nil, code: Swift.Int? = nil)
   public func toDictionary() -> [Swift.String : Any?]
   public struct CodingKeys {
     public static let KeyPayload: Swift.String
@@ -38,8 +38,8 @@ public struct VCLCredentialTypeSchema {
 }
 public struct VCLClaims : VCToken.Claims, Swift.Decodable, Swift.Encodable {
   public let all: [Swift.String : Any]
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public init(all: [Swift.String : Any])
   public var iat: Swift.Double? {
     get
@@ -67,8 +67,9 @@ public class VCLCredentialManifestDescriptor {
   final public let issuingType: VCL.VCLIssuingType
   final public let credentialTypes: [Swift.String]?
   final public let pushDelegate: VCL.VCLPushDelegate?
-  public var did: Swift.String?
-  public init(uri: Swift.String?, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil)
+  final public let did: Swift.String?
+  final public let vendorOriginContext: Swift.String?
+  public init(uri: Swift.String?, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil)
   public var endpoint: Swift.String? {
     get
   }
@@ -99,7 +100,7 @@ public class VCLPresentationRequestDescriptor {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VCLProvider {
-  public static func vclInstance() -> VCL.VCL
+  public static func vclInstance() -> any VCL.VCL
   @objc deinit
 }
 public class VCLPresentationSubmission : VCL.VCLSubmission {
