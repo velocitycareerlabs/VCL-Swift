@@ -37204,97 +37204,83 @@
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
       "offset": 3458,
-      "length": 8,
-      "value": "\"Accept\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 3496,
-      "length": 33,
-      "value": "\"application\/json; charset=utf-8\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 3551,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3881,
+      "offset": 3788,
       "length": 27,
       "value": "\"Method: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3907,
+      "offset": 3814,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3935,
+      "offset": 3842,
       "length": 33,
       "value": "\"\nEndpoint: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3967,
+      "offset": 3874,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3991,
+      "offset": 3898,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4053,
+      "offset": 3960,
       "length": 17,
       "value": "\"\nBody: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4069,
+      "offset": 3976,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4098,
+      "offset": 4005,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4111,
+      "offset": 4018,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4125,
+      "offset": 4032,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4135,
+      "offset": 4042,
       "length": 2,
       "value": "\"\""
     },
