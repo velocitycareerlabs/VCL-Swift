@@ -6,6 +6,6 @@ framework module VCCrypto {
 }
 
 module VCCrypto.Swift {
-    header "VCCrypto-Swift.h"
-    requires objc
+  header "VCCrypto-Swift.h"
+  requires objc
 }

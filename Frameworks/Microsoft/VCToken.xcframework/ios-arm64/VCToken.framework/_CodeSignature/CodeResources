@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/VCToken-Swift.h</key>
 		<data>
-		f+h8dehuhozCb/LAGI4je+DnK3Y=
+		ihDs9D0tU6j9BTmPwuJ5C7wbZrk=
 		</data>
 		<key>Headers/VCToken.h</key>
 		<data>
@@ -14,136 +14,89 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JchPCuui53h4qmTDRSCM2v71zQU=
+		AOK4bdCHgwwa/z0W/Rqg0IJFoZg=
+		</data>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		3jP5w8V9bq7l8VZdVO2JuGnGeQE=
+		</data>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		pfPmoW0Pqn2GnW6dVeCSVEtNIu4=
 		</data>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		pjOyOjyO6R15Xj7CPRf9TTkFI70=
+		Y5G5rXcDQpy94hhF4nfj3lEFNew=
 		</data>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		3JbiPewoQDTH2mhKqg+91mWxOpU=
+		pfPmoW0Pqn2GnW6dVeCSVEtNIu4=
 		</data>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		w00YqZu0AfVGIz4xywc6+vAm14Q=
-		</data>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		pjOyOjyO6R15Xj7CPRf9TTkFI70=
-		</data>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		3JbiPewoQDTH2mhKqg+91mWxOpU=
-		</data>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		w00YqZu0AfVGIz4xywc6+vAm14Q=
+		Q0v5aixJau3/EIFKguoyD028bnk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		1i4XWaY3GYavYiQ9hFPRDXXoeaY=
+		MfxwcQNZ1gHjiThBSShDoLIDQnk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/VCToken-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			f+h8dehuhozCb/LAGI4je+DnK3Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			yhEIf4lTc6m3My4P7BoJWhXtpPjUjCOwgQ15/1lpUDE=
+			7qzSMHlJ85uo/tvbRGuUdBceMDSa5+BwDqfDef335nU=
 			</data>
 		</dict>
 		<key>Headers/VCToken.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UjUJ/PcrAVJOG5mV5HTci0vkt9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			sKS8ly4Xu0sSfFlQWmlAQ74x9wYS+nAHZMx8ZWWy454=
 			</data>
 		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pjOyOjyO6R15Xj7CPRf9TTkFI70=
-			</data>
 			<key>hash2</key>
 			<data>
-			1rNKzURcsAgDOiTAnHOClPZOVmFHqlCo7ng7aGDDeCE=
+			xJSaVgDrZOqPCKSNoC7ex896XZRN9dXBDHidtWJECAo=
+			</data>
+		</dict>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tPS9ZBWiYfqRiIMfnhtHcJfnBNWS0CeVB1nCs6nO1rk=
+			</data>
+		</dict>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			24lV1OHON5QpeHm1KF2P1SjtSM30X8MZYrEIb8SnaHU=
 			</data>
 		</dict>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3JbiPewoQDTH2mhKqg+91mWxOpU=
-			</data>
 			<key>hash2</key>
 			<data>
-			Hjxw3X8mGvQ/tPc2xPuMSw2/xWUDhFj44fVMtbdPk2I=
+			tPS9ZBWiYfqRiIMfnhtHcJfnBNWS0CeVB1nCs6nO1rk=
 			</data>
 		</dict>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			w00YqZu0AfVGIz4xywc6+vAm14Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			XWn/ipooEm12xfbiAPH2yK1KqTmcnLejL+ZXw3M+2+I=
-			</data>
-		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pjOyOjyO6R15Xj7CPRf9TTkFI70=
-			</data>
-			<key>hash2</key>
-			<data>
-			1rNKzURcsAgDOiTAnHOClPZOVmFHqlCo7ng7aGDDeCE=
-			</data>
-		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3JbiPewoQDTH2mhKqg+91mWxOpU=
-			</data>
-			<key>hash2</key>
-			<data>
-			Hjxw3X8mGvQ/tPc2xPuMSw2/xWUDhFj44fVMtbdPk2I=
-			</data>
-		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w00YqZu0AfVGIz4xywc6+vAm14Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			XWn/ipooEm12xfbiAPH2yK1KqTmcnLejL+ZXw3M+2+I=
+			19WFi08/ewHZExlBcOKAHjYDu9kaAD9dJHk+8H2KAl8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1i4XWaY3GYavYiQ9hFPRDXXoeaY=
-			</data>
 			<key>hash2</key>
 			<data>
-			kaPKij+/98maXTsfATl/6BLbeE2+SiP8ih8igjchWEg=
+			fKjISp6dNSBYlw1eI8RT4M+k4pSJj3wAGBuMEfqQqcg=
 			</data>
 		</dict>
 	</dict>

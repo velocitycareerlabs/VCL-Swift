@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/VCToken-Swift.h</key>
 		<data>
-		qY39ioq6HIt75lJMgRH2utiOfBA=
+		D3yNHYnGUIEie/40QITprWFXh4o=
 		</data>
 		<key>Headers/VCToken.h</key>
 		<data>
@@ -14,226 +14,144 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZB3Ae1LqlGWG6sDKwEicoZT+2TI=
+		EpjGJPfD+Azl9m9hEiHGhenrlzo=
+		</data>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		3jP5w8V9bq7l8VZdVO2JuGnGeQE=
+		</data>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		ewpUZ3tea5j072jdYpMfp6MyFMg=
 		</data>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		p6Sjsb0DEP/8qit6AeZYA2t2a5o=
+		dqn0zg1dco/j4G8yrjcxU+KLix0=
 		</data>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		geLxt6A0QjLBAQccHsTI6ikxsFQ=
+		ewpUZ3tea5j072jdYpMfp6MyFMg=
 		</data>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DZDeG1oEP8D6j+Vk3McMROxS4pA=
+		YNhGJWxft3ZvHESAaJYS7vsZItw=
 		</data>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		p6Sjsb0DEP/8qit6AeZYA2t2a5o=
+		3jP5w8V9bq7l8VZdVO2JuGnGeQE=
 		</data>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		geLxt6A0QjLBAQccHsTI6ikxsFQ=
-		</data>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		DZDeG1oEP8D6j+Vk3McMROxS4pA=
+		LzdjTBQWhalzJmgkB3GW3FjiYn8=
 		</data>
 		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Kln+yJHo41EU9mkb0SwCQJ3QZOQ=
+		vD0iPjBLWfCQ+hWcpn2p0s8Eq24=
 		</data>
 		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GsxILQlbOoWM6FJCPkbVVeVGWq4=
+		LzdjTBQWhalzJmgkB3GW3FjiYn8=
 		</data>
 		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aJBjkKgesXX3ErCcBkGr9iHTPzs=
-		</data>
-		<key>Modules/VCToken.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		Kln+yJHo41EU9mkb0SwCQJ3QZOQ=
-		</data>
-		<key>Modules/VCToken.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		GsxILQlbOoWM6FJCPkbVVeVGWq4=
-		</data>
-		<key>Modules/VCToken.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		aJBjkKgesXX3ErCcBkGr9iHTPzs=
+		ig0ba22uJ+nbX46P0BGpzlBFr5M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		1i4XWaY3GYavYiQ9hFPRDXXoeaY=
+		MfxwcQNZ1gHjiThBSShDoLIDQnk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/VCToken-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qY39ioq6HIt75lJMgRH2utiOfBA=
-			</data>
 			<key>hash2</key>
 			<data>
-			ag2Fz/0/0f+nsT3c+ONIY+VeLMMkiTH7+APPZ1NPYfc=
+			7pU3XjCuXX4XTwGXu0qO+TaRFMLPWOrBh13jnHnTj6Y=
 			</data>
 		</dict>
 		<key>Headers/VCToken.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UjUJ/PcrAVJOG5mV5HTci0vkt9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			sKS8ly4Xu0sSfFlQWmlAQ74x9wYS+nAHZMx8ZWWy454=
 			</data>
 		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			p6Sjsb0DEP/8qit6AeZYA2t2a5o=
-			</data>
 			<key>hash2</key>
 			<data>
-			X67vx3gJcug1h4FmSo1Rm3Zge96ynczSPEeT5iAw4zg=
+			xJSaVgDrZOqPCKSNoC7ex896XZRN9dXBDHidtWJECAo=
+			</data>
+		</dict>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XMI03vsbfvRfowNzEh4Larxyjjt+KIGbXRDu2fB1DPU=
+			</data>
+		</dict>
+		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4IebgfTT41ldh6xkZ8hD3yW1H3Pu+VtYFcYIZFHyB2E=
 			</data>
 		</dict>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			geLxt6A0QjLBAQccHsTI6ikxsFQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			igoJhR42LWLld2Bz/w8O/23ZV8JJ9yjVJSprSl282GA=
+			XMI03vsbfvRfowNzEh4Larxyjjt+KIGbXRDu2fB1DPU=
 			</data>
 		</dict>
 		<key>Modules/VCToken.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DZDeG1oEP8D6j+Vk3McMROxS4pA=
-			</data>
 			<key>hash2</key>
 			<data>
-			uw2LJrNdcMBXsAvdmh9UI45HCYZ6pY6+MNERrsI9Zbw=
+			P+AVv2MPj9znrMD09pMZiCPF2y2bpFaELd6WdefQER4=
 			</data>
 		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			p6Sjsb0DEP/8qit6AeZYA2t2a5o=
-			</data>
 			<key>hash2</key>
 			<data>
-			X67vx3gJcug1h4FmSo1Rm3Zge96ynczSPEeT5iAw4zg=
+			xJSaVgDrZOqPCKSNoC7ex896XZRN9dXBDHidtWJECAo=
 			</data>
 		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			geLxt6A0QjLBAQccHsTI6ikxsFQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			igoJhR42LWLld2Bz/w8O/23ZV8JJ9yjVJSprSl282GA=
-			</data>
-		</dict>
-		<key>Modules/VCToken.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DZDeG1oEP8D6j+Vk3McMROxS4pA=
-			</data>
-			<key>hash2</key>
-			<data>
-			uw2LJrNdcMBXsAvdmh9UI45HCYZ6pY6+MNERrsI9Zbw=
+			I0M9ds4tXiZAvqK1P4KdhxhRDAF1e+Kx4EGgiwF5kEM=
 			</data>
 		</dict>
 		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Kln+yJHo41EU9mkb0SwCQJ3QZOQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			wOQFPG7/S7wlWgfJT6eWyISI9xSWSlXtZlbZr9DQw5A=
+			z36nsRLVoaecbVbSiPGufpqmgcsZ0s2Ga56quWbvlSo=
 			</data>
 		</dict>
 		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GsxILQlbOoWM6FJCPkbVVeVGWq4=
-			</data>
 			<key>hash2</key>
 			<data>
-			etppAAkEBHqRhnIcWR2e7WV3MN0qjvuE4uJW84IDjr0=
+			I0M9ds4tXiZAvqK1P4KdhxhRDAF1e+Kx4EGgiwF5kEM=
 			</data>
 		</dict>
 		<key>Modules/VCToken.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aJBjkKgesXX3ErCcBkGr9iHTPzs=
-			</data>
 			<key>hash2</key>
 			<data>
-			aRMr/J1XvbJQ7MuVsNgNusBnFrfy7mTo4x2eIRyRg+I=
-			</data>
-		</dict>
-		<key>Modules/VCToken.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Kln+yJHo41EU9mkb0SwCQJ3QZOQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			wOQFPG7/S7wlWgfJT6eWyISI9xSWSlXtZlbZr9DQw5A=
-			</data>
-		</dict>
-		<key>Modules/VCToken.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GsxILQlbOoWM6FJCPkbVVeVGWq4=
-			</data>
-			<key>hash2</key>
-			<data>
-			etppAAkEBHqRhnIcWR2e7WV3MN0qjvuE4uJW84IDjr0=
-			</data>
-		</dict>
-		<key>Modules/VCToken.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aJBjkKgesXX3ErCcBkGr9iHTPzs=
-			</data>
-			<key>hash2</key>
-			<data>
-			aRMr/J1XvbJQ7MuVsNgNusBnFrfy7mTo4x2eIRyRg+I=
+			/RbWKafO4fGVkgfwKHks02sB83kwWZFSPo4ZGQ+ypn8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1i4XWaY3GYavYiQ9hFPRDXXoeaY=
-			</data>
 			<key>hash2</key>
 			<data>
-			kaPKij+/98maXTsfATl/6BLbeE2+SiP8ih8igjchWEg=
+			fKjISp6dNSBYlw1eI8RT4M+k4pSJj3wAGBuMEfqQqcg=
 			</data>
 		</dict>
 	</dict>

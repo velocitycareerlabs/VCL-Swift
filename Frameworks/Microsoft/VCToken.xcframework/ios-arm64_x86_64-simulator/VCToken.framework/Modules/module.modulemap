@@ -6,6 +6,6 @@ framework module VCToken {
 }
 
 module VCToken.Swift {
-    header "VCToken-Swift.h"
-    requires objc
+  header "VCToken-Swift.h"
+  requires objc
 }
