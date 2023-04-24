@@ -339,7 +339,7 @@ public struct VCLJwt {
   public func getVerifiedProfile(verifiedProfileDescriptor: VCLVerifiedProfileDescriptor, successHandler: @escaping (VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func verifyJwt(jwt: VCLJwt, jwkPublic: VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func generateDidJwk(jwkDescriptor: VCLDidJwkDescriptor, successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateDidJwk(successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   @objc deinit
 }
 public struct VCLExchangeDescriptor {
@@ -776,7 +776,7 @@ public protocol VCL {
   func getVerifiedProfile(verifiedProfileDescriptor: VCLVerifiedProfileDescriptor, successHandler: @escaping (VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func verifyJwt(jwt: VCLJwt, jwkPublic: VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func generateDidJwk(jwkDescriptor: VCLDidJwkDescriptor, successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func generateDidJwk(successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
 }
 public class VCLCredentialManifestDescriptorByService : VCLCredentialManifestDescriptor {
   public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
@@ -831,7 +831,7 @@ public struct VCLJwtVerifiableCredentials {
 }
 public struct VCLDidJwkDescriptor {
   public let kid: Swift.String
-  public init(kid: Swift.String? = nil)
+  public init(kid: Swift.String)
 }
 public class VCLJwtDescriptor {
   final public let didJwk: VCLDidJwk?

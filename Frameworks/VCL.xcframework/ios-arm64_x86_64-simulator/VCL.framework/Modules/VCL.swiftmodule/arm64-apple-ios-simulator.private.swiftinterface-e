@@ -339,7 +339,7 @@ public struct VCLJwt {
   public func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func verifyJwt(jwt: VCL.VCLJwt, jwkPublic: VCL.VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func generateSignedJwt(jwtDescriptor: VCL.VCLJwtDescriptor, successHandler: @escaping (VCL.VCLJwt) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  public func generateDidJwk(jwkDescriptor: VCL.VCLDidJwkDescriptor, successHandler: @escaping (VCL.VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  public func generateDidJwk(successHandler: @escaping (VCL.VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   @objc deinit
 }
 public struct VCLExchangeDescriptor {
@@ -776,7 +776,7 @@ public protocol VCL {
   func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func verifyJwt(jwt: VCL.VCLJwt, jwkPublic: VCL.VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func generateSignedJwt(jwtDescriptor: VCL.VCLJwtDescriptor, successHandler: @escaping (VCL.VCLJwt) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  func generateDidJwk(jwkDescriptor: VCL.VCLDidJwkDescriptor, successHandler: @escaping (VCL.VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  func generateDidJwk(successHandler: @escaping (VCL.VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
 }
 public class VCLCredentialManifestDescriptorByService : VCL.VCLCredentialManifestDescriptor {
   public init(service: VCL.VCLService, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil)
@@ -831,7 +831,7 @@ public struct VCLJwtVerifiableCredentials {
 }
 public struct VCLDidJwkDescriptor {
   public let kid: Swift.String
-  public init(kid: Swift.String? = nil)
+  public init(kid: Swift.String)
 }
 public class VCLJwtDescriptor {
   final public let didJwk: VCL.VCLDidJwk?
