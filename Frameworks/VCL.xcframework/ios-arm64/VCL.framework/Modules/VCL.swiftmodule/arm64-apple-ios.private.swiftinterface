@@ -749,14 +749,9 @@ public enum VCLStatusCode : Swift.Int {
   }
 }
 public class VCLDidJwk {
-  final public let publicKey: VCToken.ECPublicJwk
-  final public let privateKey: any VCCrypto.VCCryptoSecret
-  public var publicKeyStr: Swift.String {
-    get
-  }
+  final public let value: Swift.String
   public static let DidJwkPrefix: Swift.String
-  public init(publicKey: VCToken.ECPublicJwk, privateKey: any VCCrypto.VCCryptoSecret)
-  public func generateDidJwkBase64() -> Swift.String
+  public init(value: Swift.String)
   @objc deinit
 }
 public protocol VCL {
