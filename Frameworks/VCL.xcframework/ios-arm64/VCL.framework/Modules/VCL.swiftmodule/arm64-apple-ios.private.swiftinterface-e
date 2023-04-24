@@ -52,12 +52,10 @@ public struct VCLClaims : VCToken.Claims, Swift.Decodable, Swift.Encodable {
   }
 }
 public struct VCLFinalizeOffersDescriptor {
-  public let didJwk: VCL.VCLDidJwk
-  public let challenge: Swift.String
   public let credentialManifest: VCL.VCLCredentialManifest
   public let approvedOfferIds: [Swift.String]
   public let rejectedOfferIds: [Swift.String]
-  public init(didJwk: VCL.VCLDidJwk, challenge: Swift.String, credentialManifest: VCL.VCLCredentialManifest, approvedOfferIds: [Swift.String], rejectedOfferIds: [Swift.String])
+  public init(credentialManifest: VCL.VCLCredentialManifest, approvedOfferIds: [Swift.String], rejectedOfferIds: [Swift.String])
   public func generateRequestBody(jwt: VCL.VCLJwt) -> [Swift.String : Any?]
   public struct CodingKeys {
     public static let KeyExchangeId: Swift.String
@@ -112,7 +110,7 @@ public class VCLPresentationRequestDescriptor {
 }
 public class VCLPresentationSubmission : VCL.VCLSubmission {
   public var progressUri: Swift.String
-  public init(didJwk: VCL.VCLDidJwk, presentationRequest: VCL.VCLPresentationRequest, verifiableCredentials: [VCL.VCLVerifiableCredential])
+  public init(presentationRequest: VCL.VCLPresentationRequest, verifiableCredentials: [VCL.VCLVerifiableCredential])
   @objc deinit
 }
 public struct VCLCredentialTypes {
@@ -251,7 +249,6 @@ public func == (lhs: [Any], rhs: [Any]) -> Swift.Bool
 public func != (lhs: [Any], rhs: [Any]) -> Swift.Bool
 public class VCLSubmission {
   final public let submitUri: Swift.String
-  final public let didJwk: VCL.VCLDidJwk
   final public let iss: Swift.String
   final public let exchangeId: Swift.String
   final public let presentationDefinitionId: Swift.String
@@ -260,7 +257,7 @@ public class VCLSubmission {
   final public let vendorOriginContext: Swift.String?
   final public let jti: Swift.String
   final public let submissionId: Swift.String
-  public init(submitUri: Swift.String, didJwk: VCL.VCLDidJwk, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCL.VCLVerifiableCredential]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil)
+  public init(submitUri: Swift.String, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCL.VCLVerifiableCredential]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil)
   public var payload: [Swift.String : Any] {
     get
   }
@@ -445,12 +442,11 @@ public struct VCLDeepLink {
   }
 }
 public struct VCLGenerateOffersDescriptor {
-  public let didJwk: VCL.VCLDidJwk
   public let credentialManifest: VCL.VCLCredentialManifest
   public let types: [Swift.String]?
   public let offerHashes: [Swift.String]?
   public let identificationVerifiableCredentials: [VCL.VCLVerifiableCredential]?
-  public init(didJwk: VCL.VCLDidJwk, credentialManifest: VCL.VCLCredentialManifest, types: [Swift.String]? = nil, offerHashes: [Swift.String]? = nil, identificationVerifiableCredentials: [VCL.VCLVerifiableCredential]? = nil)
+  public init(credentialManifest: VCL.VCLCredentialManifest, types: [Swift.String]? = nil, offerHashes: [Swift.String]? = nil, identificationVerifiableCredentials: [VCL.VCLVerifiableCredential]? = nil)
   public struct CodingKeys {
     public static let KeyDid: Swift.String
     public static let KeyExchangeId: Swift.String
@@ -840,14 +836,11 @@ public struct VCLDidJwkDescriptor {
 public class VCLJwtDescriptor {
   final public let didJwk: VCL.VCLDidJwk?
   final public let kid: Swift.String
-  final public let payload: [Swift.String : Any]?
+  final public let payload: [Swift.String : Any]
   final public let jti: Swift.String
   final public let iss: Swift.String
   final public let aud: Swift.String?
-  final public let iat: Swift.Double?
-  final public let nbf: Swift.Int?
-  final public let nonce: Swift.String?
-  public init(didJwk: VCL.VCLDidJwk? = nil, kid: Swift.String = UUID().uuidString, payload: [Swift.String : Any]? = nil, jti: Swift.String = UUID().uuidString, iss: Swift.String, aud: Swift.String? = nil, iat: Swift.Double? = nil, nbf: Swift.Int? = nil, nonce: Swift.String? = nil)
+  public init(didJwk: VCL.VCLDidJwk? = nil, kid: Swift.String = UUID().uuidString, payload: [Swift.String : Any], jti: Swift.String = UUID().uuidString, iss: Swift.String, aud: Swift.String? = nil, nonce: Swift.String? = nil)
   @objc deinit
 }
 public struct VCLJwkPublic {
