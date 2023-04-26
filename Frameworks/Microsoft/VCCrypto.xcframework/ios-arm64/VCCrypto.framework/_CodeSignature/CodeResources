@@ -10,11 +10,11 @@
 		</data>
 		<key>Frameworks/Secp256k1.framework/Secp256k1</key>
 		<data>
-		/tkNR/CjIQs2hYb2XmpgDr6YlSY=
+		qOO+grygKsIcHlJoDmYnfXZNIdU=
 		</data>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		B43wlFEMjKcU85+TIpHPUYYLx84=
+		e0hGkL9FJaItSJCgHQKAWfYzGtM=
 		</data>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		hZVS6aF6Th9MdSxBazbNKI5Y0Yk=
+		tEpxiWpNKGUB7aTPGeKPxcuWyS4=
 		</data>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		RKbvzY4jSiegjI051fNqDKacLDc=
+		Z5LogAE4Boq1c/UdSo57hA9btl0=
 		</data>
 		<key>Headers/VCCrypto-Swift.h</key>
 		<data>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9yKvLYY7o9V3Eam/OMUXCn5b8lcWaZrIPM8JqU4P27A=
+			6pLxWAGYB4YWJiVY4ccNNNdoCJSPyDIlKMpXT9LDNds=
 			</data>
 		</dict>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a20PqOeJdq/joM8iv/CZtW/Ebo6O71AbQ9frupFeDqs=
+			tdH1n6FibGacBY7yeWg71ymZg/n5trhAIVkUX2LM8hk=
 			</data>
 		</dict>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeRequirements</key>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2i4Fj/4CozpmCe5CFjEpxQchnYZDeaNK3QXT057YMuU=
+			ytOiDaSh6J796bP3ncOq6dbEW+FeKZS7Waj9OiP5TLo=
 			</data>
 		</dict>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iKE25QxzqIYhEZoXzEoRzXs/TEBj1wN669S8HQ0hPEM=
+			ImKPLW4fRFy98X3nKK/OTU9a6D4/R21k5tStpjF3Bzk=
 			</data>
 		</dict>
 		<key>Headers/VCCrypto-Swift.h</key>
