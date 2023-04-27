@@ -4,34 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/Secp256k1.framework/Info.plist</key>
-		<data>
-		u0l5iQZQATgtbhUexhtCn/Ty0HI=
-		</data>
-		<key>Frameworks/Secp256k1.framework/Secp256k1</key>
-		<data>
-		jebCz9OKO4ocLX3+qAlkcZKgNO8=
-		</data>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		9PMaMSaV95rFQkXVmNtqWe5KB6A=
-		</data>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		iFkyWkAYNJqCoSdwnUuF+5GVCSk=
-		</data>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
-		<data>
-		SHWsihmey2p0LrbqETehEomo3Fs=
-		</data>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
 		<key>Headers/VCCrypto-Swift.h</key>
 		<data>
 		gLXkK0A3BNN2qS1vPn82EjuhV74=
@@ -91,55 +63,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/Secp256k1.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AoxAIjlC1lut+NvpgCL6+3VBUN3Tn111dO2XpuWxwlU=
-			</data>
-		</dict>
-		<key>Frameworks/Secp256k1.framework/Secp256k1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4nQbZ/2jzbjZP3pE7E97PlOY5YwOPURgD8+cx/jnjkk=
-			</data>
-		</dict>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZG43hqbEx6UC8CL4dsMEDEhr8QD5lIiT3hkpNlM6F98=
-			</data>
-		</dict>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lhieTMCjmoy+qknyKcLgFz/b0pruk53X3fit44Bg4rw=
-			</data>
-		</dict>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47pZWZRGWcMX99eS6Cw40Dtd8cyKiyculY7dop2QKvo=
-			</data>
-		</dict>
-		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
-			</data>
-		</dict>
 		<key>Headers/VCCrypto-Swift.h</key>
 		<dict>
 			<key>hash2</key>
