@@ -845,16 +845,10 @@ public struct VCLJwkPublic {
   public init(valueDict: [Swift.String : Any])
 }
 public struct VCLOffers {
-  public let payload: [Swift.String : Any]
   public let all: [[Swift.String : Any]]
   public let responseCode: Swift.Int
   public let token: VCLToken
-  public let challenge: Swift.String
-  public init(payload: [Swift.String : Any], all: [[Swift.String : Any]], responseCode: Swift.Int, token: VCLToken, challenge: Swift.String)
-  public struct CodingKeys {
-    public static let KeyOffers: Swift.String
-    public static let KeyChallenge: Swift.String
-  }
+  public init(all: [[Swift.String : Any]], responseCode: Swift.Int, token: VCLToken)
 }
 public struct VCLSubmissionResult {
   public let token: VCLToken
