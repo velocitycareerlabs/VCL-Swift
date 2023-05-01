@@ -35325,36 +35325,29 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3781,
+      "offset": 3778,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4193,
-      "length": 83,
+      "offset": 4190,
+      "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4219,
+      "offset": 4216,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4275,
+      "offset": 4278,
       "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4851,
-      "length": 2,
       "value": "\"\""
     },
     {
@@ -36179,7 +36172,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/DateExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1449,
+      "offset": 1533,
       "length": 28,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\""
     },
@@ -38580,49 +38573,49 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/microsoft\/ECPublicJwkExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 926,
+      "offset": 655,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/microsoft\/ECPublicJwkExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1002,
+      "offset": 731,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/microsoft\/ECPublicJwkExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1036,
+      "offset": 765,
       "length": 5,
       "value": "\"kty\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/microsoft\/ECPublicJwkExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1070,
+      "offset": 799,
       "length": 5,
       "value": "\"use\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/microsoft\/ECPublicJwkExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 833,
       "length": 5,
       "value": "\"crv\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/microsoft\/ECPublicJwkExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 865,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/microsoft\/ECPublicJwkExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 895,
       "length": 3,
       "value": "\"y\""
     },
