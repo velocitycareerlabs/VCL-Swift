@@ -821,8 +821,9 @@ public struct VCLOrganization {
   }
 }
 public struct VCLJwtVerifiableCredentials {
-  public let all: [VCLJwt]
-  public init(all: [VCLJwt])
+  public let passedCredentials: [VCLJwt]
+  public let failedCredentials: [VCLJwt]
+  public init(passedCredentials: [VCLJwt], failedCredentials: [VCLJwt])
 }
 public struct VCLDidJwkDescriptor {
   public let kid: Swift.String
