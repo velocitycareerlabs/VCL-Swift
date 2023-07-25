@@ -4981,8 +4981,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "PROD",
-            "printedName": "PROD",
+            "name": "Prod",
+            "printedName": "Prod",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5012,14 +5012,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:3VCL14VCLEnvironmentO4PRODyA2CmF",
-            "mangledName": "$s3VCL14VCLEnvironmentO4PRODyA2CmF",
+            "usr": "s:3VCL14VCLEnvironmentO4ProdyA2CmF",
+            "mangledName": "$s3VCL14VCLEnvironmentO4ProdyA2CmF",
             "moduleName": "VCL"
           },
           {
             "kind": "Var",
-            "name": "STAGING",
-            "printedName": "STAGING",
+            "name": "Staging",
+            "printedName": "Staging",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5049,14 +5049,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:3VCL14VCLEnvironmentO7STAGINGyA2CmF",
-            "mangledName": "$s3VCL14VCLEnvironmentO7STAGINGyA2CmF",
+            "usr": "s:3VCL14VCLEnvironmentO7StagingyA2CmF",
+            "mangledName": "$s3VCL14VCLEnvironmentO7StagingyA2CmF",
             "moduleName": "VCL"
           },
           {
             "kind": "Var",
-            "name": "QA",
-            "printedName": "QA",
+            "name": "Qa",
+            "printedName": "Qa",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5086,14 +5086,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:3VCL14VCLEnvironmentO2QAyA2CmF",
-            "mangledName": "$s3VCL14VCLEnvironmentO2QAyA2CmF",
+            "usr": "s:3VCL14VCLEnvironmentO2QayA2CmF",
+            "mangledName": "$s3VCL14VCLEnvironmentO2QayA2CmF",
             "moduleName": "VCL"
           },
           {
             "kind": "Var",
-            "name": "DEV",
-            "printedName": "DEV",
+            "name": "Dev",
+            "printedName": "Dev",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5123,8 +5123,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:3VCL14VCLEnvironmentO3DEVyA2CmF",
-            "mangledName": "$s3VCL14VCLEnvironmentO3DEVyA2CmF",
+            "usr": "s:3VCL14VCLEnvironmentO3DevyA2CmF",
+            "mangledName": "$s3VCL14VCLEnvironmentO3DevyA2CmF",
             "moduleName": "VCL"
           },
           {
@@ -16596,8 +16596,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "LOCAL",
-            "printedName": "LOCAL",
+            "name": "Local",
+            "printedName": "Local",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -16627,14 +16627,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:3VCL17VCLKeyServiceTypeO5LOCALyA2CmF",
-            "mangledName": "$s3VCL17VCLKeyServiceTypeO5LOCALyA2CmF",
+            "usr": "s:3VCL17VCLKeyServiceTypeO5LocalyA2CmF",
+            "mangledName": "$s3VCL17VCLKeyServiceTypeO5LocalyA2CmF",
             "moduleName": "VCL"
           },
           {
             "kind": "Var",
-            "name": "REMOTE",
-            "printedName": "REMOTE",
+            "name": "Remote",
+            "printedName": "Remote",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -16664,8 +16664,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:3VCL17VCLKeyServiceTypeO6REMOTEyA2CmF",
-            "mangledName": "$s3VCL17VCLKeyServiceTypeO6REMOTEyA2CmF",
+            "usr": "s:3VCL17VCLKeyServiceTypeO6RemoteyA2CmF",
+            "mangledName": "$s3VCL17VCLKeyServiceTypeO6RemoteyA2CmF",
             "moduleName": "VCL"
           },
           {

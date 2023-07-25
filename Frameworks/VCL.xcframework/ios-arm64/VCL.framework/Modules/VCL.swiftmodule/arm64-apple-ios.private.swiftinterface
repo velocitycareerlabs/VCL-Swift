@@ -107,7 +107,7 @@ public struct VCLInitializationDescriptor {
   public let xVnfProtocolVersion: VCLXVnfProtocolVersion
   public let cacheSequence: Swift.Int
   public let keycahinAccessGroupIdentifier: Swift.String?
-  public init(environment: VCLEnvironment = .PROD, keyServiceType: VCLKeyServiceType = .LOCAL, xVnfProtocolVersion: VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil)
+  public init(environment: VCLEnvironment = .Prod, keyServiceType: VCLKeyServiceType = .Local, xVnfProtocolVersion: VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil)
 }
 public class VCLPresentationRequestDescriptor {
   final public let deepLink: VCLDeepLink
@@ -145,10 +145,10 @@ public struct VCLVerifiableCredential {
   public init(inputDescriptor: Swift.String, jwtVc: Swift.String)
 }
 public enum VCLEnvironment : Swift.String {
-  case PROD
-  case STAGING
-  case QA
-  case DEV
+  case Prod
+  case Staging
+  case Qa
+  case Dev
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -485,8 +485,8 @@ public struct VCLDeepLink {
   }
 }
 public enum VCLKeyServiceType : Swift.String {
-  case LOCAL
-  case REMOTE
+  case Local
+  case Remote
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
