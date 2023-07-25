@@ -418,7 +418,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(payload:)",
+            "printedName": "init(payload:errorCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -428,14 +428,37 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL8VCLErrorV7payloadACSS_tcfc",
-            "mangledName": "$s3VCL8VCLErrorV7payloadACSS_tcfc",
+            "usr": "s:3VCL8VCLErrorV7payload9errorCodeACSSSg_AFtcfc",
+            "mangledName": "$s3VCL8VCLErrorV7payload9errorCodeACSSSg_AFtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -1139,16 +1162,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "VCL",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "VCToken",
         "printedName": "VCToken",
         "declKind": "Import",
@@ -1536,13 +1549,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1572,11 +1578,364 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "VCLErrorCode",
+        "printedName": "VCLErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "CredentialTypeNotRegistered",
+            "printedName": "CredentialTypeNotRegistered",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO27CredentialTypeNotRegisteredyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO27CredentialTypeNotRegisteredyA2CmF",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "IssuerRequiresIdentityPermission",
+            "printedName": "IssuerRequiresIdentityPermission",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO32IssuerRequiresIdentityPermissionyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO32IssuerRequiresIdentityPermissionyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "IssuerRequiresNotaryPermission",
+            "printedName": "IssuerRequiresNotaryPermission",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO30IssuerRequiresNotaryPermissionyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO30IssuerRequiresNotaryPermissionyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "InvalidCredentialSubjectType",
+            "printedName": "InvalidCredentialSubjectType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO28InvalidCredentialSubjectTypeyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO28InvalidCredentialSubjectTypeyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "InvalidCredentialSubjectContext",
+            "printedName": "InvalidCredentialSubjectContext",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO31InvalidCredentialSubjectContextyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO31InvalidCredentialSubjectContextyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "IssuerUnexpectedPermissionFailure",
+            "printedName": "IssuerUnexpectedPermissionFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO33IssuerUnexpectedPermissionFailureyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO33IssuerUnexpectedPermissionFailureyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL12VCLErrorCodeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s3VCL12VCLErrorCodeO8rawValueACSgSS_tcfc",
+            "moduleName": "VCL",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLErrorCodeO8rawValueSSvp",
+            "mangledName": "$s3VCL12VCLErrorCodeO8rawValueSSvp",
+            "moduleName": "VCL",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLErrorCodeO8rawValueSSvg",
+                "mangledName": "$s3VCL12VCLErrorCodeO8rawValueSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3VCL12VCLErrorCodeO",
+        "mangledName": "$s3VCL12VCLErrorCodeO",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "VCL"
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3171,6 +3530,94 @@
           },
           {
             "kind": "Var",
+            "name": "keyServiceType",
+            "printedName": "keyServiceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLKeyServiceType",
+                "printedName": "VCL.VCLKeyServiceType",
+                "usr": "s:3VCL17VCLKeyServiceTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL27VCLInitializationDescriptorV14keyServiceTypeAA06VCLKeyeF0Ovp",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV14keyServiceTypeAA06VCLKeyeF0Ovp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLKeyServiceType",
+                    "printedName": "VCL.VCLKeyServiceType",
+                    "usr": "s:3VCL17VCLKeyServiceTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV14keyServiceTypeAA06VCLKeyeF0Ovg",
+                "mangledName": "$s3VCL27VCLInitializationDescriptorV14keyServiceTypeAA06VCLKeyeF0Ovg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "xVnfProtocolVersion",
+            "printedName": "xVnfProtocolVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLXVnfProtocolVersion",
+                "printedName": "VCL.VCLXVnfProtocolVersion",
+                "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL27VCLInitializationDescriptorV19xVnfProtocolVersionAA07VCLXVnfeF0Ovp",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV19xVnfProtocolVersionAA07VCLXVnfeF0Ovp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLXVnfProtocolVersion",
+                    "printedName": "VCL.VCLXVnfProtocolVersion",
+                    "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV19xVnfProtocolVersionAA07VCLXVnfeF0Ovg",
+                "mangledName": "$s3VCL27VCLInitializationDescriptorV19xVnfProtocolVersionAA07VCLXVnfeF0Ovg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "cacheSequence",
             "printedName": "cacheSequence",
             "children": [
@@ -3276,7 +3723,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:cacheSequence:keycahinAccessGroupIdentifier:)",
+            "printedName": "init(environment:keyServiceType:xVnfProtocolVersion:cacheSequence:keycahinAccessGroupIdentifier:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3290,6 +3737,20 @@
                 "printedName": "VCL.VCLEnvironment",
                 "hasDefaultArg": true,
                 "usr": "s:3VCL14VCLEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLKeyServiceType",
+                "printedName": "VCL.VCLKeyServiceType",
+                "hasDefaultArg": true,
+                "usr": "s:3VCL17VCLKeyServiceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLXVnfProtocolVersion",
+                "printedName": "VCL.VCLXVnfProtocolVersion",
+                "hasDefaultArg": true,
+                "usr": "s:3VCL22VCLXVnfProtocolVersionO"
               },
               {
                 "kind": "TypeNominal",
@@ -3315,8 +3776,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL27VCLInitializationDescriptorV11environment13cacheSequence29keycahinAccessGroupIdentifierAcA14VCLEnvironmentO_SiSSSgtcfc",
-            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environment13cacheSequence29keycahinAccessGroupIdentifierAcA14VCLEnvironmentO_SiSSSgtcfc",
+            "usr": "s:3VCL27VCLInitializationDescriptorV11environment14keyServiceType19xVnfProtocolVersion13cacheSequence29keycahinAccessGroupIdentifierAcA14VCLEnvironmentO_AA06VCLKeyfG0OAA07VCLXVnfiJ0OSiSSSgtcfc",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environment14keyServiceType19xVnfProtocolVersion13cacheSequence29keycahinAccessGroupIdentifierAcA14VCLEnvironmentO_AA06VCLKeyfG0OAA07VCLXVnfiJ0OSiSSSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -3341,13 +3802,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -3760,6 +4214,16 @@
           "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -4251,6 +4715,41 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "credentialTypeByTypeName",
+            "printedName": "credentialTypeByTypeName(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLCredentialType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLCredentialType",
+                    "printedName": "VCL.VCLCredentialType",
+                    "usr": "s:3VCL17VCLCredentialTypeV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL18VCLCredentialTypesV016credentialTypeByE4Name4typeAA0bE0VSgSS_tF",
+            "mangledName": "$s3VCL18VCLCredentialTypesV016credentialTypeByE4Name4typeAA0bE0VSgSS_tF",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -5224,6 +5723,537 @@
         "moduleName": "VCL",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JwtServiceCodingKeys",
+        "printedName": "JwtServiceCodingKeys",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "KeyIss",
+            "printedName": "KeyIss",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV6KeyIssSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyIssSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV6KeyIssSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyIssSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyAud",
+            "printedName": "KeyAud",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV6KeyAudSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyAudSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV6KeyAudSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyAudSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeySub",
+            "printedName": "KeySub",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV6KeySubSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeySubSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV6KeySubSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeySubSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyJti",
+            "printedName": "KeyJti",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV6KeyJtiSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyJtiSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV6KeyJtiSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyJtiSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyIat",
+            "printedName": "KeyIat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV6KeyIatSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyIatSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV6KeyIatSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyIatSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyNbf",
+            "printedName": "KeyNbf",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV6KeyNbfSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyNbfSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV6KeyNbfSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyNbfSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyExp",
+            "printedName": "KeyExp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV6KeyExpSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyExpSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV6KeyExpSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV6KeyExpSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyNonce",
+            "printedName": "KeyNonce",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV8KeyNonceSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV8KeyNonceSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV8KeyNonceSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV8KeyNonceSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyPayload",
+            "printedName": "KeyPayload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV10KeyPayloadSSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV10KeyPayloadSSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV10KeyPayloadSSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV10KeyPayloadSSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyJwt",
+            "printedName": "KeyJwt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV03KeyB0SSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV03KeyB0SSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV03KeyB0SSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV03KeyB0SSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KeyPublicKey",
+            "printedName": "KeyPublicKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL20JwtServiceCodingKeysV09KeyPublicF0SSvpZ",
+            "mangledName": "$s3VCL20JwtServiceCodingKeysV09KeyPublicF0SSvpZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL20JwtServiceCodingKeysV09KeyPublicF0SSvgZ",
+                "mangledName": "$s3VCL20JwtServiceCodingKeysV09KeyPublicF0SSvgZ",
+                "moduleName": "VCL",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:3VCL20JwtServiceCodingKeysV",
+        "mangledName": "$s3VCL20JwtServiceCodingKeysV",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -6691,9 +7721,53 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "verifiedProfile",
+            "printedName": "verifiedProfile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLVerifiedProfile",
+                "printedName": "VCL.VCLVerifiedProfile",
+                "usr": "s:3VCL18VCLVerifiedProfileV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL21VCLCredentialManifestV15verifiedProfileAA011VCLVerifiedE0Vvp",
+            "mangledName": "$s3VCL21VCLCredentialManifestV15verifiedProfileAA011VCLVerifiedE0Vvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLVerifiedProfile",
+                    "printedName": "VCL.VCLVerifiedProfile",
+                    "usr": "s:3VCL18VCLVerifiedProfileV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL21VCLCredentialManifestV15verifiedProfileAA011VCLVerifiedE0Vvg",
+                "mangledName": "$s3VCL21VCLCredentialManifestV15verifiedProfileAA011VCLVerifiedE0Vvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(jwt:vendorOriginContext:)",
+            "printedName": "init(jwt:vendorOriginContext:verifiedProfile:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6721,11 +7795,17 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLVerifiedProfile",
+                "printedName": "VCL.VCLVerifiedProfile",
+                "usr": "s:3VCL18VCLVerifiedProfileV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL21VCLCredentialManifestV3jwt19vendorOriginContextAcA6VCLJwtV_SSSgtcfc",
-            "mangledName": "$s3VCL21VCLCredentialManifestV3jwt19vendorOriginContextAcA6VCLJwtV_SSSgtcfc",
+            "usr": "s:3VCL21VCLCredentialManifestV3jwt19vendorOriginContext15verifiedProfileAcA6VCLJwtV_SSSgAA011VCLVerifiedI0Vtcfc",
+            "mangledName": "$s3VCL21VCLCredentialManifestV3jwt19vendorOriginContext15verifiedProfileAcA6VCLJwtV_SSSgAA011VCLVerifiedI0Vtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -7714,13 +8794,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
-      },
-      {
         "kind": "TypeDecl",
         "name": "VCLCredentialTypeSchemas",
         "printedName": "VCLCredentialTypeSchemas",
@@ -8006,6 +9079,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VCToken",
+        "printedName": "VCToken",
+        "declKind": "Import",
+        "moduleName": "VCL"
+      },
+      {
+        "kind": "Import",
+        "name": "VCCrypto",
+        "printedName": "VCCrypto",
+        "declKind": "Import",
+        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -11347,9 +12444,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDidJwk",
-                "printedName": "VCL.VCLDidJwk",
-                "usr": "s:3VCL9VCLDidJwkC"
+                "name": "Optional",
+                "printedName": "VCL.VCLDidJwk?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLDidJwk",
+                    "printedName": "VCL.VCLDidJwk",
+                    "usr": "s:3VCL9VCLDidJwkC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -11389,8 +12495,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC18submitPresentation22presentationSubmission6didJwk14successHandler05errorJ0yAA015VCLPresentationF0C_AA06VCLDidH0CyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC18submitPresentation22presentationSubmission6didJwk14successHandler05errorJ0yAA015VCLPresentationF0C_AA06VCLDidH0CyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC18submitPresentation22presentationSubmission6didJwk14successHandler05errorJ0yAA015VCLPresentationF0C_AA06VCLDidH0CSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC18submitPresentation22presentationSubmission6didJwk14successHandler05errorJ0yAA015VCLPresentationF0C_AA06VCLDidH0CSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -11601,9 +12707,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDidJwk",
-                "printedName": "VCL.VCLDidJwk",
-                "usr": "s:3VCL9VCLDidJwkC"
+                "name": "Optional",
+                "printedName": "VCL.VCLDidJwk?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLDidJwk",
+                    "printedName": "VCL.VCLDidJwk",
+                    "usr": "s:3VCL9VCLDidJwkC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -11643,8 +12758,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC14generateOffers0cD10Descriptor6didJwk14successHandler05errorI0yAA011VCLGeneratedE0V_AA06VCLDidG0CyAA9VCLOffersVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC14generateOffers0cD10Descriptor6didJwk14successHandler05errorI0yAA011VCLGeneratedE0V_AA06VCLDidG0CyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC14generateOffers0cD10Descriptor6didJwk14successHandler05errorI0yAA011VCLGeneratedE0V_AA06VCLDidG0CSgyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC14generateOffers0cD10Descriptor6didJwk14successHandler05errorI0yAA011VCLGeneratedE0V_AA06VCLDidG0CSgyAA9VCLOffersVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -11737,9 +12852,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDidJwk",
-                "printedName": "VCL.VCLDidJwk",
-                "usr": "s:3VCL9VCLDidJwkC"
+                "name": "Optional",
+                "printedName": "VCL.VCLDidJwk?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLDidJwk",
+                    "printedName": "VCL.VCLDidJwk",
+                    "usr": "s:3VCL9VCLDidJwkC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -11785,8 +12909,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk5token14successHandler05errorJ0yAA011VCLFinalizedE0V_AA06VCLDidG0CAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk5token14successHandler05errorJ0yAA011VCLFinalizedE0V_AA06VCLDidG0CAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk5token14successHandler05errorJ0yAA011VCLFinalizedE0V_AA06VCLDidG0CSgAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk5token14successHandler05errorJ0yAA011VCLFinalizedE0V_AA06VCLDidG0CSgAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -13680,6 +14804,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "VCLCredentialType",
         "printedName": "VCLCredentialType",
@@ -14115,9 +15249,145 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "jsonldContext",
+            "printedName": "jsonldContext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL17VCLCredentialTypeV13jsonldContextSaySSGSgvp",
+            "mangledName": "$s3VCL17VCLCredentialTypeV13jsonldContextSaySSGSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL17VCLCredentialTypeV13jsonldContextSaySSGSgvg",
+                "mangledName": "$s3VCL17VCLCredentialTypeV13jsonldContextSaySSGSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "issuerCategory",
+            "printedName": "issuerCategory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL17VCLCredentialTypeV14issuerCategorySSSgvp",
+            "mangledName": "$s3VCL17VCLCredentialTypeV14issuerCategorySSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL17VCLCredentialTypeV14issuerCategorySSSgvg",
+                "mangledName": "$s3VCL17VCLCredentialTypeV14issuerCategorySSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(payload:id:schema:createdAt:schemaName:credentialType:recommended:)",
+            "printedName": "init(payload:id:schema:createdAt:schemaName:credentialType:recommended:jsonldContext:issuerCategory:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14156,6 +15426,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -14232,11 +15503,49 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL17VCLCredentialTypeV7payload2id6schema9createdAt0F4Name010credentialC011recommendedACSDySSypG_SSSgA4LSbSgtcfc",
-            "mangledName": "$s3VCL17VCLCredentialTypeV7payload2id6schema9createdAt0F4Name010credentialC011recommendedACSDySSypG_SSSgA4LSbSgtcfc",
+            "usr": "s:3VCL17VCLCredentialTypeV7payload2id6schema9createdAt0F4Name010credentialC011recommended13jsonldContext14issuerCategoryACSDySSypG_SSSgA4NSbSgSaySSGSgANtcfc",
+            "mangledName": "$s3VCL17VCLCredentialTypeV7payload2id6schema9createdAt0F4Name010credentialC011recommended13jsonldContext14issuerCategoryACSDySSypG_SSSgA4NSbSgSaySSGSgANtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -14529,6 +15838,100 @@
                     "accessorKind": "get"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyJsonldContext",
+                "printedName": "KeyJsonldContext",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL17VCLCredentialTypeV10CodingKeysV16KeyJsonldContextSSvpZ",
+                "mangledName": "$s3VCL17VCLCredentialTypeV10CodingKeysV16KeyJsonldContextSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL17VCLCredentialTypeV10CodingKeysV16KeyJsonldContextSSvgZ",
+                    "mangledName": "$s3VCL17VCLCredentialTypeV10CodingKeysV16KeyJsonldContextSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyIssuerCategory",
+                "printedName": "KeyIssuerCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL17VCLCredentialTypeV10CodingKeysV17KeyIssuerCategorySSvpZ",
+                "mangledName": "$s3VCL17VCLCredentialTypeV10CodingKeysV17KeyIssuerCategorySSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL17VCLCredentialTypeV10CodingKeysV17KeyIssuerCategorySSvgZ",
+                    "mangledName": "$s3VCL17VCLCredentialTypeV10CodingKeysV17KeyIssuerCategorySSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
             "declKind": "Struct",
@@ -14624,13 +16027,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -15194,6 +16590,215 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "VCLKeyServiceType",
+        "printedName": "VCLKeyServiceType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "LOCAL",
+            "printedName": "LOCAL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLKeyServiceType.Type) -> VCL.VCLKeyServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLKeyServiceType",
+                    "printedName": "VCL.VCLKeyServiceType",
+                    "usr": "s:3VCL17VCLKeyServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLKeyServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLKeyServiceType",
+                        "printedName": "VCL.VCLKeyServiceType",
+                        "usr": "s:3VCL17VCLKeyServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL17VCLKeyServiceTypeO5LOCALyA2CmF",
+            "mangledName": "$s3VCL17VCLKeyServiceTypeO5LOCALyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "REMOTE",
+            "printedName": "REMOTE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLKeyServiceType.Type) -> VCL.VCLKeyServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLKeyServiceType",
+                    "printedName": "VCL.VCLKeyServiceType",
+                    "usr": "s:3VCL17VCLKeyServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLKeyServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLKeyServiceType",
+                        "printedName": "VCL.VCLKeyServiceType",
+                        "usr": "s:3VCL17VCLKeyServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL17VCLKeyServiceTypeO6REMOTEyA2CmF",
+            "mangledName": "$s3VCL17VCLKeyServiceTypeO6REMOTEyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLKeyServiceType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLKeyServiceType",
+                    "printedName": "VCL.VCLKeyServiceType",
+                    "usr": "s:3VCL17VCLKeyServiceTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL17VCLKeyServiceTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s3VCL17VCLKeyServiceTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "VCL",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL17VCLKeyServiceTypeO8rawValueSSvp",
+            "mangledName": "$s3VCL17VCLKeyServiceTypeO8rawValueSSvp",
+            "moduleName": "VCL",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL17VCLKeyServiceTypeO8rawValueSSvg",
+                "mangledName": "$s3VCL17VCLKeyServiceTypeO8rawValueSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3VCL17VCLKeyServiceTypeO",
+        "mangledName": "$s3VCL17VCLKeyServiceTypeO",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -15259,13 +16864,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -15870,13 +17468,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -28983,10 +30574,13 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "VCL"
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -29297,6 +30891,190 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "KeyKeyId",
+                "printedName": "KeyKeyId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL9VCLDidJwkC10CodingKeysV03KeyF2IdSSvpZ",
+                "mangledName": "$s3VCL9VCLDidJwkC10CodingKeysV03KeyF2IdSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL9VCLDidJwkC10CodingKeysV03KeyF2IdSSvgZ",
+                    "mangledName": "$s3VCL9VCLDidJwkC10CodingKeysV03KeyF2IdSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyValue",
+                "printedName": "KeyValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL9VCLDidJwkC10CodingKeysV8KeyValueSSvpZ",
+                "mangledName": "$s3VCL9VCLDidJwkC10CodingKeysV8KeyValueSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL9VCLDidJwkC10CodingKeysV8KeyValueSSvgZ",
+                    "mangledName": "$s3VCL9VCLDidJwkC10CodingKeysV8KeyValueSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyKid",
+                "printedName": "KeyKid",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL9VCLDidJwkC10CodingKeysV6KeyKidSSvpZ",
+                "mangledName": "$s3VCL9VCLDidJwkC10CodingKeysV6KeyKidSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL9VCLDidJwkC10CodingKeysV6KeyKidSSvgZ",
+                    "mangledName": "$s3VCL9VCLDidJwkC10CodingKeysV6KeyKidSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:3VCL9VCLDidJwkC10CodingKeysV",
+            "mangledName": "$s3VCL9VCLDidJwkC10CodingKeysV",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toString",
+            "printedName": "toString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL9VCLDidJwkC8toStringSSSgyF",
+            "mangledName": "$s3VCL9VCLDidJwkC8toStringSSSgyF",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -29629,9 +31407,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDidJwk",
-                "printedName": "VCL.VCLDidJwk",
-                "usr": "s:3VCL9VCLDidJwkC"
+                "name": "Optional",
+                "printedName": "VCL.VCLDidJwk?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLDidJwk",
+                    "printedName": "VCL.VCLDidJwk",
+                    "usr": "s:3VCL9VCLDidJwkC"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -29671,8 +31457,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP18submitPresentation22presentationSubmission6didJwk14successHandler05errorI0yAA015VCLPresentationE0C_AA06VCLDidG0CyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP18submitPresentation22presentationSubmission6didJwk14successHandler05errorI0yAA015VCLPresentationE0C_AA06VCLDidG0CyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP18submitPresentation22presentationSubmission6didJwk14successHandler05errorI0yAA015VCLPresentationE0C_AA06VCLDidG0CSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP18submitPresentation22presentationSubmission6didJwk14successHandler05errorI0yAA015VCLPresentationE0C_AA06VCLDidG0CSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -29887,9 +31673,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDidJwk",
-                "printedName": "VCL.VCLDidJwk",
-                "usr": "s:3VCL9VCLDidJwkC"
+                "name": "Optional",
+                "printedName": "VCL.VCLDidJwk?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLDidJwk",
+                    "printedName": "VCL.VCLDidJwk",
+                    "usr": "s:3VCL9VCLDidJwkC"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -29929,8 +31723,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP14generateOffers0bC10Descriptor6didJwk14successHandler05errorH0yAA011VCLGeneratecD0V_AA06VCLDidF0CyAA9VCLOffersVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP14generateOffers0bC10Descriptor6didJwk14successHandler05errorH0yAA011VCLGeneratecD0V_AA06VCLDidF0CyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP14generateOffers0bC10Descriptor6didJwk14successHandler05errorH0yAA011VCLGeneratecD0V_AA06VCLDidF0CSgyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP14generateOffers0bC10Descriptor6didJwk14successHandler05errorH0yAA011VCLGeneratecD0V_AA06VCLDidF0CSgyAA9VCLOffersVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -30025,9 +31819,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLDidJwk",
-                "printedName": "VCL.VCLDidJwk",
-                "usr": "s:3VCL9VCLDidJwkC"
+                "name": "Optional",
+                "printedName": "VCL.VCLDidJwk?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLDidJwk",
+                    "printedName": "VCL.VCLDidJwk",
+                    "usr": "s:3VCL9VCLDidJwkC"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -30073,8 +31875,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP14finalizeOffers0bC10Descriptor6didJwk5token14successHandler05errorI0yAA011VCLFinalizecD0V_AA06VCLDidF0CAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP14finalizeOffers0bC10Descriptor6didJwk5token14successHandler05errorI0yAA011VCLFinalizecD0V_AA06VCLDidF0CAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP14finalizeOffers0bC10Descriptor6didJwk5token14successHandler05errorI0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP14finalizeOffers0bC10Descriptor6didJwk5token14successHandler05errorI0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -30448,6 +32250,33 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "VCToken",
+        "printedName": "VCToken",
+        "declKind": "Import",
+        "moduleName": "VCL"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "VCLCredentialManifestDescriptorByService",
         "printedName": "VCLCredentialManifestDescriptorByService",
@@ -30703,13 +32532,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -30998,13 +32820,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -31386,13 +33201,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -32678,6 +34486,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "VCLOffers",
         "printedName": "VCLOffers",
@@ -33631,13 +35449,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VCL"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -33808,6 +35619,232 @@
         "superclassNames": [
           "VCL.VCLService"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VCLXVnfProtocolVersion",
+        "printedName": "VCLXVnfProtocolVersion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "XVnfProtocolVersion1",
+            "printedName": "XVnfProtocolVersion1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLXVnfProtocolVersion.Type) -> VCL.VCLXVnfProtocolVersion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLXVnfProtocolVersion",
+                    "printedName": "VCL.VCLXVnfProtocolVersion",
+                    "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLXVnfProtocolVersion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLXVnfProtocolVersion",
+                        "printedName": "VCL.VCLXVnfProtocolVersion",
+                        "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL22VCLXVnfProtocolVersionO04XVnfC8Version1yA2CmF",
+            "mangledName": "$s3VCL22VCLXVnfProtocolVersionO04XVnfC8Version1yA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "XVnfProtocolVersion2",
+            "printedName": "XVnfProtocolVersion2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLXVnfProtocolVersion.Type) -> VCL.VCLXVnfProtocolVersion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLXVnfProtocolVersion",
+                    "printedName": "VCL.VCLXVnfProtocolVersion",
+                    "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLXVnfProtocolVersion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLXVnfProtocolVersion",
+                        "printedName": "VCL.VCLXVnfProtocolVersion",
+                        "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL22VCLXVnfProtocolVersionO04XVnfC8Version2yA2CmF",
+            "mangledName": "$s3VCL22VCLXVnfProtocolVersionO04XVnfC8Version2yA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLXVnfProtocolVersionO8rawValueSSvp",
+            "mangledName": "$s3VCL22VCLXVnfProtocolVersionO8rawValueSSvp",
+            "moduleName": "VCL",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLXVnfProtocolVersionO8rawValueSSvg",
+                "mangledName": "$s3VCL22VCLXVnfProtocolVersionO8rawValueSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLXVnfProtocolVersion?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLXVnfProtocolVersion",
+                    "printedName": "VCL.VCLXVnfProtocolVersion",
+                    "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL22VCLXVnfProtocolVersionO8rawValueACSgSS_tcfc",
+            "mangledName": "$s3VCL22VCLXVnfProtocolVersionO8rawValueACSgSS_tcfc",
+            "moduleName": "VCL",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3VCL22VCLXVnfProtocolVersionO",
+        "mangledName": "$s3VCL22VCLXVnfProtocolVersionO",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VCL"
       },
       {
         "kind": "Import",
@@ -36047,205 +38084,121 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1530,
+      "offset": 1558,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1559,
+      "offset": 1587,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1997,
+      "offset": 2025,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2044,
+      "offset": 2072,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2093,
+      "offset": 2121,
       "length": 11,
       "value": "\"errorCode\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2144,
+      "offset": 2172,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2224,
       "length": 12,
       "value": "\"statusCode\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 681,
-      "length": 21,
-      "value": "\"not implemented yet\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 915,
+      "offset": 775,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 992,
+      "offset": 856,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1075,
+      "offset": 943,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 1178,
+      "offset": 1072,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
+      "kind": "Dictionary",
+      "offset": 2793,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2654,
+      "offset": 3363,
       "length": 27,
       "value": "\"Failed to create JwsToken\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3139,
+      "offset": 4112,
       "length": 34,
       "value": "\"Failed to create signed JwsToken\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3701,
+      "offset": 5442,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3944,
+      "offset": 5725,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4423,
+      "offset": 6214,
       "length": 3,
       "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4581,
-      "length": 5,
-      "value": "\"iss\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4622,
-      "length": 5,
-      "value": "\"aud\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4663,
-      "length": 5,
-      "value": "\"sub\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4704,
-      "length": 5,
-      "value": "\"jti\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4745,
-      "length": 5,
-      "value": "\"iat\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4786,
-      "length": 5,
-      "value": "\"nbf\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4827,
-      "length": 5,
-      "value": "\"exp\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4870,
-      "length": 7,
-      "value": "\"nonce\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/CodableExtensions.swift",
-      "kind": "Array",
-      "offset": 584,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/CodableExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 606,
-      "length": 41,
-      "value": "\"Deserialized object is not a dictionary\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/CodableExtensions.swift",
-      "kind": "Array",
-      "offset": 1107,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/CodableExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1129,
-      "length": 41,
-      "value": "\"Deserialized object is not a dictionary\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLClaims.swift",
@@ -36271,70 +38224,49 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1419,
-      "length": 42,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1460,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 2569,
-      "length": 13,
-      "value": "\"self is nil\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 3563,
+      "offset": 2229,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3574,
+      "offset": 2240,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3590,
+      "offset": 2256,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4252,
+      "offset": 2959,
       "length": 13,
       "value": "\"Empty KeyID\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 5360,
+      "offset": 4198,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5728,
+      "offset": 4620,
       "length": 27,
       "value": "\"Failed  to verify: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialManifestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5754,
+      "offset": 4646,
       "length": 4,
       "value": "\"\""
     },
@@ -36381,65 +38313,128 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/SubmissionUseCaseImpl.swift",
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
       "kind": "StringLiteral",
-      "offset": 1147,
-      "length": 34,
-      "value": "\"Finish \""
+      "offset": 316,
+      "length": 32,
+      "value": "\"credential_type_not_registered\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/SubmissionUseCaseImpl.swift",
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
       "kind": "StringLiteral",
-      "offset": 1180,
-      "length": 4,
-      "value": "\"\""
+      "offset": 393,
+      "length": 37,
+      "value": "\"issuer_requires_identity_permission\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/SubmissionUseCaseImpl.swift",
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
       "kind": "StringLiteral",
-      "offset": 2663,
-      "length": 13,
-      "value": "\"self is nil\""
+      "offset": 473,
+      "length": 35,
+      "value": "\"issuer_requires_notary_permission\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 549,
+      "length": 33,
+      "value": "\"invalid_credential_subject_type\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 626,
+      "length": 36,
+      "value": "\"invalid_credential_subject_context\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 708,
+      "length": 38,
+      "value": "\"issuer_unexpected_permission_failure\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 32,
+      "value": "\"credential_type_not_registered\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 37,
+      "value": "\"issuer_requires_identity_permission\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 473,
+      "length": 35,
+      "value": "\"issuer_requires_notary_permission\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 549,
+      "length": 33,
+      "value": "\"invalid_credential_subject_type\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 626,
+      "length": 36,
+      "value": "\"invalid_credential_subject_context\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 708,
+      "length": 38,
+      "value": "\"issuer_unexpected_permission_failure\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1667,
+      "offset": 1765,
       "length": 12,
       "value": "\"exchangeId\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1728,
+      "offset": 1826,
       "length": 18,
       "value": "\"approvedOfferIds\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1795,
+      "offset": 1893,
       "length": 18,
       "value": "\"rejectedOfferIds\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1956,
       "length": 5,
       "value": "\"jwt\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1901,
+      "offset": 1999,
       "length": 7,
       "value": "\"proof\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1950,
+      "offset": 2048,
       "length": 12,
       "value": "\"proof_type\""
     },
@@ -36689,13 +38684,6 @@
       "value": "\"x-vnf-protocol-version\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
-      "kind": "StringLiteral",
-      "offset": 1856,
-      "length": 5,
-      "value": "\"2.0\""
-    },
-    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "Array",
       "offset": 275,
@@ -36747,268 +38735,212 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "Array",
-      "offset": 1537,
+      "offset": 1553,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 1902,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1878,
+      "offset": 1910,
       "length": 1,
       "value": "\"&\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1893,
+      "offset": 1925,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1939,
+      "offset": 1971,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1947,
+      "offset": 1979,
       "length": 1,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1962,
+      "offset": 1994,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2003,
+      "offset": 2035,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2011,
+      "offset": 2043,
       "length": 1,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2026,
+      "offset": 2058,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2191,
+      "offset": 2223,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2968,
+      "offset": 3008,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2979,
+      "offset": 3019,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3033,
+      "offset": 3073,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3044,
+      "offset": 3084,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3078,
+      "offset": 3118,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3083,
+      "offset": 3123,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3125,
+      "offset": 3165,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3420,
+      "offset": 3466,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3475,
+      "offset": 3521,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3504,
+      "offset": 3550,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 3605,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3651,
+      "offset": 3698,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3680,
+      "offset": 3727,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 3781,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3827,
+      "offset": 3875,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3869,
+      "offset": 3917,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 3926,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4914,
+      "offset": 4963,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4980,
+      "offset": 5033,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 5100,
+      "offset": 5155,
       "length": 64,
       "value": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 5182,
+      "offset": 5237,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLInitializationDescriptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 490,
+      "offset": 713,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1368,
-      "length": 38,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1405,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 3398,
-      "length": 13,
-      "value": "\"self is nil\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4089,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 5296,
-      "length": 5,
-      "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/DateExtensions.swift",
@@ -37186,6 +39118,83 @@
       "value": "\"push_delegate.push_token\""
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 280,
+      "length": 56,
+      "value": "\"https:\/\/devcareerwallet.velocitycareerlabs.io\/api\/v0.6\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 373,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 1,
+      "value": "\"\/jwt\/sign\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 436,
+      "length": 26,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 1,
+      "value": "\"\/jwt\/verify\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 1383,
+      "length": 62,
+      "value": "\"Failed to parse data from \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 1444,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 2440,
+      "length": 62,
+      "value": "\"Failed to parse data from \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 2501,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3393,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/jwt\/JwtServiceRemoteImpl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3676,
+      "length": 1,
+      "value": "7"
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/executors\/DsptchQueueImpl.swift",
       "kind": "StringLiteral",
       "offset": 374,
@@ -37216,15 +39225,15 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/keys\/KeyServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1447,
+      "offset": 2328,
       "length": 40,
       "value": "\"Invalid UUID format of keyID: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/keys\/KeyServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
-      "length": 2,
+      "offset": 2367,
+      "length": 4,
       "value": "\"\""
     },
     {
@@ -37454,58 +39463,135 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 484,
+      "offset": 565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 571,
+      "offset": 652,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 593,
+      "offset": 674,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 663,
+      "offset": 744,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 697,
+      "offset": 778,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 735,
+      "offset": 816,
       "length": 6,
       "value": "\"VCL \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 984,
       "length": 8,
       "value": "\"ES256K\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 937,
+      "offset": 1018,
       "length": 5,
       "value": "\"JWT\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 905,
+      "length": 5,
+      "value": "\"iss\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 942,
+      "length": 5,
+      "value": "\"aud\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 5,
+      "value": "\"sub\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1016,
+      "length": 5,
+      "value": "\"jti\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1053,
+      "length": 5,
+      "value": "\"iat\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1090,
+      "length": 5,
+      "value": "\"nbf\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 5,
+      "value": "\"exp\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1166,
+      "length": 7,
+      "value": "\"nonce\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1214,
+      "length": 9,
+      "value": "\"payload\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 5,
+      "value": "\"jwt\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/domain\/infrastructure\/jwt\/JwtService.swift",
+      "kind": "StringLiteral",
+      "offset": 1298,
+      "length": 11,
+      "value": "\"publicKey\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
@@ -37608,133 +39694,133 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 555,
+      "offset": 720,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 684,
+      "offset": 849,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 863,
+      "offset": 1028,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 1032,
+      "offset": 1197,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 1250,
+      "offset": 1415,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 1462,
+      "offset": 1627,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 1686,
+      "offset": 1851,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 1857,
+      "offset": 2022,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 1897,
+      "offset": 2062,
       "length": 9,
       "value": "\"\/issue\/\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2079,
+      "offset": 2244,
       "length": 17,
       "value": "\"issuing_request\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2140,
+      "offset": 2305,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2345,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2389,
       "length": 8,
       "value": "\"issuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2275,
+      "offset": 2440,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2345,
+      "offset": 2510,
       "length": 25,
       "value": "\"presentation_definition\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2420,
+      "offset": 2585,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2477,
+      "offset": 2642,
       "length": 18,
       "value": "\"check_offers_uri\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 2710,
       "length": 21,
       "value": "\"finalize_offers_uri\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2622,
+      "offset": 2787,
       "length": 25,
       "value": "\"submit_presentation_uri\""
     },
@@ -37758,27 +39844,6 @@
       "offset": 511,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/OrganizationsUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1024,
-      "length": 37,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/OrganizationsUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1060,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/OrganizationsUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1817,
-      "length": 13,
-      "value": "\"self is nil\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/VCLLog.swift",
@@ -37963,6 +40028,34 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/keys\/KeyServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
+      "length": 28,
+      "value": "\"not implemented for remote\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/keys\/KeyServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 786,
+      "length": 28,
+      "value": "\"not implemented for remote\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/keys\/KeyServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 1025,
+      "length": 28,
+      "value": "\"not implemented for remote\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/keys\/KeyServiceRemoteImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 1272,
+      "length": 28,
+      "value": "\"not implemented for remote\""
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLSubmission.swift",
       "kind": "StringLiteral",
       "offset": 2077,
@@ -38133,399 +40226,406 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "IntegerLiteral",
-      "offset": 877,
+      "offset": 895,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
+      "kind": "IntegerLiteral",
+      "offset": 958,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "IntegerLiteral",
-      "offset": 928,
+      "offset": 1014,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "IntegerLiteral",
-      "offset": 981,
+      "offset": 1072,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2140,
+      "offset": 1708,
       "length": 5,
       "value": "\"typ\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2181,
+      "offset": 1749,
       "length": 5,
       "value": "\"alg\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2222,
+      "offset": 1790,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2263,
+      "offset": 1831,
       "length": 5,
       "value": "\"jwk\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2311,
+      "offset": 1879,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2348,
+      "offset": 1916,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2399,
+      "offset": 1967,
       "length": 8,
       "value": "\"header\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2447,
+      "offset": 2015,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2498,
+      "offset": 2066,
       "length": 11,
       "value": "\"signature\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2554,
+      "offset": 2122,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2595,
+      "offset": 2163,
       "length": 5,
       "value": "\"aud\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2636,
+      "offset": 2204,
       "length": 5,
       "value": "\"sub\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2677,
+      "offset": 2245,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2718,
+      "offset": 2286,
       "length": 5,
       "value": "\"iat\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2759,
+      "offset": 2327,
       "length": 5,
       "value": "\"nbf\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2800,
+      "offset": 2368,
       "length": 5,
       "value": "\"exp\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2843,
+      "offset": 2411,
       "length": 7,
       "value": "\"nonce\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 247,
+      "offset": 249,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2905,
+      "offset": 4875,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3088,
+      "offset": 5092,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3431,
+      "offset": 5444,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4064,
+      "offset": 6086,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4311,
+      "offset": 6367,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4548,
+      "offset": 6638,
       "length": 39,
       "value": "\"Failed to get credential type schemas\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4761,
+      "offset": 6851,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4770,
+      "offset": 6860,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6504,
+      "offset": 8748,
       "length": 24,
       "value": "\"getPresentationRequest\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6767,
+      "offset": 9011,
       "length": 29,
       "value": "\"profile verification failed\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6937,
+      "offset": 9181,
       "length": 57,
       "value": "\"did was not found in ֿ\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6993,
+      "offset": 9237,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 7026,
+      "offset": 9270,
       "length": 41,
       "value": "\"getPresentationRequest::verifiedProfile\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 7721,
+      "offset": 9972,
       "length": 21,
       "value": "\"submit presentation\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8382,
+      "offset": 10633,
       "length": 21,
       "value": "\"getExchangeProgress\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9067,
+      "offset": 11318,
       "length": 24,
       "value": "\"searchForOrganizations\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10267,
+      "offset": 12592,
       "length": 23,
       "value": "\"getCredentialManifest\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10529,
+      "offset": 12854,
       "length": 29,
       "value": "\"profile verification failed\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10699,
+      "offset": 13024,
       "length": 54,
       "value": "\"did was not found in \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10752,
+      "offset": 13077,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10785,
+      "offset": 13110,
       "length": 40,
       "value": "\"getCredentialManifest::verifiedProfile\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12090,
+      "offset": 14432,
       "length": 23,
       "value": "\"submit identification\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12343,
+      "offset": 14685,
       "length": 23,
       "value": "\"submit identification\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13526,
+      "offset": 15868,
       "length": 16,
       "value": "\"generateOffers\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14340,
+      "offset": 16689,
       "length": 16,
       "value": "\"finalizeOffers\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15261,
+      "offset": 17610,
       "length": 32,
       "value": "\"getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15479,
+      "offset": 17828,
       "length": 49,
       "value": "\"No countries for getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15565,
+      "offset": 17914,
       "length": 32,
       "value": "\"getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16188,
+      "offset": 18537,
       "length": 20,
       "value": "\"getVerifiedProfile\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16776,
+      "offset": 19125,
       "length": 11,
       "value": "\"verifyJwt\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17344,
+      "offset": 19693,
       "length": 19,
       "value": "\"generateSignedJwt\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17902,
+      "offset": 20251,
       "length": 16,
       "value": "\"generateDidJwk\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18111,
+      "offset": 20460,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18148,
+      "offset": 20497,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18159,
+      "offset": 20508,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18169,
+      "offset": 20518,
       "length": 2,
       "value": "\"\""
     },
@@ -38726,121 +40826,128 @@
       "value": "\"Failed to parse verified profile payload.\""
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialDidVerifierImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 872,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialDidVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 1636,
+      "length": 5,
+      "value": "\"iss\""
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
       "kind": "StringLiteral",
-      "offset": 1043,
+      "offset": 1263,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
       "kind": "StringLiteral",
-      "offset": 1086,
+      "offset": 1306,
       "length": 8,
       "value": "\"schema\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1356,
       "length": 11,
       "value": "\"createdAt\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
       "kind": "StringLiteral",
-      "offset": 1190,
+      "offset": 1410,
       "length": 12,
       "value": "\"schemaName\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
       "kind": "StringLiteral",
-      "offset": 1249,
+      "offset": 1469,
       "length": 16,
       "value": "\"credentialType\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
       "kind": "StringLiteral",
-      "offset": 1309,
+      "offset": 1529,
       "length": 13,
       "value": "\"recommended\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
       "kind": "StringLiteral",
-      "offset": 1415,
-      "length": 43,
-      "value": "\"Finish \""
+      "offset": 1588,
+      "length": 15,
+      "value": "\"jsonldContext\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialType.swift",
+      "kind": "StringLiteral",
+      "offset": 1650,
+      "length": 16,
+      "value": "\"issuerCategory\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1457,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 2503,
-      "length": 13,
-      "value": "\"self is nil\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 3535,
+      "offset": 2107,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3546,
+      "offset": 2118,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3562,
+      "offset": 2134,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4204,
+      "offset": 2776,
       "length": 13,
       "value": "\"Empty KeyID\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 5589,
+      "offset": 4161,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5761,
+      "offset": 4333,
       "length": 62,
       "value": "\"Failed  to verify: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "Dictionary",
-      "offset": 5818,
+      "offset": 4390,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5822,
+      "offset": 4394,
       "length": 20,
       "value": "\"\""
     },
@@ -39027,6 +41134,34 @@
       "value": "\"vendorOriginContext\""
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLKeyServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 7,
+      "value": "\"local\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLKeyServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 8,
+      "value": "\"remote\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLKeyServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 7,
+      "value": "\"local\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLKeyServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 8,
+      "value": "\"remote\""
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/ResolveKidRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 591,
@@ -39064,105 +41199,105 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypeSchemasUseCaseImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 1380,
+      "offset": 1382,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypeSchemasUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1579,
+      "offset": 1581,
       "length": 45,
       "value": "\"Finish \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypeSchemasUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1623,
+      "offset": 1625,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypeSchemasUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3192,
+      "offset": 3194,
       "length": 41,
       "value": "\"Failed to fetch credential type schemas\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypeSchemasUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3648,
+      "offset": 3650,
       "length": 13,
       "value": "\"self is nil\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2003,
+      "offset": 2036,
       "length": 104,
       "value": "\"Wrong service type - expected: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2062,
+      "offset": 2095,
       "length": 1,
       "value": "\", found: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2139,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2395,
+      "offset": 2428,
       "length": 13,
       "value": "\"profileName\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2441,
+      "offset": 2474,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2504,
+      "offset": 2537,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2522,
+      "offset": 2555,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2525,
+      "offset": 2558,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2539,
+      "offset": 2572,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
       "kind": "StringLiteral",
-      "offset": 2542,
+      "offset": 2575,
       "length": 1,
       "value": "\"\""
     },
@@ -39289,99 +41424,78 @@
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
       "offset": 3788,
-      "length": 27,
-      "value": "\"Method: \""
+      "length": 35,
+      "value": "\"Request Method: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3814,
+      "offset": 3822,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3842,
-      "length": 33,
-      "value": "\"\nEndpoint: \""
+      "offset": 3850,
+      "length": 40,
+      "value": "\" Request Endpoint: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3874,
+      "offset": 3889,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3898,
-      "length": 2,
-      "value": "\"\""
+      "offset": 3913,
+      "length": 4,
+      "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3960,
-      "length": 17,
-      "value": "\"\nBody: \""
+      "offset": 3977,
+      "length": 24,
+      "value": "\" Request Body: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3976,
+      "offset": 4000,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4005,
+      "offset": 4029,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4018,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 4032,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
-      "kind": "StringLiteral",
       "offset": 4042,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 4056,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 4066,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/ExchangeProgressUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1021,
-      "length": 40,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/ExchangeProgressUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1060,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/ExchangeProgressUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1764,
-      "length": 13,
-      "value": "\"self is nil\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLGenerateOffersDescriptor.swift",
@@ -39410,27 +41524,6 @@
       "offset": 1554,
       "length": 13,
       "value": "\"offerHashes\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CountriesUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 923,
-      "length": 33,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CountriesUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 955,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CountriesUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1676,
-      "length": 13,
-      "value": "\"self is nil\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLIdentificationSubmission.swift",
@@ -41407,116 +43500,200 @@
       "value": "\"KEY_CACHE_SEQUENCE_CREDENTIAL_TYPE_SCHEMA\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypesUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 985,
-      "length": 39,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypesUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1023,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypesUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1755,
-      "length": 13,
-      "value": "\"self is nil\""
-    },
-    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 589,
       "length": 10,
       "value": "\"did:jwk:\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 521,
+      "offset": 637,
       "length": 4,
       "value": "\"#0\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 613,
-      "length": 97,
+      "offset": 729,
+      "length": 93,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 639,
+      "offset": 755,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 706,
+      "offset": 818,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 709,
+      "offset": 821,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 811,
+      "offset": 923,
       "length": 76,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 861,
+      "offset": 973,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
       "kind": "StringLiteral",
-      "offset": 886,
+      "offset": 998,
       "length": 1,
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
+      "kind": "StringLiteral",
+      "offset": 1258,
+      "length": 7,
+      "value": "\"keyId\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
+      "kind": "StringLiteral",
+      "offset": 1303,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidJwk.swift",
+      "kind": "StringLiteral",
+      "offset": 1346,
+      "length": 5,
+      "value": "\"kid\""
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCL.swift",
       "kind": "StringLiteral",
-      "offset": 3477,
+      "offset": 3482,
       "length": 34,
       "value": "\"Version: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCL.swift",
       "kind": "StringLiteral",
-      "offset": 3510,
+      "offset": 3515,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCL.swift",
       "kind": "StringLiteral",
-      "offset": 3530,
+      "offset": 3535,
       "length": 30,
       "value": "\"Build: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCL.swift",
       "kind": "StringLiteral",
-      "offset": 3559,
+      "offset": 3564,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 399,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 655,
+      "length": 5,
+      "value": "\"kty\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 5,
+      "value": "\"kid\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 5,
+      "value": "\"crv\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 761,
+      "length": 5,
+      "value": "\"use\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 3,
+      "value": "\"x\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 823,
+      "length": 3,
+      "value": "\"y\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptorByService.swift",
@@ -41638,27 +43815,6 @@
       "value": "\"VCL.VCLCredentialManifestDescriptorByService\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypesUIFormSchemaUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1332,
-      "length": 51,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypesUIFormSchemaUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1382,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypesUIFormSchemaUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 2290,
-      "length": 13,
-      "value": "\"self is nil\""
-    },
-    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/FinalizeOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 982,
@@ -41748,27 +43904,6 @@
       "offset": 805,
       "length": 17,
       "value": "\"serviceEndpoint\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/VerifiedProfileUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1034,
-      "length": 34,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/VerifiedProfileUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1067,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/VerifiedProfileUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1845,
-      "length": 13,
-      "value": "\"self is nil\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLIssuingType.swift",
@@ -41895,27 +44030,6 @@
       "offset": 3713,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/GenerateOffersUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1025,
-      "length": 38,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/GenerateOffersUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1062,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/GenerateOffersUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1825,
-      "length": 13,
-      "value": "\"self is nil\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifestDescriptorByDeepLink.swift",
@@ -42072,27 +44186,6 @@
       "value": "\"submissionId\""
     },
     {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/JwtServiceUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 944,
-      "length": 34,
-      "value": "\"Finish \""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/JwtServiceUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 977,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/JwtServiceUseCaseImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1657,
-      "length": 13,
-      "value": "\"self is nil\""
-    },
-    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/CredentialTypesRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 1291,
@@ -42112,6 +44205,181 @@
       "offset": 2820,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLXVnfProtocolVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 277,
+      "length": 5,
+      "value": "\"1.0\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLXVnfProtocolVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 5,
+      "value": "\"2.0\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLXVnfProtocolVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 277,
+      "length": 5,
+      "value": "\"1.0\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLXVnfProtocolVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 5,
+      "value": "\"2.0\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1349,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 1730,
+      "length": 37,
+      "value": "\"Finish mainBackgroundTaskIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 3043,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 3052,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3995,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5096,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5625,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 8242,
+      "length": 46,
+      "value": "\"Finish resolveConetxBackgroundTaskIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 9176,
+      "length": 73,
+      "value": "\"Invalid format of credentialSubjectContext: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 9248,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 9328,
+      "length": 44,
+      "value": "\"Error fetching \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 9371,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 10640,
+      "length": 47,
+      "value": "\"Finish completeConetxBackgroundTaskIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12783,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 13790,
+      "length": 4,
+      "value": "\"vc\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 13824,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 13882,
+      "length": 19,
+      "value": "\"credentialSubject\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 13934,
+      "length": 10,
+      "value": "\"@context\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 13972,
+      "length": 5,
+      "value": "\"@id\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 14013,
+      "length": 12,
+      "value": "\"identifier\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 14079,
+      "length": 65,
+      "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCountry.swift",
@@ -42137,7 +44405,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VclBlocksProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1085,
+      "offset": 1627,
       "length": 23,
       "value": "\"CredentialTypeSchemas\""
     },
