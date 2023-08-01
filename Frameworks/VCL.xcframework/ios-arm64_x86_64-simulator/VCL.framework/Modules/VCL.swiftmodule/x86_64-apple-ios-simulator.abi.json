@@ -38574,161 +38574,147 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 822,
-      "length": 61,
-      "value": "\"https:\/\/\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
-      "kind": "StringLiteral",
-      "offset": 851,
-      "length": 9,
-      "value": "\"walletapi.velocitycareerlabs.io\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
-      "kind": "StringLiteral",
-      "offset": 940,
+      "offset": 942,
       "length": 47,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 960,
+      "offset": 962,
       "length": 1,
       "value": "\"\/api\/v0.6\/credential-types\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1047,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1065,
+      "offset": 1067,
       "length": 1,
       "value": "\"\/schemas\/\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1121,
+      "offset": 1123,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1141,
+      "offset": 1143,
       "length": 1,
       "value": "\"\/reference\/countries\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1214,
       "length": 60,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1232,
+      "offset": 1234,
       "length": 1,
       "value": "\"\/api\/v0.6\/organizations\/search-profiles\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1319,
+      "offset": 1321,
       "length": 43,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1339,
+      "offset": 1341,
       "length": 1,
       "value": "\"\/api\/v0.6\/resolve-kid\/\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1424,
+      "offset": 1426,
       "length": 83,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1446,
       "length": 1,
       "value": "\"\/api\/v0.6\/form-schemas?credentialType=\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1506,
+      "offset": 1508,
       "length": 5,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1559,
+      "offset": 1561,
       "length": 75,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1579,
+      "offset": 1581,
       "length": 1,
       "value": "\"\/api\/v0.6\/organizations\/\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1616,
+      "offset": 1618,
       "length": 1,
       "value": "\"\/verified-profile\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1679,
+      "offset": 1681,
       "length": 7,
       "value": "\"{did}\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1719,
+      "offset": 1721,
       "length": 18,
       "value": "\"{credentialType}\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1801,
+      "offset": 1803,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1860,
       "length": 8,
       "value": "\"Bearer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1904,
+      "offset": 1906,
       "length": 24,
       "value": "\"x-vnf-protocol-version\""
     },
