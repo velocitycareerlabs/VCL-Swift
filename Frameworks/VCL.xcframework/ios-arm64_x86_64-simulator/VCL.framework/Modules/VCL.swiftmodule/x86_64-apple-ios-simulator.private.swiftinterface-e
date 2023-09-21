@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VCL
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -10,6 +10,15 @@ import VCCrypto
 import VCToken
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
+public struct VCLVerifiedProfileDescriptor {
+  public let did: Swift.String
+  public init(did: Swift.String)
+}
+public struct VCLCredentialTypeSchema {
+  public let payload: [Swift.String : Any]?
+  public init(payload: [Swift.String : Any]?)
+}
 public struct VCLError : Swift.Error {
   public let payload: Swift.String?
   public let error: Swift.String?
@@ -28,14 +37,6 @@ public struct VCLError : Swift.Error {
     public static let KeyStatusCode: Swift.String
   }
 }
-public struct VCLVerifiedProfileDescriptor {
-  public let did: Swift.String
-  public init(did: Swift.String)
-}
-public struct VCLCredentialTypeSchema {
-  public let payload: [Swift.String : Any]?
-  public init(payload: [Swift.String : Any]?)
-}
 public struct VCLClaims : VCToken.Claims, Swift.Decodable, Swift.Encodable {
   public let all: [Swift.String : Any]
   public init(from decoder: any Swift.Decoder) throws
@@ -48,19 +49,6 @@ public struct VCLClaims : VCToken.Claims, Swift.Decodable, Swift.Encodable {
     get
   }
   public var nbf: Swift.Double? {
-    get
-  }
-}
-public enum VCLErrorCode : Swift.String {
-  case CredentialTypeNotRegistered
-  case IssuerRequiresIdentityPermission
-  case IssuerRequiresNotaryPermission
-  case InvalidCredentialSubjectType
-  case InvalidCredentialSubjectContext
-  case IssuerUnexpectedPermissionFailure
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
     get
   }
 }
@@ -102,15 +90,6 @@ public class VCLCredentialManifestDescriptor {
   }
   @objc deinit
 }
-public struct VCLInitializationDescriptor {
-  public let environment: VCL.VCLEnvironment
-  public let keyServiceType: VCL.VCLKeyServiceType
-  public let xVnfProtocolVersion: VCL.VCLXVnfProtocolVersion
-  public let cacheSequence: Swift.Int
-  public let keycahinAccessGroupIdentifier: Swift.String?
-  public let isDebugOn: Swift.Bool
-  public init(environment: VCL.VCLEnvironment = .Prod, keyServiceType: VCL.VCLKeyServiceType = .Local, xVnfProtocolVersion: VCL.VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil, isDebugOn: Swift.Bool = false)
-}
 public class VCLPresentationRequestDescriptor {
   final public let deepLink: VCL.VCLDeepLink
   final public let pushDelegate: VCL.VCLPushDelegate?
@@ -141,6 +120,12 @@ public struct VCLCredentialTypes {
   public init(all: [VCL.VCLCredentialType]?)
   public func credentialTypeByTypeName(type: Swift.String) -> VCL.VCLCredentialType?
 }
+public protocol VCLKeyService {
+  func generateDidJwk(completionBlock: @escaping (VCL.VCLResult<VCL.VCLDidJwk>) -> Swift.Void)
+  func generateSecret(completionBlock: @escaping (VCL.VCLResult<any VCCrypto.VCCryptoSecret>) -> Swift.Void)
+  func retrieveSecretReference(keyId: Swift.String, completionBlock: @escaping (VCL.VCLResult<any VCCrypto.VCCryptoSecret>) -> Swift.Void)
+  func retrievePublicJwk(secret: any VCCrypto.VCCryptoSecret, completionBlock: @escaping (VCL.VCLResult<VCToken.ECPublicJwk>) -> Swift.Void)
+}
 public struct VCLVerifiableCredential {
   public let inputDescriptor: Swift.String
   public let jwtVc: Swift.String
@@ -169,18 +154,9 @@ public class VCLCredentialManifestDescriptorRefresh : VCL.VCLCredentialManifestD
   }
   @objc deinit
 }
-public struct JwtServiceCodingKeys {
-  public static let KeyIss: Swift.String
-  public static let KeyAud: Swift.String
-  public static let KeySub: Swift.String
-  public static let KeyJti: Swift.String
-  public static let KeyIat: Swift.String
-  public static let KeyNbf: Swift.String
-  public static let KeyExp: Swift.String
-  public static let KeyNonce: Swift.String
-  public static let KeyPayload: Swift.String
-  public static let KeyJwt: Swift.String
-  public static let KeyPublicKey: Swift.String
+public protocol VCLJwtService {
+  func verify(jwt: VCL.VCLJwt, publicJwk: VCL.VCLPublicJwk, completionBlock: @escaping (VCL.VCLResult<Swift.Bool>) -> Swift.Void)
+  func sign(kid: Swift.String?, nonce: Swift.String?, jwtDescriptor: VCL.VCLJwtDescriptor, completionBlock: @escaping (VCL.VCLResult<VCL.VCLJwt>) -> Swift.Void)
 }
 public struct VCLVerifiedProfile {
   public let payload: [Swift.String : Any]
@@ -378,7 +354,7 @@ public struct VCLJwt {
   public func finalizeOffers(finalizeOffersDescriptor: VCL.VCLFinalizeOffersDescriptor, didJwk: VCL.VCLDidJwk? = nil, token: VCL.VCLToken, successHandler: @escaping (VCL.VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCL.VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCL.VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  public func verifyJwt(jwt: VCL.VCLJwt, jwkPublic: VCL.VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  public func verifyJwt(jwt: VCL.VCLJwt, publicJwk: VCL.VCLPublicJwk, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func generateSignedJwt(jwtDescriptor: VCL.VCLJwtDescriptor, successHandler: @escaping (VCL.VCLJwt) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func generateDidJwk(successHandler: @escaping (VCL.VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   @objc deinit
@@ -424,6 +400,21 @@ public struct VCLPushDelegate {
   public struct CodingKeys {
     public static let KeyPushUrl: Swift.String
     public static let KeyPushToken: Swift.String
+  }
+}
+public enum VCLErrorCode : Swift.String {
+  case RemoteServicesUrlsNotFount
+  case InjectedServicesNotFount
+  case CredentialTypeNotRegistered
+  case IssuerRequiresIdentityPermission
+  case IssuerRequiresNotaryPermission
+  case InvalidCredentialSubjectType
+  case InvalidCredentialSubjectContext
+  case IssuerUnexpectedPermissionFailure
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
   }
 }
 public struct VCLRegion : VCL.VCLPlace {
@@ -486,9 +477,10 @@ public struct VCLDeepLink {
     public static let KeyVendorOriginContext: Swift.String
   }
 }
-public enum VCLKeyServiceType : Swift.String {
+public enum VCLCryptoServiceType : Swift.String {
   case Local
   case Remote
+  case Injected
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -508,12 +500,31 @@ public struct VCLGenerateOffersDescriptor {
     public static let KeyOfferHashes: Swift.String
   }
 }
+public struct VCLKeyServiceUrls {
+  public let createDidKeyServiceUrl: Swift.String
+  public init(createDidKeyServiceUrl: Swift.String)
+}
+public struct VCLCryptoServicesDescriptor {
+  public let cryptoServiceType: VCL.VCLCryptoServiceType
+  public let injectedCryptoServicesDescriptor: VCL.VCLInjectedCryptoServicesDescriptor?
+  public let remoteCryptoServicesUrlsDescriptor: VCL.VCLRemoteCryptoServicesUrlsDescriptor?
+  public init(cryptoServiceType: VCL.VCLCryptoServiceType = VCLCryptoServiceType.Local, injectedCryptoServicesDescriptor: VCL.VCLInjectedCryptoServicesDescriptor? = nil, remoteCryptoServicesUrlsDescriptor: VCL.VCLRemoteCryptoServicesUrlsDescriptor? = nil)
+}
+public struct VCLInitializationDescriptor {
+  public let environment: VCL.VCLEnvironment
+  public let xVnfProtocolVersion: VCL.VCLXVnfProtocolVersion
+  public let cacheSequence: Swift.Int
+  public let keycahinAccessGroupIdentifier: Swift.String?
+  public let isDebugOn: Swift.Bool
+  public let cryptoServicesDescriptor: VCL.VCLCryptoServicesDescriptor
+  public init(environment: VCL.VCLEnvironment = .Prod, xVnfProtocolVersion: VCL.VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil, isDebugOn: Swift.Bool = false, cryptoServicesDescriptor: VCL.VCLCryptoServicesDescriptor = VCLCryptoServicesDescriptor())
+}
 public struct VCLPresentationRequest {
   public let jwt: VCL.VCLJwt
-  public let jwkPublic: VCL.VCLJwkPublic
+  public let publicJwk: VCL.VCLPublicJwk
   public let deepLink: VCL.VCLDeepLink
   public let pushDelegate: VCL.VCLPushDelegate?
-  public init(jwt: VCL.VCLJwt, jwkPublic: VCL.VCLJwkPublic, deepLink: VCL.VCLDeepLink, pushDelegate: VCL.VCLPushDelegate? = nil)
+  public init(jwt: VCL.VCLJwt, publicJwk: VCL.VCLPublicJwk, deepLink: VCL.VCLDeepLink, pushDelegate: VCL.VCLPushDelegate? = nil)
   public var iss: Swift.String {
     get
   }
@@ -803,18 +814,18 @@ public enum VCLStatusCode : Swift.Int {
   }
 }
 public class VCLDidJwk {
-  final public let keyId: Swift.String
-  final public let value: Swift.String
+  final public let did: Swift.String
+  final public let publicJwk: VCL.VCLPublicJwk
   final public let kid: Swift.String
+  final public let keyId: Swift.String
   public static let DidJwkPrefix: Swift.String
   public static let DidJwkSuffix: Swift.String
-  public init(keyId: Swift.String, value: Swift.String, kid: Swift.String)
+  public init(did: Swift.String, publicJwk: VCL.VCLPublicJwk, kid: Swift.String, keyId: Swift.String)
   public struct CodingKeys {
-    public static let KeyKeyId: Swift.String
-    public static let KeyValue: Swift.String
+    public static let KeyDid: Swift.String
     public static let KeyKid: Swift.String
+    public static let KeyKeyId: Swift.String
   }
-  public func toString() -> Swift.String?
   @objc deinit
 }
 public protocol VCL {
@@ -832,7 +843,7 @@ public protocol VCL {
   func finalizeOffers(finalizeOffersDescriptor: VCL.VCLFinalizeOffersDescriptor, didJwk: VCL.VCLDidJwk?, token: VCL.VCLToken, successHandler: @escaping (VCL.VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCL.VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCL.VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  func verifyJwt(jwt: VCL.VCLJwt, jwkPublic: VCL.VCLJwkPublic, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  func verifyJwt(jwt: VCL.VCLJwt, publicJwk: VCL.VCLPublicJwk, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func generateSignedJwt(jwtDescriptor: VCL.VCLJwtDescriptor, successHandler: @escaping (VCL.VCLJwt) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func generateDidJwk(successHandler: @escaping (VCL.VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
 }
@@ -843,6 +854,11 @@ public class VCLCredentialManifestDescriptorByService : VCL.VCLCredentialManifes
   }
   override public func toPropsString() -> Swift.String
   @objc deinit
+}
+public struct VCLRemoteCryptoServicesUrlsDescriptor {
+  public let keyServiceUrls: VCL.VCLKeyServiceUrls
+  public let jwtServiceUrls: VCL.VCLJwtServiceUrls
+  public init(keyServiceUrls: VCL.VCLKeyServiceUrls, jwtServiceUrls: VCL.VCLJwtServiceUrls)
 }
 public class VCLService {
   final public let payload: [Swift.String : Any]
@@ -890,6 +906,11 @@ public struct VCLJwtVerifiableCredentials {
   public let failedCredentials: [VCL.VCLJwt]
   public init(passedCredentials: [VCL.VCLJwt], failedCredentials: [VCL.VCLJwt])
 }
+public struct VCLInjectedCryptoServicesDescriptor {
+  public let keyService: any VCL.VCLKeyService
+  public let jwtService: any VCL.VCLJwtService
+  public init(keyService: any VCL.VCLKeyService, jwtService: any VCL.VCLJwtService)
+}
 public class VCLJwtDescriptor {
   final public let keyId: Swift.String?
   final public let payload: [Swift.String : Any]?
@@ -899,7 +920,7 @@ public class VCLJwtDescriptor {
   public init(keyId: Swift.String? = nil, payload: [Swift.String : Any]? = nil, jti: Swift.String = UUID().uuidString, iss: Swift.String, aud: Swift.String? = nil)
   @objc deinit
 }
-public struct VCLJwkPublic {
+public struct VCLPublicJwk {
   public let valueStr: Swift.String
   public let valueDict: [Swift.String : Any]
   public init(valueStr: Swift.String)
@@ -968,6 +989,11 @@ public class VCLServiceTypes {
   convenience public init(issuingType: VCL.VCLIssuingType)
   @objc deinit
 }
+public struct VCLJwtServiceUrls {
+  public let jwtSignServiceUrl: Swift.String
+  public let jwtVerifyServiceUrl: Swift.String
+  public init(jwtSignServiceUrl: Swift.String, jwtVerifyServiceUrl: Swift.String)
+}
 public struct VCLOrganizations {
   public let all: [VCL.VCLOrganization]
   public init(all: [VCL.VCLOrganization])
@@ -1010,18 +1036,18 @@ public struct VCLCredentialTypesUIFormSchemaDescriptor {
   public let countryCode: Swift.String
   public init(credentialType: Swift.String, countryCode: Swift.String)
 }
-extension VCL.VCLErrorCode : Swift.Equatable {}
-extension VCL.VCLErrorCode : Swift.Hashable {}
-extension VCL.VCLErrorCode : Swift.RawRepresentable {}
 extension VCL.VCLEnvironment : Swift.Equatable {}
 extension VCL.VCLEnvironment : Swift.Hashable {}
 extension VCL.VCLEnvironment : Swift.RawRepresentable {}
 extension VCL.VCLServiceType : Swift.Equatable {}
 extension VCL.VCLServiceType : Swift.Hashable {}
 extension VCL.VCLServiceType : Swift.RawRepresentable {}
-extension VCL.VCLKeyServiceType : Swift.Equatable {}
-extension VCL.VCLKeyServiceType : Swift.Hashable {}
-extension VCL.VCLKeyServiceType : Swift.RawRepresentable {}
+extension VCL.VCLErrorCode : Swift.Equatable {}
+extension VCL.VCLErrorCode : Swift.Hashable {}
+extension VCL.VCLErrorCode : Swift.RawRepresentable {}
+extension VCL.VCLCryptoServiceType : Swift.Equatable {}
+extension VCL.VCLCryptoServiceType : Swift.Hashable {}
+extension VCL.VCLCryptoServiceType : Swift.RawRepresentable {}
 extension VCL.VCLStatusCode : Swift.Equatable {}
 extension VCL.VCLStatusCode : Swift.Hashable {}
 extension VCL.VCLStatusCode : Swift.RawRepresentable {}
