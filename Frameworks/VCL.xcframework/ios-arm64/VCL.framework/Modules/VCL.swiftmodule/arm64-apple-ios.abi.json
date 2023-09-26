@@ -4679,6 +4679,34 @@
             "moduleName": "VCL"
           },
           {
+            "kind": "Function",
+            "name": "fromString",
+            "printedName": "fromString(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLEnvironment",
+                "printedName": "VCL.VCLEnvironment",
+                "usr": "s:3VCL14VCLEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL14VCLEnvironmentO10fromString5valueACSS_tFZ",
+            "mangledName": "$s3VCL14VCLEnvironmentO10fromString5valueACSS_tFZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
@@ -16315,6 +16343,34 @@
             "usr": "s:3VCL20VCLCryptoServiceTypeO8InjectedyA2CmF",
             "mangledName": "$s3VCL20VCLCryptoServiceTypeO8InjectedyA2CmF",
             "moduleName": "VCL"
+          },
+          {
+            "kind": "Function",
+            "name": "fromString",
+            "printedName": "fromString(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLCryptoServiceType",
+                "printedName": "VCL.VCLCryptoServiceType",
+                "usr": "s:3VCL20VCLCryptoServiceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL20VCLCryptoServiceTypeO10fromString5valueACSS_tFZ",
+            "mangledName": "$s3VCL20VCLCryptoServiceTypeO10fromString5valueACSS_tFZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -36455,6 +36511,34 @@
             "usr": "s:3VCL22VCLXVnfProtocolVersionO04XVnfC8Version2yA2CmF",
             "mangledName": "$s3VCL22VCLXVnfProtocolVersionO04XVnfC8Version2yA2CmF",
             "moduleName": "VCL"
+          },
+          {
+            "kind": "Function",
+            "name": "fromString",
+            "printedName": "fromString(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLXVnfProtocolVersion",
+                "printedName": "VCL.VCLXVnfProtocolVersion",
+                "usr": "s:3VCL22VCLXVnfProtocolVersionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL22VCLXVnfProtocolVersionO10fromString5valueACSS_tFZ",
+            "mangledName": "$s3VCL22VCLXVnfProtocolVersionO10fromString5valueACSS_tFZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",

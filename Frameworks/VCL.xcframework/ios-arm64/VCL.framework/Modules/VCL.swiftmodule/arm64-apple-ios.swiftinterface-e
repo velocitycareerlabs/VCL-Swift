@@ -136,6 +136,7 @@ public enum VCLEnvironment : Swift.String {
   case Staging
   case Qa
   case Dev
+  public static func fromString(value: Swift.String) -> VCL.VCLEnvironment
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -481,6 +482,7 @@ public enum VCLCryptoServiceType : Swift.String {
   case Local
   case Remote
   case Injected
+  public static func fromString(value: Swift.String) -> VCL.VCLCryptoServiceType
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -962,6 +964,7 @@ public struct VCLSubmissionResult {
 public enum VCLXVnfProtocolVersion : Swift.String {
   case XVnfProtocolVersion1
   case XVnfProtocolVersion2
+  public static func fromString(value: Swift.String) -> VCL.VCLXVnfProtocolVersion
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
