@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/Secp256k1.framework/Secp256k1</key>
 		<data>
-		KzZ9WX8qYYrHK6t82QuVSWw/UMg=
+		swAPleSDY2C09hzO3qsPiRK689c=
 		</data>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/VCCrypto.framework/VCCrypto</key>
 		<data>
-		ECRfkp8DfnarHw7Usaua3ffUWJs=
+		/CfLTiIHi6WUbdKQE4o4rKA3viw=
 		</data>
 		<key>Frameworks/VCCrypto.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Frameworks/VCToken.framework/VCToken</key>
 		<data>
-		87o+SCMEitDqqCqVj8q+cZAhU+I=
+		I7BZeAcpgPa8Q0XxQSAohkmz9h4=
 		</data>
 		<key>Frameworks/VCToken.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		k1OlkUaNl6YKuEXe6y4FxjhthgM=
+		7cQVvnTq9l25rqFd+MOJ3i3WXmU=
 		</data>
 		<key>Microsoft/Secp256k1.xcframework/Info.plist</key>
 		<data>
@@ -378,11 +378,11 @@
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ckoPb//JTlKjCM3H3uzwP7MInzc=
+		I/6qjS2UUEn3uiCgclLNG7JG6II=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		MDEUolAPeBgf0Gdqx2KJ9zZMDF8=
+		FC18pYX66V84InGxqAms1QYkSdY=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -390,11 +390,11 @@
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		MDEUolAPeBgf0Gdqx2KJ9zZMDF8=
+		FC18pYX66V84InGxqAms1QYkSdY=
 		</data>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IdxHI+0sKOVj0MC/UsaeFJWQEX8=
+		PIIZgutjRtYdVPGnNunAlTeCn30=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -414,7 +414,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T651phVOPoy8B5H7ASLj2Y5UIsdg4VzbAMho7kSzplU=
+			8hGf4SvPcmxtQ5ctJzlnyHzdVdvyh+cx2ahlbE0Ejto=
 			</data>
 		</dict>
 		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
@@ -435,7 +435,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZaD3NlG5N8QnCHkePpnoiyOZ3ciR9i1cmNpYvQtPjKk=
+			2rqYKReHeh81uDukwJw4JTf09dHBR25N5CE4h6VwQ7Q=
 			</data>
 		</dict>
 		<key>Frameworks/VCCrypto.framework/_CodeSignature/CodeResources</key>
@@ -456,7 +456,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9syKC6mdS8R4mb+SzjValBGWtzeD9UYTijCx6I9S81A=
+			FcTpJzMSEc1h6pjtBMVS48c8a/HplB8ViP6jrwkrAXI=
 			</data>
 		</dict>
 		<key>Frameworks/VCToken.framework/_CodeSignature/CodeResources</key>
@@ -1051,14 +1051,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3yLe7M1tCAL6Nn0vPAdtGMhmcdoPsWRiCUy0Lur5yXY=
+			nsaNHHbNpoWzxluuv9DM4UGDWSAhkm+mZovTzoOtiQ8=
 			</data>
 		</dict>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0+SA3sLDEG0wJBBGMNLfNpSeMS024LrPYxYiCAruDJA=
+			ZoMypCwwsQAUyfCD8fuCrpwRuKr9R8JGEDIzhOjINo4=
 			</data>
 		</dict>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -1072,14 +1072,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0+SA3sLDEG0wJBBGMNLfNpSeMS024LrPYxYiCAruDJA=
+			ZoMypCwwsQAUyfCD8fuCrpwRuKr9R8JGEDIzhOjINo4=
 			</data>
 		</dict>
 		<key>Modules/VCL.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C/zCo7haNcuZKGIcfPvxNzc2mBmHb+ZFWmNS7Qe28UU=
+			lBzdgz0XNYgP3yYQoUkki2g721X2Y4JmwbG4MFukYXc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

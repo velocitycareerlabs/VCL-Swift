@@ -11978,7 +11978,7 @@
           {
             "kind": "Function",
             "name": "checkForOffers",
-            "printedName": "checkForOffers(generateOffersDescriptor:exchangeToken:successHandler:errorHandler:)",
+            "printedName": "checkForOffers(generateOffersDescriptor:sessionToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12035,8 +12035,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC14checkForOffers08generateE10Descriptor13exchangeToken14successHandler05errorK0yAA011VCLGenerateeG0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC14checkForOffers08generateE10Descriptor13exchangeToken14successHandler05errorK0yAA011VCLGenerateeG0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC14checkForOffers08generateE10Descriptor12sessionToken14successHandler05errorK0yAA011VCLGenerateeG0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC14checkForOffers08generateE10Descriptor12sessionToken14successHandler05errorK0yAA011VCLGenerateeG0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -12046,7 +12046,7 @@
           {
             "kind": "Function",
             "name": "finalizeOffers",
-            "printedName": "finalizeOffers(finalizeOffersDescriptor:didJwk:exchangeToken:remoteCryptoServicesToken:successHandler:errorHandler:)",
+            "printedName": "finalizeOffers(finalizeOffersDescriptor:didJwk:sessionToken:remoteCryptoServicesToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12133,8 +12133,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk13exchangeToken020remoteCryptoServicesI014successHandler05errorN0yAA011VCLFinalizedE0V_AA06VCLDidG0CSgAA8VCLTokenVAQSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk13exchangeToken020remoteCryptoServicesI014successHandler05errorN0yAA011VCLFinalizedE0V_AA06VCLDidG0CSgAA8VCLTokenVAQSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk12sessionToken020remoteCryptoServicesI014successHandler05errorN0yAA011VCLFinalizedE0V_AA06VCLDidG0CSgAA8VCLTokenVAQSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC14finalizeOffers0cD10Descriptor6didJwk12sessionToken020remoteCryptoServicesI014successHandler05errorN0yAA011VCLFinalizedE0V_AA06VCLDidG0CSgAA8VCLTokenVAQSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -12757,8 +12757,8 @@
           },
           {
             "kind": "Var",
-            "name": "exchangeToken",
-            "printedName": "exchangeToken",
+            "name": "sessionToken",
+            "printedName": "sessionToken",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12768,8 +12768,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL21VCLExchangeDescriptorV13exchangeTokenAA8VCLTokenVvp",
-            "mangledName": "$s3VCL21VCLExchangeDescriptorV13exchangeTokenAA8VCLTokenVvp",
+            "usr": "s:3VCL21VCLExchangeDescriptorV12sessionTokenAA8VCLTokenVvp",
+            "mangledName": "$s3VCL21VCLExchangeDescriptorV12sessionTokenAA8VCLTokenVvp",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -12788,8 +12788,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL21VCLExchangeDescriptorV13exchangeTokenAA8VCLTokenVvg",
-                "mangledName": "$s3VCL21VCLExchangeDescriptorV13exchangeTokenAA8VCLTokenVvg",
+                "usr": "s:3VCL21VCLExchangeDescriptorV12sessionTokenAA8VCLTokenVvg",
+                "mangledName": "$s3VCL21VCLExchangeDescriptorV12sessionTokenAA8VCLTokenVvg",
                 "moduleName": "VCL",
                 "accessorKind": "get"
               }
@@ -32314,7 +32314,7 @@
           {
             "kind": "Function",
             "name": "checkForOffers",
-            "printedName": "checkForOffers(generateOffersDescriptor:exchangeToken:successHandler:errorHandler:)",
+            "printedName": "checkForOffers(generateOffersDescriptor:sessionToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -32371,8 +32371,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP14checkForOffers08generateD10Descriptor13exchangeToken14successHandler05errorJ0yAA011VCLGeneratedF0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP14checkForOffers08generateD10Descriptor13exchangeToken14successHandler05errorJ0yAA011VCLGeneratedF0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP14checkForOffers08generateD10Descriptor12sessionToken14successHandler05errorJ0yAA011VCLGeneratedF0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP14checkForOffers08generateD10Descriptor12sessionToken14successHandler05errorJ0yAA011VCLGeneratedF0V_AA8VCLTokenVyAA9VCLOffersVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -32383,7 +32383,7 @@
           {
             "kind": "Function",
             "name": "finalizeOffers",
-            "printedName": "finalizeOffers(finalizeOffersDescriptor:didJwk:exchangeToken:remoteCryptoServicesToken:successHandler:errorHandler:)",
+            "printedName": "finalizeOffers(finalizeOffersDescriptor:didJwk:sessionToken:remoteCryptoServicesToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -32468,8 +32468,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP14finalizeOffers0bC10Descriptor6didJwk13exchangeToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP14finalizeOffers0bC10Descriptor6didJwk13exchangeToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP14finalizeOffers0bC10Descriptor6didJwk12sessionToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP14finalizeOffers0bC10Descriptor6didJwk12sessionToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -33187,7 +33187,7 @@
           {
             "kind": "Function",
             "name": "finalizeOffers",
-            "printedName": "finalizeOffers(finalizeOffersDescriptor:didJwk:exchangeToken:remoteCryptoServicesToken:successHandler:errorHandler:)",
+            "printedName": "finalizeOffers(finalizeOffersDescriptor:didJwk:sessionToken:remoteCryptoServicesToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -33274,8 +33274,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAPAAE14finalizeOffers0bC10Descriptor6didJwk13exchangeToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAPAAE14finalizeOffers0bC10Descriptor6didJwk13exchangeToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAPAAE14finalizeOffers0bC10Descriptor6didJwk12sessionToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAPAAE14finalizeOffers0bC10Descriptor6didJwk12sessionToken020remoteCryptoServicesH014successHandler05errorM0yAA011VCLFinalizecD0V_AA06VCLDidF0CSgAA8VCLTokenVAPSgyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -36556,8 +36556,8 @@
           },
           {
             "kind": "Var",
-            "name": "exchangeToken",
-            "printedName": "exchangeToken",
+            "name": "sessionToken",
+            "printedName": "sessionToken",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36567,8 +36567,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL9VCLOffersV13exchangeTokenAA8VCLTokenVvp",
-            "mangledName": "$s3VCL9VCLOffersV13exchangeTokenAA8VCLTokenVvp",
+            "usr": "s:3VCL9VCLOffersV12sessionTokenAA8VCLTokenVvp",
+            "mangledName": "$s3VCL9VCLOffersV12sessionTokenAA8VCLTokenVvp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -36590,8 +36590,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL9VCLOffersV13exchangeTokenAA8VCLTokenVvg",
-                "mangledName": "$s3VCL9VCLOffersV13exchangeTokenAA8VCLTokenVvg",
+                "usr": "s:3VCL9VCLOffersV12sessionTokenAA8VCLTokenVvg",
+                "mangledName": "$s3VCL9VCLOffersV12sessionTokenAA8VCLTokenVvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -36645,7 +36645,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(payload:all:responseCode:exchangeToken:challenge:)",
+            "printedName": "init(payload:all:responseCode:sessionToken:challenge:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36719,8 +36719,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL9VCLOffersV7payload3all12responseCode13exchangeToken9challengeACSDySSypG_SayAIGSiAA8VCLTokenVSStcfc",
-            "mangledName": "$s3VCL9VCLOffersV7payload3all12responseCode13exchangeToken9challengeACSDySSypG_SayAIGSiAA8VCLTokenVSStcfc",
+            "usr": "s:3VCL9VCLOffersV7payload3all12responseCode12sessionToken9challengeACSDySSypG_SayAIGSiAA8VCLTokenVSStcfc",
+            "mangledName": "$s3VCL9VCLOffersV7payload3all12responseCode12sessionToken9challengeACSDySSypG_SayAIGSiAA8VCLTokenVSStcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -36861,8 +36861,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "exchangeToken",
-            "printedName": "exchangeToken",
+            "name": "sessionToken",
+            "printedName": "sessionToken",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36872,8 +36872,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL19VCLSubmissionResultV13exchangeTokenAA8VCLTokenVvp",
-            "mangledName": "$s3VCL19VCLSubmissionResultV13exchangeTokenAA8VCLTokenVvp",
+            "usr": "s:3VCL19VCLSubmissionResultV12sessionTokenAA8VCLTokenVvp",
+            "mangledName": "$s3VCL19VCLSubmissionResultV12sessionTokenAA8VCLTokenVvp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -36895,8 +36895,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL19VCLSubmissionResultV13exchangeTokenAA8VCLTokenVvg",
-                "mangledName": "$s3VCL19VCLSubmissionResultV13exchangeTokenAA8VCLTokenVvg",
+                "usr": "s:3VCL19VCLSubmissionResultV12sessionTokenAA8VCLTokenVvg",
+                "mangledName": "$s3VCL19VCLSubmissionResultV12sessionTokenAA8VCLTokenVvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -37038,7 +37038,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(exchangeToken:exchange:jti:submissionId:)",
+            "printedName": "init(sessionToken:exchange:jti:submissionId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -37072,8 +37072,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL19VCLSubmissionResultV13exchangeToken0D03jti12submissionIdAcA8VCLTokenV_AA11VCLExchangeVS2Stcfc",
-            "mangledName": "$s3VCL19VCLSubmissionResultV13exchangeToken0D03jti12submissionIdAcA8VCLTokenV_AA11VCLExchangeVS2Stcfc",
+            "usr": "s:3VCL19VCLSubmissionResultV12sessionToken8exchange3jti12submissionIdAcA8VCLTokenV_AA11VCLExchangeVS2Stcfc",
+            "mangledName": "$s3VCL19VCLSubmissionResultV12sessionToken8exchange3jti12submissionIdAcA8VCLTokenV_AA11VCLExchangeVS2Stcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -40295,77 +40295,77 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 913,
-      "length": 45,
+      "offset": 912,
+      "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 934,
+      "offset": 933,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 957,
+      "offset": 955,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1490,
+      "offset": 1486,
       "length": 56,
       "value": "\"VCL offers parse could not be completed - self is dead\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 2070,
+      "offset": 2065,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2257,
+      "offset": 2250,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "Dictionary",
-      "offset": 2472,
+      "offset": 2465,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2633,
+      "offset": 2624,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "Dictionary",
-      "offset": 2743,
+      "offset": 2734,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 2769,
+      "offset": 2760,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2897,
+      "offset": 2886,
       "length": 2,
       "value": "\"\""
     },
@@ -40477,7 +40477,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/SubmissionRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2001,
+      "offset": 2000,
       "length": 2,
       "value": "\"\""
     },
@@ -42871,140 +42871,140 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15281,
+      "offset": 15259,
       "length": 23,
       "value": "\"submit identification\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15534,
+      "offset": 15500,
       "length": 23,
       "value": "\"submit identification\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16765,
+      "offset": 16733,
       "length": 16,
       "value": "\"generateOffers\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17732,
+      "offset": 17673,
       "length": 16,
       "value": "\"finalizeOffers\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18641,
+      "offset": 18582,
       "length": 32,
       "value": "\"getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18859,
+      "offset": 18800,
       "length": 49,
       "value": "\"No countries for getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18945,
+      "offset": 18886,
       "length": 32,
       "value": "\"getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 19568,
+      "offset": 19509,
       "length": 20,
       "value": "\"getVerifiedProfile\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 20308,
+      "offset": 20249,
       "length": 11,
       "value": "\"verifyJwt\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21016,
+      "offset": 20957,
       "length": 19,
       "value": "\"generateSignedJwt\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21652,
+      "offset": 21593,
       "length": 16,
       "value": "\"generateDidJwk\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21848,
+      "offset": 21789,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21885,
+      "offset": 21826,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21896,
+      "offset": 21837,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21906,
+      "offset": 21847,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21963,
+      "offset": 21904,
       "length": 34,
       "value": "\"Version: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21996,
+      "offset": 21937,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 22016,
+      "offset": 21957,
       "length": 30,
       "value": "\"Build: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 22045,
+      "offset": 21986,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLExchangeDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 992,
+      "offset": 990,
       "length": 13,
       "value": "\"exchange_id\""
     },
@@ -43614,7 +43614,7 @@
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/ExchangeProgressRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 943,
-      "length": 64,
+      "length": 63,
       "value": "\"\""
     },
     {
@@ -43627,28 +43627,28 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/ExchangeProgressRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1006,
+      "offset": 1005,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/ExchangeProgressRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1475,
+      "offset": 1474,
       "length": 90,
       "value": "\"Failed to parse \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/ExchangeProgressRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1561,
+      "offset": 1560,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/ExchangeProgressRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1564,
+      "offset": 1563,
       "length": 4,
       "value": "\"\""
     },
@@ -46469,42 +46469,42 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/FinalizeOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 981,
-      "length": 45,
+      "offset": 980,
+      "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/FinalizeOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1002,
+      "offset": 1001,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/FinalizeOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 1023,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/FinalizeOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1468,
+      "offset": 1466,
       "length": 89,
       "value": "\"Failed to parse \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/FinalizeOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1553,
+      "offset": 1551,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/FinalizeOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1556,
+      "offset": 1554,
       "length": 4,
       "value": "\"\""
     },
@@ -46861,42 +46861,42 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
       "kind": "StringLiteral",
-      "offset": 820,
+      "offset": 816,
       "length": 8,
       "value": "\"offers\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
       "kind": "StringLiteral",
-      "offset": 870,
+      "offset": 866,
       "length": 11,
       "value": "\"challenge\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLSubmissionResult.swift",
       "kind": "StringLiteral",
-      "offset": 738,
+      "offset": 734,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLSubmissionResult.swift",
       "kind": "StringLiteral",
-      "offset": 786,
+      "offset": 782,
       "length": 10,
       "value": "\"exchange\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLSubmissionResult.swift",
       "kind": "StringLiteral",
-      "offset": 832,
+      "offset": 828,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLSubmissionResult.swift",
       "kind": "StringLiteral",
-      "offset": 882,
+      "offset": 878,
       "length": 14,
       "value": "\"submissionId\""
     },
