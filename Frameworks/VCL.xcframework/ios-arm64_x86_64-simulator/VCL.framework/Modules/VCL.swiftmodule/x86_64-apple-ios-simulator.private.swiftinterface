@@ -121,7 +121,7 @@ public struct VCLCredentialTypes {
   public func credentialTypeByTypeName(type: Swift.String) -> VCLCredentialType?
 }
 public protocol VCLKeyService {
-  func generateDidJwk(completionBlock: @escaping (VCLResult<VCLDidJwk>) -> Swift.Void)
+  func generateDidJwk(remoteCryptoServicesToken: VCLToken?, completionBlock: @escaping (VCLResult<VCLDidJwk>) -> Swift.Void)
   func generateSecret(completionBlock: @escaping (VCLResult<any VCCrypto.VCCryptoSecret>) -> Swift.Void)
   func retrieveSecretReference(keyId: Swift.String, completionBlock: @escaping (VCLResult<any VCCrypto.VCCryptoSecret>) -> Swift.Void)
   func retrievePublicJwk(secret: any VCCrypto.VCCryptoSecret, completionBlock: @escaping (VCLResult<VCToken.ECPublicJwk>) -> Swift.Void)
@@ -154,10 +154,6 @@ public class VCLCredentialManifestDescriptorRefresh : VCLCredentialManifestDescr
     get
   }
   @objc deinit
-}
-public protocol VCLJwtService {
-  func verify(jwt: VCLJwt, publicJwk: VCLPublicJwk, completionBlock: @escaping (VCLResult<Swift.Bool>) -> Swift.Void)
-  func sign(kid: Swift.String?, nonce: Swift.String?, jwtDescriptor: VCLJwtDescriptor, completionBlock: @escaping (VCLResult<VCLJwt>) -> Swift.Void)
 }
 public struct VCLVerifiedProfile {
   public let payload: [Swift.String : Any]
@@ -257,6 +253,9 @@ public struct VCLCredentialTypeSchemas {
 }
 public func == (lhs: [Any], rhs: [Any]) -> Swift.Bool
 public func != (lhs: [Any], rhs: [Any]) -> Swift.Bool
+public protocol VCLJwtVerifyService {
+  func verify(jwt: VCLJwt, publicJwk: VCLPublicJwk, remoteCryptoServicesToken: VCLToken?, completionBlock: @escaping (VCLResult<Swift.Bool>) -> Swift.Void)
+}
 public class VCLSubmission {
   final public let submitUri: Swift.String
   final public let iss: Swift.String
@@ -345,19 +344,19 @@ public struct VCLJwt {
   public var credentialTypeSchemas: VCLCredentialTypeSchemas? {
     get
   }
-  public func getPresentationRequest(presentationRequestDescriptor: VCLPresentationRequestDescriptor, successHandler: @escaping (VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func submitPresentation(presentationSubmission: VCLPresentationSubmission, didJwk: VCLDidJwk? = nil, successHandler: @escaping (VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func getPresentationRequest(presentationRequestDescriptor: VCLPresentationRequestDescriptor, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func submitPresentation(presentationSubmission: VCLPresentationSubmission, didJwk: VCLDidJwk? = nil, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func getExchangeProgress(exchangeDescriptor: VCLExchangeDescriptor, successHandler: @escaping (VCLExchange) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func searchForOrganizations(organizationsSearchDescriptor: VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func getCredentialManifest(credentialManifestDescriptor: VCLCredentialManifestDescriptor, successHandler: @escaping (VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func generateOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, didJwk: VCLDidJwk? = nil, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func checkForOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, token: VCLToken, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func finalizeOffers(finalizeOffersDescriptor: VCLFinalizeOffersDescriptor, didJwk: VCLDidJwk? = nil, token: VCLToken, successHandler: @escaping (VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func getCredentialManifest(credentialManifestDescriptor: VCLCredentialManifestDescriptor, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, didJwk: VCLDidJwk? = nil, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func checkForOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, sessionToken: VCLToken, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func finalizeOffers(finalizeOffersDescriptor: VCLFinalizeOffersDescriptor, didJwk: VCLDidJwk? = nil, sessionToken: VCLToken, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   public func getVerifiedProfile(verifiedProfileDescriptor: VCLVerifiedProfileDescriptor, successHandler: @escaping (VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func verifyJwt(jwt: VCLJwt, publicJwk: VCLPublicJwk, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  public func generateDidJwk(successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func verifyJwt(jwt: VCLJwt, publicJwk: VCLPublicJwk, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateDidJwk(remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   @objc deinit
 }
 public struct VCLExchangeDescriptor {
@@ -372,7 +371,7 @@ public struct VCLExchangeDescriptor {
   public var exchangeId: Swift.String? {
     get
   }
-  public var token: VCLToken {
+  public var sessionToken: VCLToken {
     get
   }
   public init(presentationSubmission: VCLPresentationSubmission, submissionResult: VCLSubmissionResult)
@@ -835,19 +834,29 @@ public protocol VCL {
   var countries: VCLCountries? { get }
   var credentialTypes: VCLCredentialTypes? { get }
   var credentialTypeSchemas: VCLCredentialTypeSchemas? { get }
-  func getPresentationRequest(presentationRequestDescriptor: VCLPresentationRequestDescriptor, successHandler: @escaping (VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func submitPresentation(presentationSubmission: VCLPresentationSubmission, didJwk: VCLDidJwk?, successHandler: @escaping (VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func getPresentationRequest(presentationRequestDescriptor: VCLPresentationRequestDescriptor, remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func submitPresentation(presentationSubmission: VCLPresentationSubmission, didJwk: VCLDidJwk?, remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func getExchangeProgress(exchangeDescriptor: VCLExchangeDescriptor, successHandler: @escaping (VCLExchange) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func searchForOrganizations(organizationsSearchDescriptor: VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func getCredentialManifest(credentialManifestDescriptor: VCLCredentialManifestDescriptor, successHandler: @escaping (VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func generateOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, didJwk: VCLDidJwk?, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func checkForOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, token: VCLToken, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func finalizeOffers(finalizeOffersDescriptor: VCLFinalizeOffersDescriptor, didJwk: VCLDidJwk?, token: VCLToken, successHandler: @escaping (VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func getCredentialManifest(credentialManifestDescriptor: VCLCredentialManifestDescriptor, remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func generateOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, didJwk: VCLDidJwk?, remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func checkForOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, sessionToken: VCLToken, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func finalizeOffers(finalizeOffersDescriptor: VCLFinalizeOffersDescriptor, didJwk: VCLDidJwk?, sessionToken: VCLToken, remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
   func getVerifiedProfile(verifiedProfileDescriptor: VCLVerifiedProfileDescriptor, successHandler: @escaping (VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func verifyJwt(jwt: VCLJwt, publicJwk: VCLPublicJwk, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
-  func generateDidJwk(successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func verifyJwt(jwt: VCLJwt, publicJwk: VCLPublicJwk, remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  func generateDidJwk(remoteCryptoServicesToken: VCLToken?, successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+}
+extension VCL {
+  public func getPresentationRequest(presentationRequestDescriptor: VCLPresentationRequestDescriptor, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func submitPresentation(presentationSubmission: VCLPresentationSubmission, didJwk: VCLDidJwk? = nil, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func getCredentialManifest(credentialManifestDescriptor: VCLCredentialManifestDescriptor, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateOffers(generateOffersDescriptor: VCLGenerateOffersDescriptor, didJwk: VCLDidJwk? = nil, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLOffers) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func finalizeOffers(finalizeOffersDescriptor: VCLFinalizeOffersDescriptor, didJwk: VCLDidJwk? = nil, sessionToken: VCLToken, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func verifyJwt(jwt: VCLJwt, publicJwk: VCLPublicJwk, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateSignedJwt(jwtDescriptor: VCLJwtDescriptor, remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLJwt) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
+  public func generateDidJwk(remoteCryptoServicesToken: VCLToken? = nil, successHandler: @escaping (VCLDidJwk) -> Swift.Void, errorHandler: @escaping (VCLError) -> Swift.Void)
 }
 public class VCLCredentialManifestDescriptorByService : VCLCredentialManifestDescriptor {
   public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil)
@@ -856,6 +865,9 @@ public class VCLCredentialManifestDescriptorByService : VCLCredentialManifestDes
   }
   override public func toPropsString() -> Swift.String
   @objc deinit
+}
+public protocol VCLJwtSignService {
+  func sign(kid: Swift.String?, nonce: Swift.String?, jwtDescriptor: VCLJwtDescriptor, remoteCryptoServicesToken: VCLToken?, completionBlock: @escaping (VCLResult<VCLJwt>) -> Swift.Void)
 }
 public struct VCLRemoteCryptoServicesUrlsDescriptor {
   public let keyServiceUrls: VCLKeyServiceUrls
@@ -910,8 +922,9 @@ public struct VCLJwtVerifiableCredentials {
 }
 public struct VCLInjectedCryptoServicesDescriptor {
   public let keyService: any VCLKeyService
-  public let jwtService: any VCLJwtService
-  public init(keyService: any VCLKeyService, jwtService: any VCLJwtService)
+  public let jwtSignService: any VCLJwtSignService
+  public let jwtVerifyService: (any VCLJwtVerifyService)?
+  public init(keyService: any VCLKeyService, jwtSignService: any VCLJwtSignService, jwtVerifyService: (any VCLJwtVerifyService)? = nil)
 }
 public class VCLJwtDescriptor {
   final public let keyId: Swift.String?
@@ -932,20 +945,20 @@ public struct VCLOffers {
   public let payload: [Swift.String : Any]
   public let all: [[Swift.String : Any]]
   public let responseCode: Swift.Int
-  public let token: VCLToken
+  public let sessionToken: VCLToken
   public let challenge: Swift.String
-  public init(payload: [Swift.String : Any], all: [[Swift.String : Any]], responseCode: Swift.Int, token: VCLToken, challenge: Swift.String)
+  public init(payload: [Swift.String : Any], all: [[Swift.String : Any]], responseCode: Swift.Int, sessionToken: VCLToken, challenge: Swift.String)
   public struct CodingKeys {
     public static let KeyOffers: Swift.String
     public static let KeyChallenge: Swift.String
   }
 }
 public struct VCLSubmissionResult {
-  public let token: VCLToken
+  public let sessionToken: VCLToken
   public let exchange: VCLExchange
   public let jti: Swift.String
   public let submissionId: Swift.String
-  public init(token: VCLToken, exchange: VCLExchange, jti: Swift.String, submissionId: Swift.String)
+  public init(sessionToken: VCLToken, exchange: VCLExchange, jti: Swift.String, submissionId: Swift.String)
   public struct CodingKeys {
     public static let KeyToken: Swift.String
     public static let KeyExchange: Swift.String
@@ -994,8 +1007,8 @@ public class VCLServiceTypes {
 }
 public struct VCLJwtServiceUrls {
   public let jwtSignServiceUrl: Swift.String
-  public let jwtVerifyServiceUrl: Swift.String
-  public init(jwtSignServiceUrl: Swift.String, jwtVerifyServiceUrl: Swift.String)
+  public let jwtVerifyServiceUrl: Swift.String?
+  public init(jwtSignServiceUrl: Swift.String, jwtVerifyServiceUrl: Swift.String? = nil)
 }
 public struct VCLOrganizations {
   public let all: [VCLOrganization]
