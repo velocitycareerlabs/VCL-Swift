@@ -382,9 +382,13 @@ public struct VCLExchangeDescriptor {
 public enum VCLServiceType : Swift.String {
   case Inspector
   case Issuer
-  case IdentityIssuer
   case NotaryIssuer
   case CareerIssuer
+  case IdentityIssuer
+  case IdDocumentIssuer
+  case NotaryIdDocumentIssuer
+  case ContactIssuer
+  case NotaryContactIssuer
   case Undefined
   public static func fromString(value: Swift.String) -> VCLServiceType
   public init?(rawValue: Swift.String)

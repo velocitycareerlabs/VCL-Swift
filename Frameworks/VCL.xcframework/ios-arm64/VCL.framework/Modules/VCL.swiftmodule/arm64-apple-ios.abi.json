@@ -12989,43 +12989,6 @@
           },
           {
             "kind": "Var",
-            "name": "IdentityIssuer",
-            "printedName": "IdentityIssuer",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VCLServiceType",
-                    "printedName": "VCL.VCLServiceType",
-                    "usr": "s:3VCL14VCLServiceTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "VCL.VCLServiceType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VCLServiceType",
-                        "printedName": "VCL.VCLServiceType",
-                        "usr": "s:3VCL14VCLServiceTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:3VCL14VCLServiceTypeO14IdentityIssueryA2CmF",
-            "mangledName": "$s3VCL14VCLServiceTypeO14IdentityIssueryA2CmF",
-            "moduleName": "VCL"
-          },
-          {
-            "kind": "Var",
             "name": "NotaryIssuer",
             "printedName": "NotaryIssuer",
             "children": [
@@ -13096,6 +13059,194 @@
             "declKind": "EnumElement",
             "usr": "s:3VCL14VCLServiceTypeO12CareerIssueryA2CmF",
             "mangledName": "$s3VCL14VCLServiceTypeO12CareerIssueryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "IdentityIssuer",
+            "printedName": "IdentityIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO14IdentityIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO14IdentityIssueryA2CmF",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "IdDocumentIssuer",
+            "printedName": "IdDocumentIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO16IdDocumentIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO16IdDocumentIssueryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "NotaryIdDocumentIssuer",
+            "printedName": "NotaryIdDocumentIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO22NotaryIdDocumentIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO22NotaryIdDocumentIssueryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "ContactIssuer",
+            "printedName": "ContactIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO13ContactIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO13ContactIssueryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "NotaryContactIssuer",
+            "printedName": "NotaryContactIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO19NotaryContactIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO19NotaryContactIssueryA2CmF",
             "moduleName": "VCL"
           },
           {
@@ -43035,28 +43186,56 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 312,
-      "length": 16,
-      "value": "\"IdentityIssuer\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
-      "kind": "StringLiteral",
-      "offset": 353,
+      "offset": 310,
       "length": 14,
       "value": "\"NotaryIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 392,
+      "offset": 349,
       "length": 14,
       "value": "\"CareerIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 419,
+      "length": 16,
+      "value": "\"IdentityIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 464,
+      "length": 18,
+      "value": "\"IdDocumentIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 24,
+      "value": "\"NotaryIdDocumentIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 15,
+      "value": "\"ContactIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 21,
+      "value": "\"NotaryContactIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 657,
       "length": 11,
       "value": "\"Undefined\""
     },
@@ -43077,28 +43256,56 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 312,
-      "length": 16,
-      "value": "\"IdentityIssuer\""
-    },
-    {
-      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
-      "kind": "StringLiteral",
-      "offset": 353,
+      "offset": 310,
       "length": 14,
       "value": "\"NotaryIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 392,
+      "offset": 349,
       "length": 14,
       "value": "\"CareerIssuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 419,
+      "length": 16,
+      "value": "\"IdentityIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 464,
+      "length": 18,
+      "value": "\"IdDocumentIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 24,
+      "value": "\"NotaryIdDocumentIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 15,
+      "value": "\"ContactIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 21,
+      "value": "\"NotaryContactIssuer\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 657,
       "length": 11,
       "value": "\"Undefined\""
     },
@@ -46976,161 +47183,161 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 1349,
+      "offset": 1357,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1730,
+      "offset": 1738,
       "length": 37,
       "value": "\"Finish mainBackgroundTaskIdentifier\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3043,
+      "offset": 3051,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3052,
+      "offset": 3060,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4072,
+      "offset": 4080,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 5173,
+      "offset": 5925,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 5702,
+      "offset": 6454,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8319,
+      "offset": 9079,
       "length": 46,
       "value": "\"Finish resolveConetxBackgroundTaskIdentifier\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9253,
+      "offset": 10013,
       "length": 73,
       "value": "\"Invalid format of credentialSubjectContext: \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9325,
+      "offset": 10085,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9405,
+      "offset": 10165,
       "length": 44,
       "value": "\"Error fetching \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9448,
+      "offset": 10208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10646,
+      "offset": 11406,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10762,
+      "offset": 11522,
       "length": 47,
       "value": "\"Finish completeConetxBackgroundTaskIdentifier\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11679,
+      "offset": 12439,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 12847,
+      "offset": 13607,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14018,
+      "offset": 14778,
       "length": 4,
       "value": "\"vc\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14052,
+      "offset": 14812,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14110,
+      "offset": 14870,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14162,
+      "offset": 14922,
       "length": 10,
       "value": "\"@context\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14200,
+      "offset": 14960,
       "length": 5,
       "value": "\"@id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14241,
+      "offset": 15001,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14307,
+      "offset": 15067,
       "length": 65,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
