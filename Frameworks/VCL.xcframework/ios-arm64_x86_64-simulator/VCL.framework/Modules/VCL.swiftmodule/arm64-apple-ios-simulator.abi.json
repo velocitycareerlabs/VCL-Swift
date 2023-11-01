@@ -43739,77 +43739,77 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "Dictionary",
-      "offset": 2128,
+      "offset": 2129,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2873,
+      "offset": 2819,
       "length": 7,
       "value": "\"keyId\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2916,
+      "offset": 2862,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2957,
+      "offset": 2903,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2998,
+      "offset": 2944,
       "length": 5,
       "value": "\"aud\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3039,
+      "offset": 2985,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3082,
+      "offset": 3028,
       "length": 7,
       "value": "\"nonce\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3129,
+      "offset": 3075,
       "length": 8,
       "value": "\"header\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3177,
+      "offset": 3123,
       "length": 9,
       "value": "\"options\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3226,
+      "offset": 3172,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3225,
       "length": 12,
       "value": "\"compactJwt\""
     },
