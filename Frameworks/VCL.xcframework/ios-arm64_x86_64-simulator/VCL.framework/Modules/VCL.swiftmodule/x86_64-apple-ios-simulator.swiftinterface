@@ -522,7 +522,8 @@ public struct VCLInitializationDescriptor {
   public let keycahinAccessGroupIdentifier: Swift.String?
   public let isDebugOn: Swift.Bool
   public let cryptoServicesDescriptor: VCLCryptoServicesDescriptor
-  public init(environment: VCLEnvironment = .Prod, xVnfProtocolVersion: VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil, isDebugOn: Swift.Bool = false, cryptoServicesDescriptor: VCLCryptoServicesDescriptor = VCLCryptoServicesDescriptor())
+  public let isDirectIssuerCheckOn: Swift.Bool
+  public init(environment: VCLEnvironment = .Prod, xVnfProtocolVersion: VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil, isDebugOn: Swift.Bool = false, cryptoServicesDescriptor: VCLCryptoServicesDescriptor = VCLCryptoServicesDescriptor(), isDirectIssuerCheckOn: Swift.Bool = true)
 }
 public struct VCLPresentationRequest {
   public let jwt: VCLJwt
