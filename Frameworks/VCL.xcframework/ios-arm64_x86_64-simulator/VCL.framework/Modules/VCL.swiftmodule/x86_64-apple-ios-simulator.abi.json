@@ -47409,63 +47409,70 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 13731,
+      "offset": 13568,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13831,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15057,
+      "offset": 15157,
       "length": 4,
       "value": "\"vc\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15091,
+      "offset": 15191,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15149,
+      "offset": 15249,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15201,
+      "offset": 15301,
       "length": 10,
       "value": "\"@context\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15239,
+      "offset": 15339,
       "length": 5,
       "value": "\"@id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15280,
+      "offset": 15380,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15358,
+      "offset": 15458,
       "length": 65,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/utils\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15481,
+      "offset": 15581,
       "length": 66,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primarySourceProfile\""
     },
