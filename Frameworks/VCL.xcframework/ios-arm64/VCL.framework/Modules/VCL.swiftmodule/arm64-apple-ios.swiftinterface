@@ -462,23 +462,20 @@ public func != (lhs: VCLCredentialType, rhs: VCLCredentialType) -> Swift.Bool
 public struct VCLDeepLink {
   public let value: Swift.String
   public init(value: Swift.String)
-  public var did: Swift.String? {
-    get
-  }
-  public var issuer: Swift.String? {
-    get
-  }
   public var requestUri: Swift.String? {
     get
   }
   public var vendorOriginContext: Swift.String? {
     get
   }
+  public var did: Swift.String? {
+    get
+  }
   public struct CodingKeys {
-    public static let KeyDidPrefix: Swift.String
-    public static let KeyIssuer: Swift.String
     public static let KeyRequestUri: Swift.String
     public static let KeyVendorOriginContext: Swift.String
+    public static let KeyIssuerDid: Swift.String
+    public static let KeyInspectorDid: Swift.String
   }
 }
 public enum VCLCryptoServiceType : Swift.String {
