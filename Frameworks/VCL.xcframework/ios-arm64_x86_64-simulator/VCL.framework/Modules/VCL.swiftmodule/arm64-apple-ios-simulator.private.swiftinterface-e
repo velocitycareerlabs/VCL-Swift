@@ -472,6 +472,7 @@ public struct VCLDeepLink {
     get
   }
   public struct CodingKeys {
+    public static let KeyDidPrefix: Swift.String
     public static let KeyRequestUri: Swift.String
     public static let KeyVendorOriginContext: Swift.String
     public static let KeyIssuerDid: Swift.String
