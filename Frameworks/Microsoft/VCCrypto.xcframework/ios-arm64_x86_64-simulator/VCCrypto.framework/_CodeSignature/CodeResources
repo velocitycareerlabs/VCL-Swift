@@ -4,9 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/Secp256k1.framework/Info.plist</key>
+		<data>
+		PLLtSCEd8NMqTK3y+H8CLnnGgns=
+		</data>
+		<key>Frameworks/Secp256k1.framework/Secp256k1</key>
+		<data>
+		Q1VPcsiWw9pSjPwXVYCkis6R35Y=
+		</data>
+		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ZljHGyzDgasESbYVx8OOU+On+ks=
+		</data>
 		<key>Headers/VCCrypto-Swift.h</key>
 		<data>
-		gLXkK0A3BNN2qS1vPn82EjuhV74=
+		zpjGTnNFumXqVKV39ECpRPeZk9A=
 		</data>
 		<key>Headers/VCCrypto.h</key>
 		<data>
@@ -14,60 +26,81 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GqeqphThuK8+JwbdZsifIkxbP1U=
+		Xtcu5c+Mz8i220dzU5OIAmfgSvw=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BNWPRMu0MT9/Fj6SNA+zVlww9bE=
+		ztCo+yOL5q5uIwNB09KjdY6A+jU=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RC+MKCub7JeDLxpsfV064n4OGu4=
+		pNGjhzLue5QDS0nCPmJB55+bbUo=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VucR+/uA0GmC199lQc6ALu9mLpc=
+		bZzzCmRfD7sUkLhnu+SlyoyXzVc=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RC+MKCub7JeDLxpsfV064n4OGu4=
+		pNGjhzLue5QDS0nCPmJB55+bbUo=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BJei77JAurELn/Aqj6D5DFkTHyw=
+		zlaAcEtR9k14joP2HEQdnZTGn+o=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		BNWPRMu0MT9/Fj6SNA+zVlww9bE=
+		ztCo+yOL5q5uIwNB09KjdY6A+jU=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3aF/Gzay7uoAFOWO0yQKAQEXURc=
+		jTtvklm9bw2Z7XxJ1AR+BnrcJkY=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		emeu1GpRnIVUH7pvInjLNsC11WA=
+		2EXXgcnTIZyksStfPrB6g3qPboQ=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3aF/Gzay7uoAFOWO0yQKAQEXURc=
+		jTtvklm9bw2Z7XxJ1AR+BnrcJkY=
 		</data>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TnFGRT1xf9dMTsmJdiOVxVNnsKU=
+		qb8Naq0NiQ0bkubNqPYWDq0xjHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		7QMxstgGIa4zQ5yvTo0HhyQ/IOM=
+		5HeMTrZTRQTmnLlBptxEvhPxHek=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/Secp256k1.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eVOMth99omAExU7HB9RD9O6kXkRN5fCx4jX7Nc0mx/c=
+			</data>
+		</dict>
+		<key>Frameworks/Secp256k1.framework/Secp256k1</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P1KpuGoOdPHoQePSWD3JRoVlKPuO6cokoBo3aTmgGBs=
+			</data>
+		</dict>
+		<key>Frameworks/Secp256k1.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+I0CgTC1Gfx5OhzTuSnQ+YsQLbwwhBG+xDJWmi51qAk=
+			</data>
+		</dict>
 		<key>Headers/VCCrypto-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PMUkYZC1GkWFYzd402zrMyk8MruYi1Hz+DbYHaf13Bc=
+			zCASsmxkclC9NhRH53ZSEHeSSZmVG/tpfOo0bH8Rk/s=
 			</data>
 		</dict>
 		<key>Headers/VCCrypto.h</key>
@@ -81,77 +114,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fs74DvTeHO4BPuZj+2D/ACP7b0nnQrXrXjrSaNXhuuE=
+			SqooYQL5w86sfargLrxcGz+ILOcra9RydIawS5mMdZ8=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M/33Y9fU+MfcIJ76ZWhjjldCp9DjVoHFVLgpewB+XSw=
+			ZoQ3Q8yNQq5crBPix6Vqzq2wXy4CjlzjE8b+rg0rD/Q=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SXcDGZe49VqNngoITqUq1QPdzeoMMNH67ft7dYbHrps=
+			OicA85BnQXO9sg9XeT91ad2BHhKpAEdWt5O+Vg2MDmw=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M/33Y9fU+MfcIJ76ZWhjjldCp9DjVoHFVLgpewB+XSw=
+			ZoQ3Q8yNQq5crBPix6Vqzq2wXy4CjlzjE8b+rg0rD/Q=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J5WEw8C4K0dBByZ1sPBAHsKE5GguMWe63XBUjcaa0BY=
+			CDv6WO4brzjOUBHicKietRZT0Vg7ES13AsWIdBg6V4U=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fs74DvTeHO4BPuZj+2D/ACP7b0nnQrXrXjrSaNXhuuE=
+			SqooYQL5w86sfargLrxcGz+ILOcra9RydIawS5mMdZ8=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SsktNiT5g3V9hTt80ejzaThubAoxFn1f69p/HgQZ2yw=
+			pDcBioari2orVa66rdUTTQMTGxZKYdZFCbr7slfonVQ=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bZettGvH4AXm5uGc+6xqytls1AFPziLkTq9XB+0CIRA=
+			JejvzBeMBeQEkOVv7b9arWlPdTpFAMdSd3RhD2iS0MA=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SsktNiT5g3V9hTt80ejzaThubAoxFn1f69p/HgQZ2yw=
+			pDcBioari2orVa66rdUTTQMTGxZKYdZFCbr7slfonVQ=
 			</data>
 		</dict>
 		<key>Modules/VCCrypto.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IaoI5Tgmo5jf5CTkGoaccfPdrY+pKVQS1x8Uu+KWU/c=
+			jt2+3cToJzHzj+KFDpW9bV0UPEx1OZTqqHhleF796j4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S+KtnHZBEjl0GYr7vTMM966t7sUBr/U5QbKnSGUo4cQ=
+			VlnfZnLOn534c6khgmRyv3CPc/7Vze6sprWYYqCWTu0=
 			</data>
 		</dict>
 	</dict>

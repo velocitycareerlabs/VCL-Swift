@@ -1,7 +1,7 @@
 framework module VCToken {
   umbrella header "VCToken.h"
-
   export *
+
   module * { export * }
 }
 

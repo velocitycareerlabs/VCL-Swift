@@ -1,7 +1,7 @@
 framework module VCCrypto {
   umbrella header "VCCrypto.h"
-
   export *
+
   module * { export * }
 }
 
