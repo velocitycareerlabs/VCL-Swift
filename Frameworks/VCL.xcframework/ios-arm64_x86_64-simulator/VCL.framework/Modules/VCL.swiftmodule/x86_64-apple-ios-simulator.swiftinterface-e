@@ -58,6 +58,24 @@ public struct VCLFinalizeOffersDescriptor {
   public let approvedOfferIds: [Swift.String]
   public let rejectedOfferIds: [Swift.String]
   public init(credentialManifest: VCL.VCLCredentialManifest, offers: VCL.VCLOffers, approvedOfferIds: [Swift.String], rejectedOfferIds: [Swift.String])
+  public var payload: [Swift.String : Any?] {
+    get
+  }
+  public var aud: Swift.String {
+    get
+  }
+  public var issuerId: Swift.String {
+    get
+  }
+  public var exchangeId: Swift.String {
+    get
+  }
+  public var finalizeOffersUri: Swift.String {
+    get
+  }
+  public var serviceTypes: VCL.VCLServiceTypes {
+    get
+  }
   public func generateRequestBody(jwt: VCL.VCLJwt) -> [Swift.String : Any?]
   public struct CodingKeys {
     public static let KeyExchangeId: Swift.String
@@ -75,7 +93,8 @@ public class VCLCredentialManifestDescriptor {
   final public let pushDelegate: VCL.VCLPushDelegate?
   final public let did: Swift.String?
   final public let vendorOriginContext: Swift.String?
-  public init(uri: Swift.String?, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil)
+  final public let deepLink: VCL.VCLDeepLink?
+  public init(uri: Swift.String?, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil, deepLink: VCL.VCLDeepLink? = nil)
   public var endpoint: Swift.String? {
     get
   }
@@ -202,7 +221,8 @@ public struct VCLCredentialManifest {
   public let jwt: VCL.VCLJwt
   public let vendorOriginContext: Swift.String?
   public let verifiedProfile: VCL.VCLVerifiedProfile
-  public init(jwt: VCL.VCLJwt, vendorOriginContext: Swift.String? = nil, verifiedProfile: VCL.VCLVerifiedProfile)
+  public let deepLink: VCL.VCLDeepLink?
+  public init(jwt: VCL.VCLJwt, vendorOriginContext: Swift.String? = nil, verifiedProfile: VCL.VCLVerifiedProfile, deepLink: VCL.VCLDeepLink? = nil)
   public var iss: Swift.String {
     get
   }
@@ -210,6 +230,9 @@ public struct VCLCredentialManifest {
     get
   }
   public var issuerId: Swift.String {
+    get
+  }
+  public var aud: Swift.String {
     get
   }
   public var exchangeId: Swift.String {
@@ -415,6 +438,10 @@ public enum VCLErrorCode : Swift.String {
   case InvalidCredentialSubjectType
   case InvalidCredentialSubjectContext
   case IssuerUnexpectedPermissionFailure
+  case MismatchedRequestIssuerDid
+  case MismatchedOfferIssuerDid
+  case MismatchedCredentialIssuerDid
+  case MismatchedPresentationRequestInspectorDid
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -496,6 +523,18 @@ public struct VCLGenerateOffersDescriptor {
   public let offerHashes: [Swift.String]?
   public let identificationVerifiableCredentials: [VCL.VCLVerifiableCredential]?
   public init(credentialManifest: VCL.VCLCredentialManifest, types: [Swift.String]? = nil, offerHashes: [Swift.String]? = nil, identificationVerifiableCredentials: [VCL.VCLVerifiableCredential]? = nil)
+  public var payload: [Swift.String : Any?] {
+    get
+  }
+  public var issuerId: Swift.String {
+    get
+  }
+  public var exchangeId: Swift.String {
+    get
+  }
+  public var checkOffersUri: Swift.String {
+    get
+  }
   public struct CodingKeys {
     public static let KeyDid: Swift.String
     public static let KeyExchangeId: Swift.String
@@ -908,6 +947,20 @@ public class VCLCredentialManifestDescriptorByDeepLink : VCL.VCLCredentialManife
   public init(deepLink: VCL.VCLDeepLink, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career)
   @objc deinit
 }
+public struct VCLOffer {
+  public let payload: [Swift.String : Any]
+  public var issuerId: Swift.String {
+    get
+  }
+  public var id: Swift.String {
+    get
+  }
+  public struct CodingKeys {
+    public static let KeyId: Swift.String
+    public static let KeyDid: Swift.String
+    public static let KeyIssuer: Swift.String
+  }
+}
 public struct VCLOrganization {
   public let payload: [Swift.String : Any]
   public init(payload: [Swift.String : Any])
@@ -946,11 +999,11 @@ public struct VCLPublicJwk {
 }
 public struct VCLOffers {
   public let payload: [Swift.String : Any]
-  public let all: [[Swift.String : Any]]
+  public let all: [VCL.VCLOffer]
   public let responseCode: Swift.Int
   public let sessionToken: VCL.VCLToken
   public let challenge: Swift.String
-  public init(payload: [Swift.String : Any], all: [[Swift.String : Any]], responseCode: Swift.Int, sessionToken: VCL.VCLToken, challenge: Swift.String)
+  public init(payload: [Swift.String : Any], all: [VCL.VCLOffer], responseCode: Swift.Int, sessionToken: VCL.VCLToken, challenge: Swift.String)
   public struct CodingKeys {
     public static let KeyOffers: Swift.String
     public static let KeyChallenge: Swift.String
