@@ -36218,6 +36218,46 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLOffer",
+                "printedName": "VCL.VCLOffer",
+                "usr": "s:3VCL8VCLOfferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL8VCLOfferV7payloadACSDySSypG_tcfc",
+            "mangledName": "$s3VCL8VCLOfferV7payloadACSDySSypG_tcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "issuerId",
             "printedName": "issuerId",
@@ -48448,35 +48488,35 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 518,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 511,
+      "offset": 606,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 584,
+      "offset": 679,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 719,
       "length": 5,
       "value": "\"did\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 668,
+      "offset": 763,
       "length": 8,
       "value": "\"issuer\""
     },

@@ -949,6 +949,7 @@ public class VCLCredentialManifestDescriptorByDeepLink : VCLCredentialManifestDe
 }
 public struct VCLOffer {
   public let payload: [Swift.String : Any]
+  public init(payload: [Swift.String : Any])
   public var issuerId: Swift.String {
     get
   }
