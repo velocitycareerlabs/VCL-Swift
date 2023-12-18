@@ -226,6 +226,9 @@ public struct VCLCredentialManifest {
   public var iss: Swift.String {
     get
   }
+  public var did: Swift.String {
+    get
+  }
   public var issuerId: Swift.String {
     get
   }
