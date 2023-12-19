@@ -42942,6 +42942,27 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialManifestByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 615,
+      "length": 89,
+      "value": "\"credential manifest: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialManifestByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 673,
+      "length": 1,
+      "value": "\" \ndeepLink: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialManifestByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 703,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "Dictionary",
       "offset": 2209,
@@ -45554,8 +45575,29 @@
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/OffersByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
+      "length": 76,
+      "value": "\"mismatched offer: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/OffersByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 1,
+      "value": "\" \ndeepLink: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/OffersByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 603,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/OffersByDeepLinkVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 663,
+      "offset": 767,
       "length": 4,
       "value": "true"
     },
@@ -45880,6 +45922,27 @@
       "offset": 570,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/PresentationRequestByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 615,
+      "length": 91,
+      "value": "\"presentation request: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/PresentationRequestByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 675,
+      "length": 1,
+      "value": "\" \ndeepLink: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/PresentationRequestByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/extensions\/DataExtensions.swift",
@@ -47850,8 +47913,29 @@
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialsByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 554,
+      "length": 89,
+      "value": "\"mismatched credential: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialsByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 612,
+      "length": 1,
+      "value": "\" \ndeepLink: \""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialsByDeepLinkVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 642,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialsByDeepLinkVerifierImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 694,
+      "offset": 811,
       "length": 4,
       "value": "true"
     },
