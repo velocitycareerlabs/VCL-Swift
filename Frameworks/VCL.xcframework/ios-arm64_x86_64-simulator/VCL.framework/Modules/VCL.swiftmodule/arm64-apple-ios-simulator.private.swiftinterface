@@ -265,7 +265,15 @@ public struct VCLCredentialManifest {
 }
 public struct VCLToken {
   public let value: Swift.String
+  public let jwtValue: VCLJwt
   public init(value: Swift.String)
+  public init(jwtValue: VCLJwt)
+  public var expirationDate: Swift.UInt64? {
+    get
+  }
+  public struct CodingKeys {
+    public static let KeyExp: Swift.String
+  }
 }
 public func == (lhs: VCLToken, rhs: VCLToken) -> Swift.Bool
 public struct VCLCredentialTypeSchemas {

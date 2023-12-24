@@ -8241,7 +8241,8 @@
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8261,6 +8262,51 @@
                 "declKind": "Accessor",
                 "usr": "s:3VCL8VCLTokenV5valueSSvg",
                 "mangledName": "$s3VCL8VCLTokenV5valueSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jwtValue",
+            "printedName": "jwtValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLJwt",
+                "printedName": "VCL.VCLJwt",
+                "usr": "s:3VCL6VCLJwtV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLTokenV8jwtValueAA6VCLJwtVvp",
+            "mangledName": "$s3VCL8VCLTokenV8jwtValueAA6VCLJwtVvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLJwt",
+                    "printedName": "VCL.VCLJwt",
+                    "usr": "s:3VCL6VCLJwtV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLTokenV8jwtValueAA6VCLJwtVvg",
+                "mangledName": "$s3VCL8VCLTokenV8jwtValueAA6VCLJwtVvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8293,6 +8339,151 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(jwtValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLToken",
+                "printedName": "VCL.VCLToken",
+                "usr": "s:3VCL8VCLTokenV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLJwt",
+                "printedName": "VCL.VCLJwt",
+                "usr": "s:3VCL6VCLJwtV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL8VCLTokenV8jwtValueAcA6VCLJwtV_tcfc",
+            "mangledName": "$s3VCL8VCLTokenV8jwtValueAcA6VCLJwtV_tcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "expirationDate",
+            "printedName": "expirationDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UInt64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLTokenV14expirationDates6UInt64VSgvp",
+            "mangledName": "$s3VCL8VCLTokenV14expirationDates6UInt64VSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UInt64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt64",
+                        "printedName": "Swift.UInt64",
+                        "usr": "s:s6UInt64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLTokenV14expirationDates6UInt64VSgvg",
+                "mangledName": "$s3VCL8VCLTokenV14expirationDates6UInt64VSgvg",
+                "moduleName": "VCL",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "KeyExp",
+                "printedName": "KeyExp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLTokenV10CodingKeysV6KeyExpSSvpZ",
+                "mangledName": "$s3VCL8VCLTokenV10CodingKeysV6KeyExpSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLTokenV10CodingKeysV6KeyExpSSvgZ",
+                    "mangledName": "$s3VCL8VCLTokenV10CodingKeysV6KeyExpSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:3VCL8VCLTokenV10CodingKeysV",
+            "mangledName": "$s3VCL8VCLTokenV10CodingKeysV",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ]
           }
         ],
         "declKind": "Struct",
@@ -43563,6 +43754,13 @@
       "offset": 511,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLToken.swift",
+      "kind": "StringLiteral",
+      "offset": 823,
+      "length": 5,
+      "value": "\"exp\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/utils\/VCLLog.swift",
