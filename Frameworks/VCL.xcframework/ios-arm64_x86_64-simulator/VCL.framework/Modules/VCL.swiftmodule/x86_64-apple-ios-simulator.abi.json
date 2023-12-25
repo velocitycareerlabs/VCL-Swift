@@ -8369,8 +8369,8 @@
           },
           {
             "kind": "Var",
-            "name": "expirationDate",
-            "printedName": "expirationDate",
+            "name": "expiresIn",
+            "printedName": "expiresIn",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8388,8 +8388,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL8VCLTokenV14expirationDates6UInt64VSgvp",
-            "mangledName": "$s3VCL8VCLTokenV14expirationDates6UInt64VSgvp",
+            "usr": "s:3VCL8VCLTokenV9expiresIns6UInt64VSgvp",
+            "mangledName": "$s3VCL8VCLTokenV9expiresIns6UInt64VSgvp",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl",
@@ -8417,8 +8417,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL8VCLTokenV14expirationDates6UInt64VSgvg",
-                "mangledName": "$s3VCL8VCLTokenV14expirationDates6UInt64VSgvg",
+                "usr": "s:3VCL8VCLTokenV9expiresIns6UInt64VSgvg",
+                "mangledName": "$s3VCL8VCLTokenV9expiresIns6UInt64VSgvg",
                 "moduleName": "VCL",
                 "accessorKind": "get"
               }
@@ -43758,7 +43758,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLToken.swift",
       "kind": "StringLiteral",
-      "offset": 823,
+      "offset": 825,
       "length": 5,
       "value": "\"exp\""
     },

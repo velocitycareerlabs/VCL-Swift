@@ -268,7 +268,7 @@ public struct VCLToken {
   public let jwtValue: VCL.VCLJwt
   public init(value: Swift.String)
   public init(jwtValue: VCL.VCLJwt)
-  public var expirationDate: Swift.UInt64? {
+  public var expiresIn: Swift.UInt64? {
     get
   }
   public struct CodingKeys {
