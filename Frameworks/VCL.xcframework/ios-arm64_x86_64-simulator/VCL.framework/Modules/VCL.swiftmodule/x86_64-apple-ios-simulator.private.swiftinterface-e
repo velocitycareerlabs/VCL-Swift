@@ -268,7 +268,7 @@ public struct VCLToken {
   public let jwtValue: VCL.VCLJwt
   public init(value: Swift.String)
   public init(jwtValue: VCL.VCLJwt)
-  public var expiresIn: Swift.UInt64? {
+  public var expiresIn: Swift.Double? {
     get
   }
   public struct CodingKeys {
@@ -952,7 +952,7 @@ public enum VCLIssuingType : Swift.String {
   }
 }
 public class VCLCredentialManifestDescriptorByDeepLink : VCL.VCLCredentialManifestDescriptor {
-  public init(deepLink: VCL.VCLDeepLink, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career)
+  public init(deepLink: VCL.VCLDeepLink, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career, pushDelegate: VCL.VCLPushDelegate? = nil)
   @objc deinit
 }
 public struct VCLOffer {
