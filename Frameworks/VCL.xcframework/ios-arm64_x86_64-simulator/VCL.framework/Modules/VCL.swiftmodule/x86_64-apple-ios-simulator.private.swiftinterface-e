@@ -911,9 +911,6 @@ extension VCL.VCL {
 }
 public class VCLCredentialManifestDescriptorByService : VCL.VCLCredentialManifestDescriptor {
   public init(service: VCL.VCLService, issuingType: VCL.VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil)
-  override public var endpoint: Swift.String? {
-    get
-  }
   override public func toPropsString() -> Swift.String
   @objc deinit
 }
