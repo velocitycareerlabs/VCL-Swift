@@ -126,7 +126,7 @@ public class VCLPresentationRequestDescriptor {
 }
 public class VCLPresentationSubmission : VCL.VCLSubmission {
   public var progressUri: Swift.String
-  public init(presentationRequest: VCL.VCLPresentationRequest, verifiableCredentials: [VCL.VCLVerifiableCredential], iss: Swift.String? = nil)
+  public init(presentationRequest: VCL.VCLPresentationRequest, verifiableCredentials: [VCL.VCLVerifiableCredential])
   @objc deinit
 }
 public struct VCLCredentialTypes {
@@ -289,7 +289,6 @@ public protocol VCLJwtVerifyService {
 }
 public class VCLSubmission {
   final public let submitUri: Swift.String
-  final public let iss: Swift.String
   final public let exchangeId: Swift.String
   final public let presentationDefinitionId: Swift.String
   final public let verifiableCredentials: [VCL.VCLVerifiableCredential]?
@@ -297,10 +296,7 @@ public class VCLSubmission {
   final public let vendorOriginContext: Swift.String?
   final public let jti: Swift.String
   final public let submissionId: Swift.String
-  public init(submitUri: Swift.String, iss: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCL.VCLVerifiableCredential]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil)
-  public var payload: [Swift.String : Any] {
-    get
-  }
+  public init(submitUri: Swift.String, exchangeId: Swift.String, presentationDefinitionId: Swift.String, verifiableCredentials: [VCL.VCLVerifiableCredential]? = nil, pushDelegate: VCL.VCLPushDelegate? = nil, vendorOriginContext: Swift.String? = nil)
   public struct CodingKeys {
     public static let KeyJti: Swift.String
     public static let KeyIss: Swift.String
@@ -394,9 +390,6 @@ public struct VCLExchangeDescriptor {
   public let presentationSubmission: VCL.VCLPresentationSubmission
   public let submissionResult: VCL.VCLSubmissionResult
   public var processUri: Swift.String {
-    get
-  }
-  public var did: Swift.String {
     get
   }
   public var exchangeId: Swift.String? {
