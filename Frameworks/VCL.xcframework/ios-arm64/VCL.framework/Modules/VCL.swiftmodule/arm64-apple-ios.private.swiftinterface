@@ -126,7 +126,7 @@ public class VCLPresentationRequestDescriptor {
 }
 public class VCLPresentationSubmission : VCLSubmission {
   public var progressUri: Swift.String
-  public init(presentationRequest: VCLPresentationRequest, verifiableCredentials: [VCLVerifiableCredential])
+  public init(presentationRequest: VCLPresentationRequest, verifiableCredentials: [VCLVerifiableCredential], iss: Swift.String? = nil)
   @objc deinit
 }
 public struct VCLCredentialTypes {
