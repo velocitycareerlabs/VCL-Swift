@@ -43577,84 +43577,84 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2251,
+      "offset": 2261,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2291,
+      "offset": 2301,
       "length": 9,
       "value": "\"\/issue\/\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2473,
+      "offset": 2483,
       "length": 17,
       "value": "\"issuing_request\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2534,
+      "offset": 2544,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2574,
+      "offset": 2584,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2618,
+      "offset": 2628,
       "length": 8,
       "value": "\"issuer\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2669,
+      "offset": 2679,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2739,
+      "offset": 2749,
       "length": 25,
       "value": "\"presentation_definition\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2824,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2871,
+      "offset": 2881,
       "length": 18,
       "value": "\"check_offers_uri\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2939,
+      "offset": 2949,
       "length": 21,
       "value": "\"finalize_offers_uri\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 3016,
+      "offset": 3026,
       "length": 25,
       "value": "\"submit_presentation_uri\""
     },
