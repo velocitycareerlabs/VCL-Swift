@@ -82,7 +82,6 @@ public struct VCLFinalizeOffersDescriptor {
   public var remoteCryptoServicesToken: VCL.VCLToken? {
     get
   }
-  public func generateRequestBody(jwt: VCL.VCLJwt) -> [Swift.String : Any?]
   public struct CodingKeys {
     public static let KeyExchangeId: Swift.String
     public static let KeyApprovedOfferIds: Swift.String
@@ -564,9 +563,10 @@ public struct VCLKeyServiceUrls {
 }
 public struct VCLCryptoServicesDescriptor {
   public let cryptoServiceType: VCL.VCLCryptoServiceType
+  public let signatureAlgorithm: VCL.VCLSignatureAlgorithm
   public let injectedCryptoServicesDescriptor: VCL.VCLInjectedCryptoServicesDescriptor?
   public let remoteCryptoServicesUrlsDescriptor: VCL.VCLRemoteCryptoServicesUrlsDescriptor?
-  public init(cryptoServiceType: VCL.VCLCryptoServiceType = VCLCryptoServiceType.Local, injectedCryptoServicesDescriptor: VCL.VCLInjectedCryptoServicesDescriptor? = nil, remoteCryptoServicesUrlsDescriptor: VCL.VCLRemoteCryptoServicesUrlsDescriptor? = nil)
+  public init(cryptoServiceType: VCL.VCLCryptoServiceType = VCLCryptoServiceType.Local, signatureAlgorithm: VCL.VCLSignatureAlgorithm = VCLSignatureAlgorithm.ES256, injectedCryptoServicesDescriptor: VCL.VCLInjectedCryptoServicesDescriptor? = nil, remoteCryptoServicesUrlsDescriptor: VCL.VCLRemoteCryptoServicesUrlsDescriptor? = nil)
 }
 public struct VCLInitializationDescriptor {
   public let environment: VCL.VCLEnvironment
@@ -992,6 +992,22 @@ public struct VCLJwtVerifiableCredentials {
   public let failedCredentials: [VCL.VCLJwt]
   public init(passedCredentials: [VCL.VCLJwt], failedCredentials: [VCL.VCLJwt])
 }
+public enum VCLSignatureAlgorithm : Swift.String {
+  case ES256
+  case SECP256k1
+  public var jwsAlgorithm: Swift.String {
+    get
+  }
+  public var curve: Swift.String {
+    get
+  }
+  public static func fromString(value: Swift.String) -> VCL.VCLSignatureAlgorithm
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct VCLInjectedCryptoServicesDescriptor {
   public let keyService: any VCL.VCLKeyService
   public let jwtSignService: any VCL.VCLJwtSignService
@@ -1017,8 +1033,8 @@ public struct VCLOffers {
   public let all: [VCL.VCLOffer]
   public let responseCode: Swift.Int
   public let sessionToken: VCL.VCLToken
-  public let challenge: Swift.String
-  public init(payload: [Swift.String : Any], all: [VCL.VCLOffer], responseCode: Swift.Int, sessionToken: VCL.VCLToken, challenge: Swift.String)
+  public let challenge: Swift.String?
+  public init(payload: [Swift.String : Any], all: [VCL.VCLOffer], responseCode: Swift.Int, sessionToken: VCL.VCLToken, challenge: Swift.String? = nil)
   public struct CodingKeys {
     public static let KeyOffers: Swift.String
     public static let KeyChallenge: Swift.String
@@ -1141,6 +1157,9 @@ extension VCL.VCLStatusCode : Swift.RawRepresentable {}
 extension VCL.VCLIssuingType : Swift.Equatable {}
 extension VCL.VCLIssuingType : Swift.Hashable {}
 extension VCL.VCLIssuingType : Swift.RawRepresentable {}
+extension VCL.VCLSignatureAlgorithm : Swift.Equatable {}
+extension VCL.VCLSignatureAlgorithm : Swift.Hashable {}
+extension VCL.VCLSignatureAlgorithm : Swift.RawRepresentable {}
 extension VCL.VCLXVnfProtocolVersion : Swift.Equatable {}
 extension VCL.VCLXVnfProtocolVersion : Swift.Hashable {}
 extension VCL.VCLXVnfProtocolVersion : Swift.RawRepresentable {}
