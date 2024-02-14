@@ -37610,8 +37610,7 @@
             "mangledName": "$s3VCL21VCLSignatureAlgorithmO03jwsC0SSvp",
             "moduleName": "VCL",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -44162,49 +44161,49 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 629,
+      "offset": 633,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 716,
+      "offset": 720,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 738,
+      "offset": 742,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 812,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 842,
+      "offset": 846,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 880,
+      "offset": 884,
       "length": 6,
       "value": "\"VCL \""
     },
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/impl\/GlobalConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1067,
+      "offset": 1071,
       "length": 5,
       "value": "\"JWT\""
     },
@@ -49461,7 +49460,7 @@
     {
       "filePath": "\/Users\/michaelavoyan\/Develop\/iOS\/iOS_Projects\/_GitHubIOS_\/WalletIOS\/VCL\/VCL\/api\/VCLSignatureAlgorithm.swift",
       "kind": "StringLiteral",
-      "offset": 420,
+      "offset": 365,
       "length": 8,
       "value": "\"ES256K\""
     },

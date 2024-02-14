@@ -566,7 +566,7 @@ public struct VCLCryptoServicesDescriptor {
   public let signatureAlgorithm: VCLSignatureAlgorithm
   public let injectedCryptoServicesDescriptor: VCLInjectedCryptoServicesDescriptor?
   public let remoteCryptoServicesUrlsDescriptor: VCLRemoteCryptoServicesUrlsDescriptor?
-  public init(cryptoServiceType: VCLCryptoServiceType = VCLCryptoServiceType.Local, signatureAlgorithm: VCLSignatureAlgorithm = VCLSignatureAlgorithm.ES256, injectedCryptoServicesDescriptor: VCLInjectedCryptoServicesDescriptor? = nil, remoteCryptoServicesUrlsDescriptor: VCLRemoteCryptoServicesUrlsDescriptor? = nil)
+  public init(cryptoServiceType: VCLCryptoServiceType = VCLCryptoServiceType.Local, signatureAlgorithm: VCLSignatureAlgorithm = VCLSignatureAlgorithm.SECP256k1, injectedCryptoServicesDescriptor: VCLInjectedCryptoServicesDescriptor? = nil, remoteCryptoServicesUrlsDescriptor: VCLRemoteCryptoServicesUrlsDescriptor? = nil)
 }
 public struct VCLInitializationDescriptor {
   public let environment: VCLEnvironment
