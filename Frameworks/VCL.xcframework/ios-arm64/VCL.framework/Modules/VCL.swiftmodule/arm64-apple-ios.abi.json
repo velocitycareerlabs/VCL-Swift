@@ -19722,19 +19722,19 @@
           },
           {
             "kind": "Var",
-            "name": "publicJwk",
-            "printedName": "publicJwk",
+            "name": "verifiedProfile",
+            "printedName": "verifiedProfile",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "VCLPublicJwk",
-                "printedName": "VCL.VCLPublicJwk",
-                "usr": "s:3VCL12VCLPublicJwkV"
+                "name": "VCLVerifiedProfile",
+                "printedName": "VCL.VCLVerifiedProfile",
+                "usr": "s:3VCL18VCLVerifiedProfileV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL22VCLPresentationRequestV9publicJwkAA09VCLPublicE0Vvp",
-            "mangledName": "$s3VCL22VCLPresentationRequestV9publicJwkAA09VCLPublicE0Vvp",
+            "usr": "s:3VCL22VCLPresentationRequestV15verifiedProfileAA011VCLVerifiedE0Vvp",
+            "mangledName": "$s3VCL22VCLPresentationRequestV15verifiedProfileAA011VCLVerifiedE0Vvp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -19750,14 +19750,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VCLPublicJwk",
-                    "printedName": "VCL.VCLPublicJwk",
-                    "usr": "s:3VCL12VCLPublicJwkV"
+                    "name": "VCLVerifiedProfile",
+                    "printedName": "VCL.VCLVerifiedProfile",
+                    "usr": "s:3VCL18VCLVerifiedProfileV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL22VCLPresentationRequestV9publicJwkAA09VCLPublicE0Vvg",
-                "mangledName": "$s3VCL22VCLPresentationRequestV9publicJwkAA09VCLPublicE0Vvg",
+                "usr": "s:3VCL22VCLPresentationRequestV15verifiedProfileAA011VCLVerifiedE0Vvg",
+                "mangledName": "$s3VCL22VCLPresentationRequestV15verifiedProfileAA011VCLVerifiedE0Vvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -19975,7 +19975,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(jwt:publicJwk:deepLink:pushDelegate:didJwk:remoteCryptoServicesToken:)",
+            "printedName": "init(jwt:verifiedProfile:deepLink:pushDelegate:didJwk:remoteCryptoServicesToken:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19991,9 +19991,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLPublicJwk",
-                "printedName": "VCL.VCLPublicJwk",
-                "usr": "s:3VCL12VCLPublicJwkV"
+                "name": "VCLVerifiedProfile",
+                "printedName": "VCL.VCLVerifiedProfile",
+                "usr": "s:3VCL18VCLVerifiedProfileV"
               },
               {
                 "kind": "TypeNominal",
@@ -20039,8 +20039,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL22VCLPresentationRequestV3jwt9publicJwk8deepLink12pushDelegate03didF025remoteCryptoServicesTokenAcA6VCLJwtV_AA09VCLPublicF0VAA07VCLDeepH0VAA07VCLPushJ0VSgAA06VCLDidF0CAA8VCLTokenVSgtcfc",
-            "mangledName": "$s3VCL22VCLPresentationRequestV3jwt9publicJwk8deepLink12pushDelegate03didF025remoteCryptoServicesTokenAcA6VCLJwtV_AA09VCLPublicF0VAA07VCLDeepH0VAA07VCLPushJ0VSgAA06VCLDidF0CAA8VCLTokenVSgtcfc",
+            "usr": "s:3VCL22VCLPresentationRequestV3jwt15verifiedProfile8deepLink12pushDelegate6didJwk25remoteCryptoServicesTokenAcA6VCLJwtV_AA011VCLVerifiedF0VAA07VCLDeepH0VAA07VCLPushJ0VSgAA06VCLDidL0CAA8VCLTokenVSgtcfc",
+            "mangledName": "$s3VCL22VCLPresentationRequestV3jwt15verifiedProfile8deepLink12pushDelegate6didJwk25remoteCryptoServicesTokenAcA6VCLJwtV_AA011VCLVerifiedF0VAA07VCLDeepH0VAA07VCLPushJ0VSgAA06VCLDidL0CAA8VCLTokenVSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -45385,238 +45385,238 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9029,
+      "offset": 9077,
       "length": 24,
       "value": "\"getPresentationRequest\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9292,
+      "offset": 9340,
       "length": 29,
       "value": "\"profile verification failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9462,
+      "offset": 9510,
       "length": 57,
       "value": "\"did was not found in ֿ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9518,
+      "offset": 9566,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9551,
+      "offset": 9599,
       "length": 41,
       "value": "\"getPresentationRequest::verifiedProfile\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10191,
+      "offset": 10239,
       "length": 21,
       "value": "\"submit presentation\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10852,
+      "offset": 10900,
       "length": 21,
       "value": "\"getExchangeProgress\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 11537,
+      "offset": 11585,
       "length": 24,
       "value": "\"searchForOrganizations\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 11940,
+      "offset": 11988,
       "length": 79,
       "value": "\"credentialManifestDescriptor: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12018,
+      "offset": 12066,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12909,
+      "offset": 12957,
       "length": 23,
       "value": "\"getCredentialManifest\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13171,
+      "offset": 13219,
       "length": 29,
       "value": "\"profile verification failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13341,
+      "offset": 13389,
       "length": 54,
       "value": "\"did was not found in \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13394,
+      "offset": 13442,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13427,
+      "offset": 13475,
       "length": 40,
       "value": "\"getCredentialManifest::verifiedProfile\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14698,
+      "offset": 14746,
       "length": 23,
       "value": "\"submit identification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14939,
+      "offset": 14987,
       "length": 23,
       "value": "\"submit identification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16164,
+      "offset": 16212,
       "length": 16,
       "value": "\"generateOffers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16924,
+      "offset": 16972,
       "length": 16,
       "value": "\"finalizeOffers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17833,
+      "offset": 17881,
       "length": 32,
       "value": "\"getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18051,
+      "offset": 18099,
       "length": 49,
       "value": "\"No countries for getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18137,
+      "offset": 18185,
       "length": 32,
       "value": "\"getCredentialTypesUIFormSchema\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18760,
+      "offset": 18808,
       "length": 20,
       "value": "\"getVerifiedProfile\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 19500,
+      "offset": 19548,
       "length": 11,
       "value": "\"verifyJwt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 20264,
+      "offset": 20312,
       "length": 19,
       "value": "\"generateSignedJwt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 20901,
+      "offset": 20949,
       "length": 16,
       "value": "\"generateDidJwk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21097,
+      "offset": 21145,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21134,
+      "offset": 21182,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21145,
+      "offset": 21193,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21155,
+      "offset": 21203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21212,
+      "offset": 21260,
       "length": 34,
       "value": "\"Version: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21245,
+      "offset": 21293,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21265,
+      "offset": 21313,
       "length": 30,
       "value": "\"Build: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21294,
+      "offset": 21342,
       "length": 2,
       "value": "\"\""
     },
@@ -46162,70 +46162,70 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2382,
+      "offset": 2850,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2861,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2409,
+      "offset": 2877,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3051,
+      "offset": 3480,
       "length": 13,
       "value": "\"Empty KeyID\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4535,
+      "offset": 4492,
       "length": 70,
       "value": "\"Presentation request by deep link verification result: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4604,
+      "offset": 4561,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 5299,
+      "offset": 5256,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5471,
+      "offset": 5428,
       "length": 62,
       "value": "\"Failed  to verify: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "Dictionary",
-      "offset": 5528,
+      "offset": 5485,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/PresentationRequestUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5532,
+      "offset": 5489,
       "length": 20,
       "value": "\"\""
     },
@@ -47072,105 +47072,105 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1027,
+      "offset": 1063,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1129,
+      "offset": 1165,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1304,
+      "offset": 1340,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1364,
+      "offset": 1400,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1421,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1618,
+      "offset": 1654,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1788,
+      "offset": 1824,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1865,
+      "offset": 1901,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1905,
+      "offset": 1941,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1962,
+      "offset": 1998,
       "length": 22,
       "value": "\"presentation_request\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2027,
+      "offset": 2063,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2133,
+      "offset": 2169,
       "length": 25,
       "value": "\"presentation_definition\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2208,
+      "offset": 2244,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2262,
+      "offset": 2298,
       "length": 14,
       "value": "\"progress_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2330,
+      "offset": 2366,
       "length": 25,
       "value": "\"submit_presentation_uri\""
     },
