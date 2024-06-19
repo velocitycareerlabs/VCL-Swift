@@ -1045,6 +1045,7 @@ public struct VCLOffers {
   public let sessionToken: VCLToken
   public let challenge: Swift.String?
   public init(payload: [Swift.String : Any], all: [VCLOffer], responseCode: Swift.Int, sessionToken: VCLToken, challenge: Swift.String? = nil)
+  public static func fromPayload(payloadData: Foundation.Data, responseCode: Swift.Int, sessionToken: VCLToken) -> VCLOffers
   public struct CodingKeys {
     public static let KeyOffers: Swift.String
     public static let KeyChallenge: Swift.String

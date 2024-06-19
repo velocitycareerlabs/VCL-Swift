@@ -39180,6 +39180,46 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "Function",
+            "name": "fromPayload",
+            "printedName": "fromPayload(payloadData:responseCode:sessionToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLOffers",
+                "printedName": "VCL.VCLOffers",
+                "usr": "s:3VCL9VCLOffersV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLToken",
+                "printedName": "VCL.VCLToken",
+                "usr": "s:3VCL8VCLTokenV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL9VCLOffersV11fromPayload11payloadData12responseCode12sessionTokenAC10Foundation0F0V_SiAA8VCLTokenVtFZ",
+            "mangledName": "$s3VCL9VCLOffersV11fromPayload11payloadData12responseCode12sessionTokenAC10Foundation0F0V_SiAA8VCLTokenVtFZ",
+            "moduleName": "VCL",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "TypeDecl",
             "name": "CodingKeys",
             "printedName": "CodingKeys",
@@ -42781,58 +42821,23 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 912,
+      "offset": 914,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 933,
+      "offset": 935,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 955,
+      "offset": 957,
       "length": 3,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 1486,
-      "length": 56,
-      "value": "\"VCL offers parse could not be completed - self is dead\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
-      "kind": "Array",
-      "offset": 2107,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
-      "kind": "Dictionary",
-      "offset": 2509,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
-      "kind": "Dictionary",
-      "offset": 2797,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/GenerateOffersRepositoryImpl.swift",
-      "kind": "Array",
-      "offset": 2823,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtVerifyServiceRemoteImpl.swift",
@@ -44646,6 +44651,13 @@
       "offset": 825,
       "length": 5,
       "value": "\"exp\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ArrayExtensions.swift",
+      "kind": "Array",
+      "offset": 348,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VCLLog.swift",
@@ -49794,15 +49806,78 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "Array",
+      "offset": 1196,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
       "kind": "StringLiteral",
-      "offset": 814,
+      "offset": 1573,
+      "length": 97,
+      "value": "\"{\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "StringLiteral",
+      "offset": 1610,
+      "length": 1,
+      "value": "\"\":\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "StringLiteral",
+      "offset": 1663,
+      "length": 4,
+      "value": "\"[]\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "StringLiteral",
+      "offset": 1668,
+      "length": 1,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "Dictionary",
+      "offset": 1689,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "Dictionary",
+      "offset": 2032,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "Array",
+      "offset": 2058,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2322,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
+      "kind": "StringLiteral",
+      "offset": 2534,
       "length": 8,
       "value": "\"offers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffers.swift",
       "kind": "StringLiteral",
-      "offset": 864,
+      "offset": 2584,
       "length": 11,
       "value": "\"challenge\""
     },
