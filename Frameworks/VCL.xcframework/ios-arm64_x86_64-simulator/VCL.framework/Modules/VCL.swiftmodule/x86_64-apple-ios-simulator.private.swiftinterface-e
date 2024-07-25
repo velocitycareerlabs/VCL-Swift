@@ -54,10 +54,10 @@ public struct VCLClaims : VCToken.Claims, Swift.Decodable, Swift.Encodable {
 }
 public struct VCLFinalizeOffersDescriptor {
   public let credentialManifest: VCL.VCLCredentialManifest
-  public let offers: VCL.VCLOffers
+  public let challenge: Swift.String?
   public let approvedOfferIds: [Swift.String]
   public let rejectedOfferIds: [Swift.String]
-  public init(credentialManifest: VCL.VCLCredentialManifest, offers: VCL.VCLOffers, approvedOfferIds: [Swift.String], rejectedOfferIds: [Swift.String])
+  public init(credentialManifest: VCL.VCLCredentialManifest, challenge: Swift.String? = nil, approvedOfferIds: [Swift.String], rejectedOfferIds: [Swift.String])
   public var payload: [Swift.String : Any?] {
     get
   }

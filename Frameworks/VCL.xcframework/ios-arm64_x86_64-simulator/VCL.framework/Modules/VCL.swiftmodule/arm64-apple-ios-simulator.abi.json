@@ -1609,19 +1609,27 @@
           },
           {
             "kind": "Var",
-            "name": "offers",
-            "printedName": "offers",
+            "name": "challenge",
+            "printedName": "challenge",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "VCLOffers",
-                "printedName": "VCL.VCLOffers",
-                "usr": "s:3VCL9VCLOffersV"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL27VCLFinalizeOffersDescriptorV6offersAA9VCLOffersVvp",
-            "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV6offersAA9VCLOffersVvp",
+            "usr": "s:3VCL27VCLFinalizeOffersDescriptorV9challengeSSSgvp",
+            "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV9challengeSSSgvp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -1637,14 +1645,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VCLOffers",
-                    "printedName": "VCL.VCLOffers",
-                    "usr": "s:3VCL9VCLOffersV"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL27VCLFinalizeOffersDescriptorV6offersAA9VCLOffersVvg",
-                "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV6offersAA9VCLOffersVvg",
+                "usr": "s:3VCL27VCLFinalizeOffersDescriptorV9challengeSSSgvg",
+                "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV9challengeSSSgvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1774,7 +1790,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(credentialManifest:offers:approvedOfferIds:rejectedOfferIds:)",
+            "printedName": "init(credentialManifest:challenge:approvedOfferIds:rejectedOfferIds:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1790,9 +1806,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VCLOffers",
-                "printedName": "VCL.VCLOffers",
-                "usr": "s:3VCL9VCLOffersV"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1824,8 +1849,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL27VCLFinalizeOffersDescriptorV18credentialManifest6offers16approvedOfferIds08rejectediJ0AcA013VCLCredentialF0V_AA9VCLOffersVSaySSGALtcfc",
-            "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV18credentialManifest6offers16approvedOfferIds08rejectediJ0AcA013VCLCredentialF0V_AA9VCLOffersVSaySSGALtcfc",
+            "usr": "s:3VCL27VCLFinalizeOffersDescriptorV18credentialManifest9challenge16approvedOfferIds08rejectediJ0AcA013VCLCredentialF0V_SSSgSaySSGAKtcfc",
+            "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV18credentialManifest9challenge16approvedOfferIds08rejectediJ0AcA013VCLCredentialF0V_SSSgSaySSGAKtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -42898,42 +42923,42 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2042,
+      "offset": 2056,
       "length": 12,
       "value": "\"exchangeId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2103,
+      "offset": 2117,
       "length": 18,
       "value": "\"approvedOfferIds\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2170,
+      "offset": 2184,
       "length": 18,
       "value": "\"rejectedOfferIds\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2233,
+      "offset": 2247,
       "length": 5,
       "value": "\"jwt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2276,
+      "offset": 2290,
       "length": 7,
       "value": "\"proof\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2325,
+      "offset": 2339,
       "length": 12,
       "value": "\"proof_type\""
     },
@@ -43724,35 +43749,35 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5910,
+      "offset": 5903,
       "length": 74,
       "value": "\"Credentials by deep link verification result: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5983,
+      "offset": 5976,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6031,
+      "offset": 6024,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6204,
+      "offset": 6197,
       "length": 49,
       "value": "\"Deep link was not provided => nothing to verify\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/FinalizeOffersUseCaseImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6292,
+      "offset": 6285,
       "length": 4,
       "value": "true"
     },
