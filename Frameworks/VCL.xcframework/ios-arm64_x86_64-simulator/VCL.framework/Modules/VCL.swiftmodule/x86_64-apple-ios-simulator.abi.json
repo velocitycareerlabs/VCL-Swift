@@ -479,6 +479,66 @@
           },
           {
             "kind": "Var",
+            "name": "requestId",
+            "printedName": "requestId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLErrorV9requestIdSSSgvp",
+            "mangledName": "$s3VCL8VCLErrorV9requestIdSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLErrorV9requestIdSSSgvg",
+                "mangledName": "$s3VCL8VCLErrorV9requestIdSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "message",
             "printedName": "message",
             "children": [
@@ -600,7 +660,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(payload:error:errorCode:message:statusCode:)",
+            "printedName": "init(payload:error:errorCode:requestId:message:statusCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -644,6 +704,21 @@
                 "printedName": "Swift.String",
                 "hasDefaultArg": true,
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -677,8 +752,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL8VCLErrorV7payload5error0D4Code7message06statusE0ACSSSg_AISSAISiSgtcfc",
-            "mangledName": "$s3VCL8VCLErrorV7payload5error0D4Code7message06statusE0ACSSSg_AISSAISiSgtcfc",
+            "usr": "s:3VCL8VCLErrorV7payload5error0D4Code9requestId7message06statusE0ACSSSg_AJSSA2JSiSgtcfc",
+            "mangledName": "$s3VCL8VCLErrorV7payload5error0D4Code9requestId7message06statusE0ACSSSg_AJSSA2JSiSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -712,15 +787,23 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "hasDefaultArg": true,
-                "usr": "s:SS"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL8VCLErrorV7payload9errorCodeACSSSg_SStcfc",
-            "mangledName": "$s3VCL8VCLErrorV7payload9errorCodeACSSSg_SStcfc",
+            "usr": "s:3VCL8VCLErrorV7payload9errorCodeACSSSg_AFtcfc",
+            "mangledName": "$s3VCL8VCLErrorV7payload9errorCodeACSSSg_AFtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -966,6 +1049,53 @@
                     "declKind": "Accessor",
                     "usr": "s:3VCL8VCLErrorV10CodingKeysV12KeyErrorCodeSSvgZ",
                     "mangledName": "$s3VCL8VCLErrorV10CodingKeysV12KeyErrorCodeSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyRequestId",
+                "printedName": "KeyRequestId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLErrorV10CodingKeysV12KeyRequestIdSSvpZ",
+                "mangledName": "$s3VCL8VCLErrorV10CodingKeysV12KeyRequestIdSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLErrorV10CodingKeysV12KeyRequestIdSSvgZ",
+                    "mangledName": "$s3VCL8VCLErrorV10CodingKeysV12KeyRequestIdSSvgZ",
                     "moduleName": "VCL",
                     "static": true,
                     "implicit": true,
@@ -42713,49 +42843,56 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1829,
+      "offset": 2097,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 2126,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 2618,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2349,
+      "offset": 2665,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2398,
+      "offset": 2714,
       "length": 11,
       "value": "\"errorCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2449,
+      "offset": 2767,
+      "length": 11,
+      "value": "\"requestId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
+      "kind": "StringLiteral",
+      "offset": 2818,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2501,
+      "offset": 2870,
       "length": 12,
       "value": "\"statusCode\""
     },
@@ -46829,175 +46966,175 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1310,
+      "offset": 1286,
       "length": 39,
       "value": "\"Request error: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1348,
+      "offset": 1324,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1816,
+      "offset": 1794,
       "length": 16,
       "value": "\"Empty response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1992,
+      "offset": 1970,
       "length": 21,
       "value": "\"Empty data received\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2082,
+      "offset": 2060,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2088,
+      "offset": 2066,
       "length": 3,
       "value": "299"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2455,
+      "offset": 2433,
       "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "Array",
-      "offset": 2492,
+      "offset": 2470,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2514,
+      "offset": 2492,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2539,
+      "offset": 2517,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2543,
+      "offset": 2521,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3524,
+      "offset": 3528,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3854,
+      "offset": 3860,
       "length": 35,
       "value": "\"Request Method: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3888,
+      "offset": 3894,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3916,
+      "offset": 3922,
       "length": 40,
       "value": "\" Request Endpoint: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3955,
+      "offset": 3961,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3979,
+      "offset": 3985,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4043,
+      "offset": 4049,
       "length": 27,
       "value": "\"\nRequest Body: \n\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4069,
+      "offset": 4075,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4098,
+      "offset": 4104,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4111,
+      "offset": 4117,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4125,
+      "offset": 4131,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4135,
+      "offset": 4141,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4219,
+      "offset": 4225,
       "length": 42,
       "value": "\"Response:\nstatus code: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/NetworkServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4260,
+      "offset": 4266,
       "length": 2,
       "value": "\"\""
     },

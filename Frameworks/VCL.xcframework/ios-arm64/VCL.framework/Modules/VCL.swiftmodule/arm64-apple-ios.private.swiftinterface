@@ -23,16 +23,18 @@ public struct VCLError : Swift.Error {
   public let payload: Swift.String?
   public let error: Swift.String?
   public let errorCode: Swift.String
+  public let requestId: Swift.String?
   public let message: Swift.String?
   public let statusCode: Swift.Int?
-  public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, message: Swift.String? = nil, statusCode: Swift.Int? = nil)
-  public init(payload: Swift.String?, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue)
+  public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, requestId: Swift.String? = nil, message: Swift.String? = nil, statusCode: Swift.Int? = nil)
+  public init(payload: Swift.String?, errorCode: Swift.String? = nil)
   public init(error: (any Swift.Error)? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, statusCode: Swift.Int? = nil)
   public func toDictionary() -> [Swift.String : Any?]
   public struct CodingKeys {
     public static let KeyPayload: Swift.String
     public static let KeyError: Swift.String
     public static let KeyErrorCode: Swift.String
+    public static let KeyRequestId: Swift.String
     public static let KeyMessage: Swift.String
     public static let KeyStatusCode: Swift.String
   }
