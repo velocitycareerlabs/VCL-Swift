@@ -163,9 +163,6 @@ public struct VCLCredentialTypes : Swift.Sendable {
 }
 public protocol VCLKeyService : Swift.Sendable {
   func generateDidJwk(didJwkDescriptor: VCL.VCLDidJwkDescriptor, completionBlock: @escaping @Sendable (VCL.VCLResult<VCL.VCLDidJwk>) -> Swift.Void)
-  func generateSecret(signatureAlgorithm: VCL.VCLSignatureAlgorithm, completionBlock: @escaping @Sendable (VCL.VCLResult<any VCCrypto.VCCryptoSecret>) -> Swift.Void)
-  func retrieveSecretReference(keyId: Swift.String, completionBlock: @escaping @Sendable (VCL.VCLResult<any VCCrypto.VCCryptoSecret>) -> Swift.Void)
-  func retrievePublicJwk(secret: any VCCrypto.VCCryptoSecret, completionBlock: @escaping @Sendable (VCL.VCLResult<VCToken.ECPublicJwk>) -> Swift.Void)
 }
 public struct VCLVerifiableCredential : Swift.Sendable {
   public let inputDescriptor: Swift.String

@@ -5661,165 +5661,6 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "generateSecret",
-            "printedName": "generateSecret(signatureAlgorithm:completionBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "VCLSignatureAlgorithm",
-                "printedName": "VCL.VCLSignatureAlgorithm",
-                "usr": "s:3VCL21VCLSignatureAlgorithmO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VCL.VCLResult<any VCCrypto.VCCryptoSecret>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VCLResult",
-                    "printedName": "VCL.VCLResult<any VCCrypto.VCCryptoSecret>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VCCryptoSecret",
-                        "printedName": "any VCCrypto.VCCryptoSecret",
-                        "usr": "s:8VCCrypto0A6SecretP"
-                      }
-                    ],
-                    "usr": "s:3VCL9VCLResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3VCL13VCLKeyServiceP14generateSecret18signatureAlgorithm15completionBlockyAA012VCLSignatureG0O_yAA9VCLResultOy8VCCrypto0lE0_pGYbctF",
-            "mangledName": "$s3VCL13VCLKeyServiceP14generateSecret18signatureAlgorithm15completionBlockyAA012VCLSignatureG0O_yAA9VCLResultOy8VCCrypto0lE0_pGYbctF",
-            "moduleName": "VCL",
-            "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCLKeyService>",
-            "sugared_genericSig": "<Self where Self : VCL.VCLKeyService>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "retrieveSecretReference",
-            "printedName": "retrieveSecretReference(keyId:completionBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VCL.VCLResult<any VCCrypto.VCCryptoSecret>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VCLResult",
-                    "printedName": "VCL.VCLResult<any VCCrypto.VCCryptoSecret>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VCCryptoSecret",
-                        "printedName": "any VCCrypto.VCCryptoSecret",
-                        "usr": "s:8VCCrypto0A6SecretP"
-                      }
-                    ],
-                    "usr": "s:3VCL9VCLResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3VCL13VCLKeyServiceP23retrieveSecretReference5keyId15completionBlockySS_yAA9VCLResultOy8VCCrypto0lE0_pGYbctF",
-            "mangledName": "$s3VCL13VCLKeyServiceP23retrieveSecretReference5keyId15completionBlockySS_yAA9VCLResultOy8VCCrypto0lE0_pGYbctF",
-            "moduleName": "VCL",
-            "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCLKeyService>",
-            "sugared_genericSig": "<Self where Self : VCL.VCLKeyService>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "retrievePublicJwk",
-            "printedName": "retrievePublicJwk(secret:completionBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "VCCryptoSecret",
-                "printedName": "any VCCrypto.VCCryptoSecret",
-                "usr": "s:8VCCrypto0A6SecretP"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VCL.VCLResult<VCToken.ECPublicJwk>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VCLResult",
-                    "printedName": "VCL.VCLResult<VCToken.ECPublicJwk>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ECPublicJwk",
-                        "printedName": "VCToken.ECPublicJwk",
-                        "usr": "s:7VCToken11ECPublicJwkV"
-                      }
-                    ],
-                    "usr": "s:3VCL9VCLResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3VCL13VCLKeyServiceP17retrievePublicJwk6secret15completionBlocky8VCCrypto0J6Secret_p_yAA9VCLResultOy7VCToken08ECPublicF0VGYbctF",
-            "mangledName": "$s3VCL13VCLKeyServiceP17retrievePublicJwk6secret15completionBlocky8VCCrypto0J6Secret_p_yAA9VCLResultOy7VCToken08ECPublicF0VGYbctF",
-            "moduleName": "VCL",
-            "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCLKeyService>",
-            "sugared_genericSig": "<Self where Self : VCL.VCLKeyService>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -47684,56 +47525,56 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5395,
+      "offset": 5626,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5436,
+      "offset": 5667,
       "length": 5,
       "value": "\"aud\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5477,
+      "offset": 5708,
       "length": 5,
       "value": "\"sub\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5518,
+      "offset": 5749,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5559,
+      "offset": 5790,
       "length": 5,
       "value": "\"iat\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5600,
+      "offset": 5831,
       "length": 5,
       "value": "\"nbf\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5641,
+      "offset": 5872,
       "length": 5,
       "value": "\"exp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/local\/VCLJwtSignServiceLocalImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5684,
+      "offset": 5915,
       "length": 7,
       "value": "\"nonce\""
     },
