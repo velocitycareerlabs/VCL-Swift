@@ -28,7 +28,7 @@ public struct VCLError : Swift.Sendable, Swift.Error {
   public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, requestId: Swift.String? = nil, message: Swift.String? = nil, statusCode: Swift.Int? = nil)
   public init(payload: Swift.String?, errorCode: Swift.String? = nil)
   public init(error: (any Swift.Error)? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, statusCode: Swift.Int? = nil)
-  public func toDictionary() -> [Swift.String : Any?]
+  public func toDictionary() -> [Swift.String : (any Swift.Sendable)?]
   public struct CodingKeys {
     public static let KeyPayload: Swift.String
     public static let KeyError: Swift.String
@@ -59,7 +59,7 @@ public struct VCLFinalizeOffersDescriptor : Swift.Sendable {
   public let approvedOfferIds: [Swift.String]
   public let rejectedOfferIds: [Swift.String]
   public init(credentialManifest: VCLCredentialManifest, challenge: Swift.String? = nil, approvedOfferIds: [Swift.String], rejectedOfferIds: [Swift.String])
-  public var payload: [Swift.String : Any?] {
+  public var payload: [Swift.String : (any Swift.Sendable)?] {
     get
   }
   public var aud: Swift.String {
@@ -208,7 +208,7 @@ public struct VCLCredentialManifestDescriptorRefresh : VCLCredentialManifestDesc
 public struct VCLVerifiedProfile : Swift.Sendable {
   public let payload: [Swift.String : any Swift.Sendable]
   public init(payload: [Swift.String : any Swift.Sendable])
-  public var credentialSubject: [Swift.String : Any]? {
+  public var credentialSubject: [Swift.String : any Swift.Sendable]? {
     get
   }
   public var name: Swift.String? {
@@ -315,8 +315,8 @@ public struct VCLCredentialTypeSchemas : Swift.Sendable {
   }
   public init(all: [Swift.String : VCLCredentialTypeSchema]?)
 }
-public func == (lhs: [Any], rhs: [Any]) -> Swift.Bool
-public func != (lhs: [Any], rhs: [Any]) -> Swift.Bool
+public func == (lhs: [any Swift.Sendable], rhs: [any Swift.Sendable]) -> Swift.Bool
+public func != (lhs: [any Swift.Sendable], rhs: [any Swift.Sendable]) -> Swift.Bool
 public protocol VCLJwtVerifyService : Swift.Sendable {
   func verify(jwt: VCLJwt, publicJwk: VCLPublicJwk, remoteCryptoServicesToken: VCLToken?, completionBlock: @escaping @Sendable (VCLResult<Swift.Bool>) -> Swift.Void)
 }
@@ -558,7 +558,7 @@ public struct VCLGenerateOffersDescriptor : Swift.Sendable {
   public let offerHashes: [Swift.String]?
   public let identificationVerifiableCredentials: [VCLVerifiableCredential]?
   public init(credentialManifest: VCLCredentialManifest, types: [Swift.String]? = nil, offerHashes: [Swift.String]? = nil, identificationVerifiableCredentials: [VCLVerifiableCredential]? = nil)
-  public var payload: [Swift.String : Any?] {
+  public var payload: [Swift.String : (any Swift.Sendable)?] {
     get
   }
   public var issuerId: Swift.String {
@@ -1151,8 +1151,8 @@ public struct VCLCountry : Swift.Sendable, VCLPlace {
     public static let KeyRegions: Swift.String
   }
 }
-public func == (lhs: [Swift.String : Any], rhs: [Swift.String : Any]) -> Swift.Bool
-public func != (lhs: [Swift.String : Any], rhs: [Swift.String : Any]) -> Swift.Bool
+public func == (lhs: [Swift.String : any Swift.Sendable], rhs: [Swift.String : any Swift.Sendable]) -> Swift.Bool
+public func != (lhs: [Swift.String : any Swift.Sendable], rhs: [Swift.String : any Swift.Sendable]) -> Swift.Bool
 public struct VCLServiceTypes : Swift.Sendable {
   public let all: [VCLServiceType]
   public init(all: [VCLServiceType])

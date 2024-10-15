@@ -925,7 +925,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any?]",
+                "printedName": "[Swift.String : (any Swift.Sendable)?]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -936,12 +936,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Any?",
+                    "printedName": "(any Swift.Sendable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:Sq"
@@ -951,8 +952,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL8VCLErrorV12toDictionarySDySSypSgGyF",
-            "mangledName": "$s3VCL8VCLErrorV12toDictionarySDySSypSgGyF",
+            "usr": "s:3VCL8VCLErrorV12toDictionarySDySSs8Sendable_pSgGyF",
+            "mangledName": "$s3VCL8VCLErrorV12toDictionarySDySSs8Sendable_pSgGyF",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -2098,7 +2099,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any?]",
+                "printedName": "[Swift.String : (any Swift.Sendable)?]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2109,12 +2110,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Any?",
+                    "printedName": "(any Swift.Sendable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:Sq"
@@ -2124,8 +2126,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSypSgGvp",
-            "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSypSgGvp",
+            "usr": "s:3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSs8Sendable_pSgGvp",
+            "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSs8Sendable_pSgGvp",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -2139,7 +2141,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any?]",
+                    "printedName": "[Swift.String : (any Swift.Sendable)?]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2150,12 +2152,13 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Any?",
+                        "printedName": "(any Swift.Sendable)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:Sq"
@@ -2165,8 +2168,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSypSgGvg",
-                "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSypSgGvg",
+                "usr": "s:3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSs8Sendable_pSgGvg",
+                "mangledName": "$s3VCL27VCLFinalizeOffersDescriptorV7payloadSDySSs8Sendable_pSgGvg",
                 "moduleName": "VCL",
                 "accessorKind": "get"
               }
@@ -7442,12 +7445,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7457,8 +7460,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -7468,8 +7472,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL18VCLVerifiedProfileV17credentialSubjectSDySSypGSgvp",
-            "mangledName": "$s3VCL18VCLVerifiedProfileV17credentialSubjectSDySSypGSgvp",
+            "usr": "s:3VCL18VCLVerifiedProfileV17credentialSubjectSDySSs8Sendable_pGSgvp",
+            "mangledName": "$s3VCL18VCLVerifiedProfileV17credentialSubjectSDySSs8Sendable_pGSgvp",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -7483,12 +7487,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : any Swift.Sendable]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : any Swift.Sendable]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -7498,8 +7502,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:SD"
@@ -7509,8 +7514,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL18VCLVerifiedProfileV17credentialSubjectSDySSypGSgvg",
-                "mangledName": "$s3VCL18VCLVerifiedProfileV17credentialSubjectSDySSypGSgvg",
+                "usr": "s:3VCL18VCLVerifiedProfileV17credentialSubjectSDySSs8Sendable_pGSgvg",
+                "mangledName": "$s3VCL18VCLVerifiedProfileV17credentialSubjectSDySSs8Sendable_pGSgvg",
                 "moduleName": "VCL",
                 "accessorKind": "get"
               }
@@ -10591,12 +10596,13 @@
           {
             "kind": "TypeNominal",
             "name": "Array",
-            "printedName": "[Any]",
+            "printedName": "[any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:Sa"
@@ -10604,20 +10610,21 @@
           {
             "kind": "TypeNominal",
             "name": "Array",
-            "printedName": "[Any]",
+            "printedName": "[any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:Sa"
           }
         ],
         "declKind": "Func",
-        "usr": "s:3VCL2eeoiySbSayypG_ACtF",
-        "mangledName": "$s3VCL2eeoiySbSayypG_ACtF",
+        "usr": "s:3VCL2eeoiySbSays8Sendable_pG_ADtF",
+        "mangledName": "$s3VCL2eeoiySbSays8Sendable_pG_ADtF",
         "moduleName": "VCL",
         "declAttributes": [
           "AccessControl"
@@ -10638,12 +10645,13 @@
           {
             "kind": "TypeNominal",
             "name": "Array",
-            "printedName": "[Any]",
+            "printedName": "[any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:Sa"
@@ -10651,20 +10659,21 @@
           {
             "kind": "TypeNominal",
             "name": "Array",
-            "printedName": "[Any]",
+            "printedName": "[any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:Sa"
           }
         ],
         "declKind": "Func",
-        "usr": "s:3VCL2neoiySbSayypG_ACtF",
-        "mangledName": "$s3VCL2neoiySbSayypG_ACtF",
+        "usr": "s:3VCL2neoiySbSays8Sendable_pG_ADtF",
+        "mangledName": "$s3VCL2neoiySbSays8Sendable_pG_ADtF",
         "moduleName": "VCL",
         "declAttributes": [
           "AccessControl"
@@ -20068,7 +20077,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any?]",
+                "printedName": "[Swift.String : (any Swift.Sendable)?]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -20079,12 +20088,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Any?",
+                    "printedName": "(any Swift.Sendable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:Sq"
@@ -20094,8 +20104,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL27VCLGenerateOffersDescriptorV7payloadSDySSypSgGvp",
-            "mangledName": "$s3VCL27VCLGenerateOffersDescriptorV7payloadSDySSypSgGvp",
+            "usr": "s:3VCL27VCLGenerateOffersDescriptorV7payloadSDySSs8Sendable_pSgGvp",
+            "mangledName": "$s3VCL27VCLGenerateOffersDescriptorV7payloadSDySSs8Sendable_pSgGvp",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -20109,7 +20119,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any?]",
+                    "printedName": "[Swift.String : (any Swift.Sendable)?]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -20120,12 +20130,13 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Any?",
+                        "printedName": "(any Swift.Sendable)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "Sendable",
+                            "printedName": "any Swift.Sendable",
+                            "usr": "s:s8SendableP"
                           }
                         ],
                         "usr": "s:Sq"
@@ -20135,8 +20146,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL27VCLGenerateOffersDescriptorV7payloadSDySSypSgGvg",
-                "mangledName": "$s3VCL27VCLGenerateOffersDescriptorV7payloadSDySSypSgGvg",
+                "usr": "s:3VCL27VCLGenerateOffersDescriptorV7payloadSDySSs8Sendable_pSgGvg",
+                "mangledName": "$s3VCL27VCLGenerateOffersDescriptorV7payloadSDySSs8Sendable_pSgGvg",
                 "moduleName": "VCL",
                 "accessorKind": "get"
               }
@@ -45157,7 +45168,7 @@
           {
             "kind": "TypeNominal",
             "name": "Dictionary",
-            "printedName": "[Swift.String : Any]",
+            "printedName": "[Swift.String : any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -45167,8 +45178,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:SD"
@@ -45176,7 +45188,7 @@
           {
             "kind": "TypeNominal",
             "name": "Dictionary",
-            "printedName": "[Swift.String : Any]",
+            "printedName": "[Swift.String : any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -45186,16 +45198,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:SD"
           }
         ],
         "declKind": "Func",
-        "usr": "s:3VCL2eeoiySbSDySSypG_ACtF",
-        "mangledName": "$s3VCL2eeoiySbSDySSypG_ACtF",
+        "usr": "s:3VCL2eeoiySbSDySSs8Sendable_pG_ADtF",
+        "mangledName": "$s3VCL2eeoiySbSDySSs8Sendable_pG_ADtF",
         "moduleName": "VCL",
         "declAttributes": [
           "AccessControl"
@@ -45216,7 +45229,7 @@
           {
             "kind": "TypeNominal",
             "name": "Dictionary",
-            "printedName": "[Swift.String : Any]",
+            "printedName": "[Swift.String : any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -45226,8 +45239,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:SD"
@@ -45235,7 +45249,7 @@
           {
             "kind": "TypeNominal",
             "name": "Dictionary",
-            "printedName": "[Swift.String : Any]",
+            "printedName": "[Swift.String : any Swift.Sendable]",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -45245,16 +45259,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Sendable",
+                "printedName": "any Swift.Sendable",
+                "usr": "s:s8SendableP"
               }
             ],
             "usr": "s:SD"
           }
         ],
         "declKind": "Func",
-        "usr": "s:3VCL2neoiySbSDySSypG_ACtF",
-        "mangledName": "$s3VCL2neoiySbSDySSypG_ACtF",
+        "usr": "s:3VCL2neoiySbSDySSs8Sendable_pG_ADtF",
+        "mangledName": "$s3VCL2neoiySbSDySSs8Sendable_pG_ADtF",
         "moduleName": "VCL",
         "declAttributes": [
           "AccessControl"
@@ -47322,105 +47337,105 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2628,
+      "offset": 2633,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2675,
+      "offset": 2680,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2724,
+      "offset": 2729,
       "length": 11,
       "value": "\"errorCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2777,
+      "offset": 2782,
       "length": 11,
       "value": "\"requestId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2828,
+      "offset": 2833,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2880,
+      "offset": 2885,
       "length": 12,
       "value": "\"statusCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtVerifyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1960,
+      "offset": 1965,
       "length": 5,
       "value": "\"jwt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtVerifyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2006,
+      "offset": 2011,
       "length": 10,
       "value": "\"verified\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtVerifyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2059,
+      "offset": 2064,
       "length": 11,
       "value": "\"publicKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 2078,
       "length": 12,
       "value": "\"exchangeId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2129,
+      "offset": 2139,
       "length": 18,
       "value": "\"approvedOfferIds\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2206,
       "length": 18,
       "value": "\"rejectedOfferIds\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2259,
+      "offset": 2269,
       "length": 5,
       "value": "\"jwt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 2312,
       "length": 7,
       "value": "\"proof\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLFinalizeOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2351,
+      "offset": 2361,
       "length": 12,
       "value": "\"proof_type\""
     },
@@ -47665,35 +47680,35 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1285,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 1340,
+      "offset": 1350,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 1383,
+      "offset": 1393,
       "length": 6,
       "value": "\"logo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 1424,
+      "offset": 1434,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLVerifiedProfile.swift",
       "kind": "StringLiteral",
-      "offset": 1472,
+      "offset": 1482,
       "length": 34,
       "value": "\"permittedVelocityServiceCategory\""
     },
@@ -47728,70 +47743,70 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2753,
+      "offset": 2783,
       "length": 17,
       "value": "\"issuing_request\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2844,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 2884,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2898,
+      "offset": 2928,
       "length": 8,
       "value": "\"issuer\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 2949,
+      "offset": 2979,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3049,
       "length": 25,
       "value": "\"presentation_definition\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 3094,
+      "offset": 3124,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 3151,
+      "offset": 3181,
       "length": 18,
       "value": "\"check_offers_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 3219,
+      "offset": 3249,
       "length": 21,
       "value": "\"finalize_offers_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCredentialManifest.swift",
       "kind": "StringLiteral",
-      "offset": 3296,
+      "offset": 3326,
       "length": 25,
       "value": "\"submit_presentation_uri\""
     },
@@ -48155,7 +48170,7 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21639,
+      "offset": 21659,
       "length": 2,
       "value": "\"\""
     },
@@ -48435,77 +48450,77 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2979,
+      "offset": 2999,
       "length": 7,
       "value": "\"keyId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3022,
+      "offset": 3042,
       "length": 5,
       "value": "\"jwk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3063,
+      "offset": 3083,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
+      "offset": 3124,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3145,
+      "offset": 3165,
       "length": 5,
       "value": "\"aud\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3186,
+      "offset": 3206,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3229,
+      "offset": 3249,
       "length": 7,
       "value": "\"nonce\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3296,
       "length": 8,
       "value": "\"header\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3324,
+      "offset": 3344,
       "length": 9,
       "value": "\"options\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3373,
+      "offset": 3393,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3426,
+      "offset": 3446,
       "length": 12,
       "value": "\"compactJwt\""
     },
@@ -48582,28 +48597,28 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLGenerateOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1455,
+      "offset": 1470,
       "length": 5,
       "value": "\"did\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLGenerateOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1503,
+      "offset": 1518,
       "length": 12,
       "value": "\"exchangeId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLGenerateOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1553,
+      "offset": 1568,
       "length": 7,
       "value": "\"types\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLGenerateOffersDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 1604,
+      "offset": 1619,
       "length": 13,
       "value": "\"offerHashes\""
     },
@@ -48631,56 +48646,56 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1911,
+      "offset": 1927,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1951,
+      "offset": 1967,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2008,
+      "offset": 2024,
       "length": 22,
       "value": "\"presentation_request\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 2089,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 2195,
       "length": 25,
       "value": "\"presentation_definition\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2254,
+      "offset": 2270,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2308,
+      "offset": 2324,
       "length": 14,
       "value": "\"progress_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2376,
+      "offset": 2392,
       "length": 25,
       "value": "\"submit_presentation_uri\""
     },
@@ -50598,21 +50613,21 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 699,
+      "offset": 704,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 739,
+      "offset": 744,
       "length": 5,
       "value": "\"did\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOffer.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 788,
       "length": 8,
       "value": "\"issuer\""
     },
