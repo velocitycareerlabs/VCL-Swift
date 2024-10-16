@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name VCL
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VCL
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import Swift
@@ -978,6 +978,29 @@ public struct VCLRemoteCryptoServicesUrlsDescriptor : Swift.Sendable {
   public let jwtServiceUrls: VCL.VCLJwtServiceUrls
   public init(keyServiceUrls: VCL.VCLKeyServiceUrls, jwtServiceUrls: VCL.VCLJwtServiceUrls)
 }
+public struct VCLService : Swift.Sendable {
+  public let payload: [Swift.String : any Swift.Sendable]
+  public var id: Swift.String {
+    get
+  }
+  public var type: Swift.String {
+    get
+  }
+  public var serviceEndpoint: Swift.String {
+    get
+  }
+  public init(payload: [Swift.String : any Swift.Sendable])
+  public var credentialTypes: [Swift.String]? {
+    get
+  }
+  public func toPropsString() -> Swift.String
+  public struct CodingKeys {
+    public static let KeyId: Swift.String
+    public static let KeyType: Swift.String
+    public static let KeyCredentialTypes: Swift.String
+    public static let KeyServiceEndpoint: Swift.String
+  }
+}
 public enum VCLIssuingType : Swift.String, Swift.Sendable {
   case Career
   case Identity
@@ -1104,29 +1127,6 @@ public struct VCLSubmissionResult : Swift.Sendable {
     public static let KeyExchange: Swift.String
     public static let KeyJti: Swift.String
     public static let KeySubmissionId: Swift.String
-  }
-}
-public struct VCLService : Swift.Sendable {
-  public let payload: [Swift.String : any Swift.Sendable]
-  public var id: Swift.String {
-    get
-  }
-  public var type: Swift.String {
-    get
-  }
-  public var serviceEndpoint: Swift.String {
-    get
-  }
-  public init(payload: [Swift.String : any Swift.Sendable])
-  public var credentialTypes: [Swift.String]? {
-    get
-  }
-  public func toPropsString() -> Swift.String
-  public struct CodingKeys {
-    public static let KeyId: Swift.String
-    public static let KeyType: Swift.String
-    public static let KeyCredentialTypes: Swift.String
-    public static let KeyServiceEndpoint: Swift.String
   }
 }
 public enum VCLXVnfProtocolVersion : Swift.String, Swift.Sendable {
