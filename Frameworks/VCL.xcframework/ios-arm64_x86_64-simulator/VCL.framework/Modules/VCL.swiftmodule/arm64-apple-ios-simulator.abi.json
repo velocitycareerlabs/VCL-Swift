@@ -47279,21 +47279,21 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VCLLog.swift",
       "kind": "StringLiteral",
-      "offset": 258,
+      "offset": 254,
       "length": 8,
       "value": "\"⛔️\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VCLLog.swift",
       "kind": "StringLiteral",
-      "offset": 294,
+      "offset": 286,
       "length": 8,
       "value": "\"⚠️\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VCLLog.swift",
       "kind": "StringLiteral",
-      "offset": 328,
+      "offset": 316,
       "length": 6,
       "value": "\"💬\""
     },
