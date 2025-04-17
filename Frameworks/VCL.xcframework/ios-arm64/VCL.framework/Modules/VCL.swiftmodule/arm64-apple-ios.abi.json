@@ -156,6 +156,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "VCLCredentialTypeSchema",
         "printedName": "VCLCredentialTypeSchema",
@@ -1702,6 +1712,672 @@
         "moduleName": "VCL",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GrantType",
+        "printedName": "GrantType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "AuthorizationCode",
+            "printedName": "AuthorizationCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.GrantType.Type) -> VCL.GrantType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GrantType",
+                    "printedName": "VCL.GrantType",
+                    "usr": "s:3VCL9GrantTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.GrantType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GrantType",
+                        "printedName": "VCL.GrantType",
+                        "usr": "s:3VCL9GrantTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL9GrantTypeO17AuthorizationCodeyA2CmF",
+            "mangledName": "$s3VCL9GrantTypeO17AuthorizationCodeyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "RefreshToken",
+            "printedName": "RefreshToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.GrantType.Type) -> VCL.GrantType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GrantType",
+                    "printedName": "VCL.GrantType",
+                    "usr": "s:3VCL9GrantTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.GrantType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GrantType",
+                        "printedName": "VCL.GrantType",
+                        "usr": "s:3VCL9GrantTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL9GrantTypeO12RefreshTokenyA2CmF",
+            "mangledName": "$s3VCL9GrantTypeO12RefreshTokenyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.GrantType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GrantType",
+                    "printedName": "VCL.GrantType",
+                    "usr": "s:3VCL9GrantTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL9GrantTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s3VCL9GrantTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "VCL",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL9GrantTypeO8rawValueSSvp",
+            "mangledName": "$s3VCL9GrantTypeO8rawValueSSvp",
+            "moduleName": "VCL",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL9GrantTypeO8rawValueSSvg",
+                "mangledName": "$s3VCL9GrantTypeO8rawValueSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3VCL9GrantTypeO",
+        "mangledName": "$s3VCL9GrantTypeO",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VCLAuthTokenDescriptor",
+        "printedName": "VCLAuthTokenDescriptor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authTokenUri",
+            "printedName": "authTokenUri",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV04authC3UriSSvp",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV04authC3UriSSvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV04authC3UriSSvg",
+                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV04authC3UriSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refreshToken",
+            "printedName": "refreshToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvp",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvg",
+                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "walletDid",
+            "printedName": "walletDid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV9walletDidSSSgvp",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV9walletDidSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV9walletDidSSSgvg",
+                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV9walletDidSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "relyingPartyDid",
+            "printedName": "relyingPartyDid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV15relyingPartyDidSSSgvp",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV15relyingPartyDidSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV15relyingPartyDidSSSgvg",
+                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV15relyingPartyDidSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vendorOriginContext",
+            "printedName": "vendorOriginContext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvp",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvg",
+                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authTokenUri:refreshToken:walletDid:relyingPartyDid:vendorOriginContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLAuthTokenDescriptor",
+                "printedName": "VCL.VCLAuthTokenDescriptor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_SSSgA3Itcfc",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_SSSgA3Itcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(presentationRequest:refreshToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLAuthTokenDescriptor",
+                "printedName": "VCL.VCLAuthTokenDescriptor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLPresentationRequest",
+                "printedName": "VCL.VCLPresentationRequest",
+                "usr": "s:3VCL22VCLPresentationRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV19presentationRequest07refreshC0AcA015VCLPresentationF0V_SSSgtcfc",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV19presentationRequest07refreshC0AcA015VCLPresentationF0V_SSSgtcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:3VCL22VCLAuthTokenDescriptorV",
+        "mangledName": "$s3VCL22VCLAuthTokenDescriptorV",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -13922,7 +14598,7 @@
           {
             "kind": "Function",
             "name": "submitPresentation",
-            "printedName": "submitPresentation(presentationSubmission:successHandler:errorHandler:)",
+            "printedName": "submitPresentation(presentationSubmission:authToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13934,6 +14610,20 @@
                 "name": "VCLPresentationSubmission",
                 "printedName": "VCL.VCLPresentationSubmission",
                 "usr": "s:3VCL25VCLPresentationSubmissionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLAuthToken?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLAuthToken",
+                    "printedName": "VCL.VCLAuthToken",
+                    "usr": "s:3VCL12VCLAuthTokenV"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -13973,8 +14663,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCL7VCLImplC18submitPresentation22presentationSubmission14successHandler05errorH0yAA015VCLPresentationF0V_yAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCL7VCLImplC18submitPresentation22presentationSubmission14successHandler05errorH0yAA015VCLPresentationF0V_yAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "usr": "s:3VCL7VCLImplC18submitPresentation22presentationSubmission9authToken14successHandler05errorJ0yAA015VCLPresentationF0V_AA07VCLAuthH0VSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC18submitPresentation22presentationSubmission9authToken14successHandler05errorJ0yAA015VCLPresentationF0V_AA07VCLAuthH0VSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "Final",
@@ -14365,6 +15055,69 @@
             "declKind": "Func",
             "usr": "s:3VCL7VCLImplC14finalizeOffers0cD10Descriptor12sessionToken14successHandler05errorI0yAA011VCLFinalizedE0V_AA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
             "mangledName": "$s3VCL7VCLImplC14finalizeOffers0cD10Descriptor12sessionToken14successHandler05errorI0yAA011VCLFinalizedE0V_AA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuthToken",
+            "printedName": "getAuthToken(authTokenDescriptor:successHandler:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLAuthTokenDescriptor",
+                "printedName": "VCL.VCLAuthTokenDescriptor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLAuthToken) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLAuthToken",
+                    "printedName": "VCL.VCLAuthToken",
+                    "usr": "s:3VCL12VCLAuthTokenV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLError",
+                    "printedName": "VCL.VCLError",
+                    "usr": "s:3VCL8VCLErrorV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL7VCLImplC12getAuthToken04authE10Descriptor14successHandler05errorI0yAA07VCLAutheG0V_yAA0kE0VcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCL7VCLImplC12getAuthToken04authE10Descriptor14successHandler05errorI0yAA07VCLAutheG0V_yAA0kE0VcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "declAttributes": [
               "Final",
@@ -19060,6 +19813,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "VCLCryptoServiceType",
         "printedName": "VCLCryptoServiceType",
@@ -22058,6 +22821,110 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "feed",
+            "printedName": "feed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLPresentationRequestV4feedSbvp",
+            "mangledName": "$s3VCL22VCLPresentationRequestV4feedSbvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLPresentationRequestV4feedSbvg",
+                "mangledName": "$s3VCL22VCLPresentationRequestV4feedSbvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vendorOriginContext",
+            "printedName": "vendorOriginContext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL22VCLPresentationRequestV19vendorOriginContextSSSgvp",
+            "mangledName": "$s3VCL22VCLPresentationRequestV19vendorOriginContextSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL22VCLPresentationRequestV19vendorOriginContextSSSgvg",
+                "mangledName": "$s3VCL22VCLPresentationRequestV19vendorOriginContextSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(jwt:verifiedProfile:deepLink:pushDelegate:didJwk:remoteCryptoServicesToken:)",
@@ -22627,6 +23494,100 @@
                     "declKind": "Accessor",
                     "usr": "s:3VCL22VCLPresentationRequestV10CodingKeysV24KeySubmitPresentationUriSSvgZ",
                     "mangledName": "$s3VCL22VCLPresentationRequestV10CodingKeysV24KeySubmitPresentationUriSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyFeed",
+                "printedName": "KeyFeed",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL22VCLPresentationRequestV10CodingKeysV7KeyFeedSSvpZ",
+                "mangledName": "$s3VCL22VCLPresentationRequestV10CodingKeysV7KeyFeedSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL22VCLPresentationRequestV10CodingKeysV7KeyFeedSSvgZ",
+                    "mangledName": "$s3VCL22VCLPresentationRequestV10CodingKeysV7KeyFeedSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyAuthTokenUri",
+                "printedName": "KeyAuthTokenUri",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL22VCLPresentationRequestV10CodingKeysV15KeyAuthTokenUriSSvpZ",
+                "mangledName": "$s3VCL22VCLPresentationRequestV10CodingKeysV15KeyAuthTokenUriSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL22VCLPresentationRequestV10CodingKeysV15KeyAuthTokenUriSSvgZ",
+                    "mangledName": "$s3VCL22VCLPresentationRequestV10CodingKeysV15KeyAuthTokenUriSSvgZ",
                     "moduleName": "VCL",
                     "static": true,
                     "implicit": true,
@@ -34996,6 +35957,531 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "VCLAuthToken",
+        "printedName": "VCLAuthToken",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "payload",
+            "printedName": "payload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLAuthTokenV7payloadSDySSypGvp",
+            "mangledName": "$s3VCL12VCLAuthTokenV7payloadSDySSypGvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLAuthTokenV7payloadSDySSypGvg",
+                "mangledName": "$s3VCL12VCLAuthTokenV7payloadSDySSypGvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authTokenUri",
+            "printedName": "authTokenUri",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLAuthTokenV04authC3UriSSSgvp",
+            "mangledName": "$s3VCL12VCLAuthTokenV04authC3UriSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLAuthTokenV04authC3UriSSSgvg",
+                "mangledName": "$s3VCL12VCLAuthTokenV04authC3UriSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "walletDid",
+            "printedName": "walletDid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLAuthTokenV9walletDidSSSgvp",
+            "mangledName": "$s3VCL12VCLAuthTokenV9walletDidSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLAuthTokenV9walletDidSSSgvg",
+                "mangledName": "$s3VCL12VCLAuthTokenV9walletDidSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "relyingPartyDid",
+            "printedName": "relyingPartyDid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLAuthTokenV15relyingPartyDidSSSgvp",
+            "mangledName": "$s3VCL12VCLAuthTokenV15relyingPartyDidSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLAuthTokenV15relyingPartyDidSSSgvg",
+                "mangledName": "$s3VCL12VCLAuthTokenV15relyingPartyDidSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessToken",
+            "printedName": "accessToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLToken",
+                "printedName": "VCL.VCLToken",
+                "usr": "s:3VCL8VCLTokenV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLAuthTokenV06accessC0AA8VCLTokenVvp",
+            "mangledName": "$s3VCL12VCLAuthTokenV06accessC0AA8VCLTokenVvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLToken",
+                    "printedName": "VCL.VCLToken",
+                    "usr": "s:3VCL8VCLTokenV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLAuthTokenV06accessC0AA8VCLTokenVvg",
+                "mangledName": "$s3VCL12VCLAuthTokenV06accessC0AA8VCLTokenVvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refreshToken",
+            "printedName": "refreshToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLToken",
+                "printedName": "VCL.VCLToken",
+                "usr": "s:3VCL8VCLTokenV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLAuthTokenV07refreshC0AA8VCLTokenVvp",
+            "mangledName": "$s3VCL12VCLAuthTokenV07refreshC0AA8VCLTokenVvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLToken",
+                    "printedName": "VCL.VCLToken",
+                    "usr": "s:3VCL8VCLTokenV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLAuthTokenV07refreshC0AA8VCLTokenVvg",
+                "mangledName": "$s3VCL12VCLAuthTokenV07refreshC0AA8VCLTokenVvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenType",
+            "printedName": "tokenType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL12VCLAuthTokenV9tokenTypeSSvp",
+            "mangledName": "$s3VCL12VCLAuthTokenV9tokenTypeSSvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL12VCLAuthTokenV9tokenTypeSSvg",
+                "mangledName": "$s3VCL12VCLAuthTokenV9tokenTypeSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(payload:authTokenUri:walletDid:relyingPartyDid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLAuthToken",
+                "printedName": "VCL.VCLAuthToken",
+                "usr": "s:3VCL12VCLAuthTokenV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL12VCLAuthTokenV7payload04authC3Uri9walletDid012relyingPartyH0ACSDySSypG_SSSgA2Itcfc",
+            "mangledName": "$s3VCL12VCLAuthTokenV7payload04authC3Uri9walletDid012relyingPartyH0ACSDySSypG_SSSgA2Itcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "declKind": "Enum",
+            "usr": "s:3VCL12VCLAuthTokenV10CodingKeysO",
+            "mangledName": "$s3VCL12VCLAuthTokenV10CodingKeysO",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:3VCL12VCLAuthTokenV",
+        "mangledName": "$s3VCL12VCLAuthTokenV",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -35003,6 +36489,109 @@
         "moduleName": "VCL",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthTokenRepository",
+        "printedName": "AuthTokenRepository",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getAuthToken",
+            "printedName": "getAuthToken(authTokenDescriptor:completionBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLAuthTokenDescriptor",
+                "printedName": "VCL.VCLAuthTokenDescriptor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLResult<VCL.VCLAuthToken>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLResult",
+                    "printedName": "VCL.VCLResult<VCL.VCLAuthToken>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLAuthToken",
+                        "printedName": "VCL.VCLAuthToken",
+                        "usr": "s:3VCL12VCLAuthTokenV"
+                      }
+                    ],
+                    "usr": "s:3VCL9VCLResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL19AuthTokenRepositoryP03getbC004authC10Descriptor15completionBlockyAA07VCLAuthcG0V_yAA9VCLResultOyAA0jC0VGctF",
+            "mangledName": "$s3VCL19AuthTokenRepositoryP03getbC004authC10Descriptor15completionBlockyAA07VCLAuthcG0V_yAA9VCLResultOyAA0jC0VGctF",
+            "moduleName": "VCL",
+            "genericSig": "<τ_0_0 where τ_0_0 : VCL.AuthTokenRepository>",
+            "sugared_genericSig": "<Self where Self : VCL.AuthTokenRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:3VCL19AuthTokenRepositoryP",
+        "mangledName": "$s3VCL19AuthTokenRepositoryP",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -35899,7 +37488,7 @@
           {
             "kind": "Function",
             "name": "submitPresentation",
-            "printedName": "submitPresentation(presentationSubmission:successHandler:errorHandler:)",
+            "printedName": "submitPresentation(presentationSubmission:authToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -35911,6 +37500,20 @@
                 "name": "VCLPresentationSubmission",
                 "printedName": "VCL.VCLPresentationSubmission",
                 "usr": "s:3VCL25VCLPresentationSubmissionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLAuthToken?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLAuthToken",
+                    "printedName": "VCL.VCLAuthToken",
+                    "usr": "s:3VCL12VCLAuthTokenV"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -35950,8 +37553,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAP18submitPresentation22presentationSubmission14successHandler05errorG0yAA015VCLPresentationE0V_yAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAP18submitPresentation22presentationSubmission14successHandler05errorG0yAA015VCLPresentationE0V_yAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAP18submitPresentation22presentationSubmission9authToken14successHandler05errorI0yAA015VCLPresentationE0V_AA07VCLAuthG0VSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP18submitPresentation22presentationSubmission9authToken14successHandler05errorI0yAA015VCLPresentationE0V_AA07VCLAuthG0VSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -36342,6 +37945,69 @@
             "declKind": "Func",
             "usr": "s:3VCLAAP14finalizeOffers0bC10Descriptor12sessionToken14successHandler05errorH0yAA011VCLFinalizecD0V_AA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
             "mangledName": "$s3VCLAAP14finalizeOffers0bC10Descriptor12sessionToken14successHandler05errorH0yAA011VCLFinalizecD0V_AA8VCLTokenVyAA27VCLJwtVerifiableCredentialsVcyAA8VCLErrorVctF",
+            "moduleName": "VCL",
+            "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
+            "sugared_genericSig": "<Self where Self : VCL.VCL>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuthToken",
+            "printedName": "getAuthToken(authTokenDescriptor:successHandler:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLAuthTokenDescriptor",
+                "printedName": "VCL.VCLAuthTokenDescriptor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLAuthToken) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLAuthToken",
+                    "printedName": "VCL.VCLAuthToken",
+                    "usr": "s:3VCL12VCLAuthTokenV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLError",
+                    "printedName": "VCL.VCLError",
+                    "usr": "s:3VCL8VCLErrorV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCLAAP12getAuthToken04authD10Descriptor14successHandler05errorH0yAA07VCLAuthdF0V_yAA0jD0VcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAP12getAuthToken04authD10Descriptor14successHandler05errorH0yAA07VCLAuthdF0V_yAA0jD0VcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -36772,7 +38438,7 @@
           {
             "kind": "Function",
             "name": "submitPresentation",
-            "printedName": "submitPresentation(presentationSubmission:successHandler:errorHandler:)",
+            "printedName": "submitPresentation(presentationSubmission:authToken:successHandler:errorHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36784,6 +38450,21 @@
                 "name": "VCLPresentationSubmission",
                 "printedName": "VCL.VCLPresentationSubmission",
                 "usr": "s:3VCL25VCLPresentationSubmissionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLAuthToken?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLAuthToken",
+                    "printedName": "VCL.VCLAuthToken",
+                    "usr": "s:3VCL12VCLAuthTokenV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -36823,8 +38504,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3VCLAAPAAE18submitPresentation22presentationSubmission14successHandler05errorG0yAA015VCLPresentationE0V_yAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
-            "mangledName": "$s3VCLAAPAAE18submitPresentation22presentationSubmission14successHandler05errorG0yAA015VCLPresentationE0V_yAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "usr": "s:3VCLAAPAAE18submitPresentation22presentationSubmission9authToken14successHandler05errorI0yAA015VCLPresentationE0V_AA07VCLAuthG0VSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
+            "mangledName": "$s3VCLAAPAAE18submitPresentation22presentationSubmission9authToken14successHandler05errorI0yAA015VCLPresentationE0V_AA07VCLAuthG0VSgyAA19VCLSubmissionResultVcyAA8VCLErrorVctF",
             "moduleName": "VCL",
             "genericSig": "<τ_0_0 where τ_0_0 : VCL.VCL>",
             "sugared_genericSig": "<Self where Self : VCL.VCL>",
@@ -42535,6 +44216,99 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AuthTokenUseCase",
+        "printedName": "AuthTokenUseCase",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getAuthToken",
+            "printedName": "getAuthToken(authTokenDescriptor:completionBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLAuthTokenDescriptor",
+                "printedName": "VCL.VCLAuthTokenDescriptor",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLResult<VCL.VCLAuthToken>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLResult",
+                    "printedName": "VCL.VCLResult<VCL.VCLAuthToken>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLAuthToken",
+                        "printedName": "VCL.VCLAuthToken",
+                        "usr": "s:3VCL12VCLAuthTokenV"
+                      }
+                    ],
+                    "usr": "s:3VCL9VCLResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3VCL16AuthTokenUseCaseP03getbC004authC10Descriptor15completionBlockyAA07VCLAuthcH0V_yAA9VCLResultOyAA0kC0VGctF",
+            "mangledName": "$s3VCL16AuthTokenUseCaseP03getbC004authC10Descriptor15completionBlockyAA07VCLAuthcH0V_yAA9VCLResultOyAA0kC0VGctF",
+            "moduleName": "VCL",
+            "genericSig": "<τ_0_0 where τ_0_0 : VCL.AuthTokenUseCase>",
+            "sugared_genericSig": "<Self where Self : VCL.AuthTokenUseCase>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:3VCL16AuthTokenUseCaseP",
+        "mangledName": "$s3VCL16AuthTokenUseCaseP",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "VCLPublicJwk",
         "printedName": "VCLPublicJwk",
         "children": [
@@ -46822,23 +48596,72 @@
       "value": "\"statusCode\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 261,
+      "length": 20,
+      "value": "\"authorization_code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 15,
+      "value": "\"refresh_token\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2228,
+      "length": 11,
+      "value": "\"client_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2273,
+      "length": 10,
+      "value": "\"audience\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2318,
+      "length": 12,
+      "value": "\"grant_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2365,
+      "length": 12,
+      "value": "\"token_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2417,
+      "length": 8,
+      "value": "\"Bearer\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtVerifyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1950,
+      "offset": 1958,
       "length": 5,
       "value": "\"jwt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtVerifyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1996,
+      "offset": 2004,
       "length": 10,
       "value": "\"verified\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtVerifyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2049,
+      "offset": 2057,
       "length": 11,
       "value": "\"publicKey\""
     },
@@ -46950,16 +48773,16 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1834,
-      "length": 8,
-      "value": "\"Bearer\""
+      "offset": 1847,
+      "length": 24,
+      "value": "\"x-vnf-protocol-version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/repositories\/Urls.swift",
       "kind": "StringLiteral",
-      "offset": 1880,
-      "length": 24,
-      "value": "\"x-vnf-protocol-version\""
+      "offset": 1927,
+      "length": 8,
+      "value": "\"Bearer\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
@@ -47300,35 +49123,35 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/keys\/VCLKeyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2716,
+      "offset": 2724,
       "length": 5,
       "value": "\"crv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/keys\/VCLKeyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2758,
+      "offset": 2766,
       "length": 5,
       "value": "\"did\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/keys\/VCLKeyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2799,
+      "offset": 2807,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/keys\/VCLKeyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2842,
+      "offset": 2850,
       "length": 7,
       "value": "\"keyId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/keys\/VCLKeyServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2891,
+      "offset": 2899,
       "length": 11,
       "value": "\"publicJwk\""
     },
@@ -47615,7 +49438,7 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 21298,
+      "offset": 22106,
       "length": 2,
       "value": "\"\""
     },
@@ -47895,77 +49718,77 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2969,
+      "offset": 2977,
       "length": 7,
       "value": "\"keyId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 3020,
       "length": 5,
       "value": "\"jwk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3053,
+      "offset": 3061,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3094,
+      "offset": 3102,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3143,
       "length": 5,
       "value": "\"aud\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3176,
+      "offset": 3184,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3219,
+      "offset": 3227,
       "length": 7,
       "value": "\"nonce\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3266,
+      "offset": 3274,
       "length": 8,
       "value": "\"header\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3314,
+      "offset": 3322,
       "length": 9,
       "value": "\"options\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3363,
+      "offset": 3371,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3416,
+      "offset": 3424,
       "length": 12,
       "value": "\"compactJwt\""
     },
@@ -48091,58 +49914,72 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1902,
+      "offset": 2223,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 2263,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1999,
+      "offset": 2320,
       "length": 22,
       "value": "\"presentation_request\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2064,
+      "offset": 2385,
       "length": 13,
       "value": "\"exchange_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2170,
+      "offset": 2491,
       "length": 25,
       "value": "\"presentation_definition\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2245,
+      "offset": 2566,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2299,
+      "offset": 2620,
       "length": 14,
       "value": "\"progress_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2367,
+      "offset": 2688,
       "length": 25,
       "value": "\"submit_presentation_uri\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2750,
+      "length": 6,
+      "value": "\"feed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2801,
+      "length": 16,
+      "value": "\"auth_token_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLCountries.swift",
@@ -49921,6 +51758,48 @@
       "offset": 304,
       "length": 2,
       "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthToken.swift",
+      "kind": "StringLiteral",
+      "offset": 1447,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthToken.swift",
+      "kind": "StringLiteral",
+      "offset": 1499,
+      "length": 15,
+      "value": "\"refresh_token\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthToken.swift",
+      "kind": "StringLiteral",
+      "offset": 1549,
+      "length": 12,
+      "value": "\"token_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthToken.swift",
+      "kind": "StringLiteral",
+      "offset": 1601,
+      "length": 14,
+      "value": "\"authTokenUri\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthToken.swift",
+      "kind": "StringLiteral",
+      "offset": 1650,
+      "length": 11,
+      "value": "\"walletDid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthToken.swift",
+      "kind": "StringLiteral",
+      "offset": 1702,
+      "length": 17,
+      "value": "\"relyingPartyDid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/db\/CacheServiceImpl.swift",

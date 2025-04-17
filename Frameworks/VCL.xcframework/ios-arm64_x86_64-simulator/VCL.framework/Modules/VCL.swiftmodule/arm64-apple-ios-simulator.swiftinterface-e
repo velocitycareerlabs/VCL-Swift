@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VCL
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VCL
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import Foundation
 import Swift
 import VCCrypto
@@ -52,6 +52,24 @@ public struct VCLClaims : VCToken.Claims, Swift.Decodable, Swift.Encodable {
   public var nbf: Swift.Double? {
     get
   }
+}
+public enum GrantType : Swift.String {
+  case AuthorizationCode
+  case RefreshToken
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VCLAuthTokenDescriptor {
+  public let authTokenUri: Swift.String
+  public let refreshToken: Swift.String?
+  public let walletDid: Swift.String?
+  public let relyingPartyDid: Swift.String?
+  public let vendorOriginContext: Swift.String?
+  public init(authTokenUri: Swift.String, refreshToken: Swift.String? = nil, walletDid: Swift.String? = nil, relyingPartyDid: Swift.String? = nil, vendorOriginContext: Swift.String? = nil)
+  public init(presentationRequest: VCL.VCLPresentationRequest, refreshToken: Swift.String? = nil)
 }
 public struct VCLFinalizeOffersDescriptor {
   public let credentialManifest: VCL.VCLCredentialManifest
@@ -405,13 +423,14 @@ public struct VCLJwt {
     get
   }
   final public func getPresentationRequest(presentationRequestDescriptor: VCL.VCLPresentationRequestDescriptor, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  final public func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  final public func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, authToken: VCL.VCLAuthToken?, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func getExchangeProgress(exchangeDescriptor: VCL.VCLExchangeDescriptor, successHandler: @escaping (VCL.VCLExchange) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func searchForOrganizations(organizationsSearchDescriptor: VCL.VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCL.VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func getCredentialManifest(credentialManifestDescriptor: any VCL.VCLCredentialManifestDescriptor, successHandler: @escaping (VCL.VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func generateOffers(generateOffersDescriptor: VCL.VCLGenerateOffersDescriptor, successHandler: @escaping (VCL.VCLOffers) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func checkForOffers(generateOffersDescriptor: VCL.VCLGenerateOffersDescriptor, sessionToken: VCL.VCLToken, successHandler: @escaping (VCL.VCLOffers) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func finalizeOffers(finalizeOffersDescriptor: VCL.VCLFinalizeOffersDescriptor, sessionToken: VCL.VCLToken, successHandler: @escaping (VCL.VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  final public func getAuthToken(authTokenDescriptor: VCL.VCLAuthTokenDescriptor, successHandler: @escaping (VCL.VCLAuthToken) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCL.VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCL.VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   final public func verifyJwt(jwt: VCL.VCLJwt, publicJwk: VCL.VCLPublicJwk, remoteCryptoServicesToken: VCL.VCLToken? = nil, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
@@ -617,6 +636,8 @@ public struct VCLPresentationRequest {
   public let pushDelegate: VCL.VCLPushDelegate?
   public let didJwk: VCL.VCLDidJwk
   public let remoteCryptoServicesToken: VCL.VCLToken?
+  public let feed: Swift.Bool
+  public let vendorOriginContext: Swift.String?
   public init(jwt: VCL.VCLJwt, verifiedProfile: VCL.VCLVerifiedProfile, deepLink: VCL.VCLDeepLink, pushDelegate: VCL.VCLPushDelegate? = nil, didJwk: VCL.VCLDidJwk, remoteCryptoServicesToken: VCL.VCLToken? = nil)
   public var iss: Swift.String {
     get
@@ -636,6 +657,8 @@ public struct VCLPresentationRequest {
     public static let KeyMetadata: Swift.String
     public static let KeyProgressUri: Swift.String
     public static let KeySubmitPresentationUri: Swift.String
+    public static let KeyFeed: Swift.String
+    public static let KeyAuthTokenUri: Swift.String
   }
 }
 public struct VCLCountries {
@@ -906,6 +929,21 @@ public enum VCLStatusCode : Swift.Int {
     get
   }
 }
+public struct VCLAuthToken {
+  public let payload: [Swift.String : Any]
+  public let authTokenUri: Swift.String?
+  public let walletDid: Swift.String?
+  public let relyingPartyDid: Swift.String?
+  public let accessToken: VCL.VCLToken
+  public let refreshToken: VCL.VCLToken
+  public let tokenType: Swift.String
+  public init(payload: [Swift.String : Any], authTokenUri: Swift.String? = nil, walletDid: Swift.String? = nil, relyingPartyDid: Swift.String? = nil)
+  public enum CodingKeys {
+  }
+}
+public protocol AuthTokenRepository {
+  func getAuthToken(authTokenDescriptor: VCL.VCLAuthTokenDescriptor, completionBlock: @escaping (VCL.VCLResult<VCL.VCLAuthToken>) -> Swift.Void)
+}
 public struct VCLDidJwk {
   public let did: Swift.String
   public let publicJwk: VCL.VCLPublicJwk
@@ -929,13 +967,14 @@ public protocol VCL {
   var credentialTypes: VCL.VCLCredentialTypes? { get }
   var credentialTypeSchemas: VCL.VCLCredentialTypeSchemas? { get }
   func getPresentationRequest(presentationRequestDescriptor: VCL.VCLPresentationRequestDescriptor, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, authToken: VCL.VCLAuthToken?, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getExchangeProgress(exchangeDescriptor: VCL.VCLExchangeDescriptor, successHandler: @escaping (VCL.VCLExchange) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func searchForOrganizations(organizationsSearchDescriptor: VCL.VCLOrganizationsSearchDescriptor, successHandler: @escaping (VCL.VCLOrganizations) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getCredentialManifest(credentialManifestDescriptor: any VCL.VCLCredentialManifestDescriptor, successHandler: @escaping (VCL.VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func generateOffers(generateOffersDescriptor: VCL.VCLGenerateOffersDescriptor, successHandler: @escaping (VCL.VCLOffers) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func checkForOffers(generateOffersDescriptor: VCL.VCLGenerateOffersDescriptor, sessionToken: VCL.VCLToken, successHandler: @escaping (VCL.VCLOffers) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func finalizeOffers(finalizeOffersDescriptor: VCL.VCLFinalizeOffersDescriptor, sessionToken: VCL.VCLToken, successHandler: @escaping (VCL.VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  func getAuthToken(authTokenDescriptor: VCL.VCLAuthTokenDescriptor, successHandler: @escaping (VCL.VCLAuthToken) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getCredentialTypesUIFormSchema(credentialTypesUIFormSchemaDescriptor: VCL.VCLCredentialTypesUIFormSchemaDescriptor, successHandler: @escaping (VCL.VCLCredentialTypesUIFormSchema) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func getVerifiedProfile(verifiedProfileDescriptor: VCL.VCLVerifiedProfileDescriptor, successHandler: @escaping (VCL.VCLVerifiedProfile) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   func verifyJwt(jwt: VCL.VCLJwt, publicJwk: VCL.VCLPublicJwk, remoteCryptoServicesToken: VCL.VCLToken?, successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
@@ -944,7 +983,7 @@ public protocol VCL {
 }
 extension VCL.VCL {
   public func getPresentationRequest(presentationRequestDescriptor: VCL.VCLPresentationRequestDescriptor, successHandler: @escaping (VCL.VCLPresentationRequest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
-  public func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
+  public func submitPresentation(presentationSubmission: VCL.VCLPresentationSubmission, authToken: VCL.VCLAuthToken? = nil, successHandler: @escaping (VCL.VCLSubmissionResult) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func getCredentialManifest(credentialManifestDescriptor: any VCL.VCLCredentialManifestDescriptor, successHandler: @escaping (VCL.VCLCredentialManifest) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func generateOffers(generateOffersDescriptor: VCL.VCLGenerateOffersDescriptor, successHandler: @escaping (VCL.VCLOffers) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
   public func finalizeOffers(finalizeOffersDescriptor: VCL.VCLFinalizeOffersDescriptor, sessionToken: VCL.VCLToken, successHandler: @escaping (VCL.VCLJwtVerifiableCredentials) -> Swift.Void, errorHandler: @escaping (VCL.VCLError) -> Swift.Void)
@@ -1094,6 +1133,9 @@ public struct VCLJwtDescriptor {
   public let aud: Swift.String?
   public init(payload: [Swift.String : Any]? = nil, jti: Swift.String = UUID().uuidString, iss: Swift.String, aud: Swift.String? = nil)
 }
+public protocol AuthTokenUseCase {
+  func getAuthToken(authTokenDescriptor: VCL.VCLAuthTokenDescriptor, completionBlock: @escaping (VCL.VCLResult<VCL.VCLAuthToken>) -> Swift.Void)
+}
 public struct VCLPublicJwk {
   public let valueStr: Swift.String
   public let valueDict: [Swift.String : Any]
@@ -1206,6 +1248,9 @@ public struct VCLCredentialTypesUIFormSchemaDescriptor {
   public let countryCode: Swift.String
   public init(credentialType: Swift.String, countryCode: Swift.String)
 }
+extension VCL.GrantType : Swift.Equatable {}
+extension VCL.GrantType : Swift.Hashable {}
+extension VCL.GrantType : Swift.RawRepresentable {}
 extension VCL.VCLEnvironment : Swift.Equatable {}
 extension VCL.VCLEnvironment : Swift.Hashable {}
 extension VCL.VCLEnvironment : Swift.RawRepresentable {}
