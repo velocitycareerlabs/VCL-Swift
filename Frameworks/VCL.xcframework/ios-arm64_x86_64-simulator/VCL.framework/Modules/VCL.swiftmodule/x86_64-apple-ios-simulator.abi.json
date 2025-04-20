@@ -1994,21 +1994,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "VCL.VCLToken?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "VCLToken",
+                    "printedName": "VCL.VCLToken",
+                    "usr": "s:3VCL8VCLTokenV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvp",
-            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvp",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV07refreshC0AA8VCLTokenVSgvp",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV07refreshC0AA8VCLTokenVSgvp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -2025,21 +2025,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "VCL.VCLToken?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "VCLToken",
+                        "printedName": "VCL.VCLToken",
+                        "usr": "s:3VCL8VCLTokenV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvg",
-                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV07refreshC0SSSgvg",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV07refreshC0AA8VCLTokenVSgvg",
+                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV07refreshC0AA8VCLTokenVSgvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2246,13 +2246,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "VCL.VCLToken?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "VCLToken",
+                    "printedName": "VCL.VCLToken",
+                    "usr": "s:3VCL8VCLTokenV"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -2305,8 +2305,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_SSSgA3Itcfc",
-            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_SSSgA3Itcfc",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_AA8VCLTokenVSgSSSgA2Ltcfc",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_AA8VCLTokenVSgSSSgA2Ltcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -2333,13 +2333,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "VCL.VCLToken?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "VCLToken",
+                    "printedName": "VCL.VCLToken",
+                    "usr": "s:3VCL8VCLTokenV"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -2347,8 +2347,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL22VCLAuthTokenDescriptorV19presentationRequest07refreshC0AcA015VCLPresentationF0V_SSSgtcfc",
-            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV19presentationRequest07refreshC0AcA015VCLPresentationF0V_SSSgtcfc",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV19presentationRequest07refreshC0AcA015VCLPresentationF0V_AA8VCLTokenVSgtcfc",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV19presentationRequest07refreshC0AcA015VCLPresentationF0V_AA8VCLTokenVSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -48612,35 +48612,35 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2228,
+      "offset": 2240,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2285,
       "length": 10,
       "value": "\"audience\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2318,
+      "offset": 2330,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2365,
+      "offset": 2377,
       "length": 12,
       "value": "\"token_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2417,
+      "offset": 2429,
       "length": 8,
       "value": "\"Bearer\""
     },
@@ -52098,56 +52098,56 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16855,
+      "offset": 16825,
       "length": 4,
       "value": "\"vc\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16889,
+      "offset": 16859,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16947,
+      "offset": 16917,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16999,
+      "offset": 16969,
       "length": 10,
       "value": "\"@context\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17037,
+      "offset": 17007,
       "length": 5,
       "value": "\"@id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17078,
+      "offset": 17048,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17156,
+      "offset": 17126,
       "length": 65,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17279,
+      "offset": 17249,
       "length": 66,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primarySourceProfile\""
     },

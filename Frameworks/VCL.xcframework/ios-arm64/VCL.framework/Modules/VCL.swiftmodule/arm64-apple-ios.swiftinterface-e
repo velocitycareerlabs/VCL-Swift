@@ -64,12 +64,12 @@ public enum GrantType : Swift.String {
 }
 public struct VCLAuthTokenDescriptor {
   public let authTokenUri: Swift.String
-  public let refreshToken: Swift.String?
+  public let refreshToken: VCL.VCLToken?
   public let walletDid: Swift.String?
   public let relyingPartyDid: Swift.String?
   public let vendorOriginContext: Swift.String?
-  public init(authTokenUri: Swift.String, refreshToken: Swift.String? = nil, walletDid: Swift.String? = nil, relyingPartyDid: Swift.String? = nil, vendorOriginContext: Swift.String? = nil)
-  public init(presentationRequest: VCL.VCLPresentationRequest, refreshToken: Swift.String? = nil)
+  public init(authTokenUri: Swift.String, refreshToken: VCL.VCLToken? = nil, walletDid: Swift.String? = nil, relyingPartyDid: Swift.String? = nil, vendorOriginContext: Swift.String? = nil)
+  public init(presentationRequest: VCL.VCLPresentationRequest, refreshToken: VCL.VCLToken? = nil)
 }
 public struct VCLFinalizeOffersDescriptor {
   public let credentialManifest: VCL.VCLCredentialManifest
