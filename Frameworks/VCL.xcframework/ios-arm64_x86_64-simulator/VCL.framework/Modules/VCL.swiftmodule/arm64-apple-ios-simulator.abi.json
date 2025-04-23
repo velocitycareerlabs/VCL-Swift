@@ -2168,8 +2168,8 @@
           },
           {
             "kind": "Var",
-            "name": "vendorOriginContext",
-            "printedName": "vendorOriginContext",
+            "name": "authorizationCode",
+            "printedName": "authorizationCode",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2187,8 +2187,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvp",
-            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvp",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV17authorizationCodeSSSgvp",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV17authorizationCodeSSSgvp",
             "moduleName": "VCL",
             "declAttributes": [
               "HasStorage",
@@ -2218,8 +2218,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvg",
-                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV19vendorOriginContextSSSgvg",
+                "usr": "s:3VCL22VCLAuthTokenDescriptorV17authorizationCodeSSSgvg",
+                "mangledName": "$s3VCL22VCLAuthTokenDescriptorV17authorizationCodeSSSgvg",
                 "moduleName": "VCL",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2229,7 +2229,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(authTokenUri:refreshToken:walletDid:relyingPartyDid:vendorOriginContext:)",
+            "printedName": "init(authTokenUri:refreshToken:walletDid:relyingPartyDid:authorizationCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2305,8 +2305,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_AA8VCLTokenVSgSSSgA2Ltcfc",
-            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI019vendorOriginContextACSS_AA8VCLTokenVSgSSSgA2Ltcfc",
+            "usr": "s:3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI017authorizationCodeACSS_AA8VCLTokenVSgSSSgA2Ltcfc",
+            "mangledName": "$s3VCL22VCLAuthTokenDescriptorV04authC3Uri07refreshC09walletDid012relyingPartyI017authorizationCodeACSS_AA8VCLTokenVSgSSSgA2Ltcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -48612,35 +48612,35 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2240,
+      "offset": 2228,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
+      "offset": 2273,
       "length": 10,
       "value": "\"audience\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2330,
+      "offset": 2318,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2377,
+      "offset": 2365,
       "length": 12,
       "value": "\"token_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
       "kind": "StringLiteral",
-      "offset": 2429,
+      "offset": 2417,
       "length": 8,
       "value": "\"Bearer\""
     },
