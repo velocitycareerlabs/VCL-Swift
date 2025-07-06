@@ -134,7 +134,9 @@ public struct CredentialManifestDescriptorCodingKeys {
   public static let KeyRefresh: Swift.String
 }
 extension VCLCredentialManifestDescriptor {
-  public func retrieveDid() -> Swift.String?
+  public var did: Swift.String? {
+    get
+  }
   public func retrieveEndpoint() -> Swift.String?
   public func generateQueryParams() -> Swift.String?
   public func toPropsString() -> Swift.String
@@ -209,17 +211,18 @@ public struct VCLCredentialManifestDescriptorRefresh : VCLCredentialManifestDesc
   public let issuingType: VCLIssuingType
   public let credentialTypes: [Swift.String]?
   public let pushDelegate: VCLPushDelegate?
-  public var did: Swift.String? {
-    get
-  }
   public let vendorOriginContext: Swift.String?
   public let deepLink: VCLDeepLink?
   public let didJwk: VCLDidJwk
+  public let didInput: Swift.String?
   public let remoteCryptoServicesToken: VCLToken?
   public var endpoint: Swift.String? {
     get
   }
-  public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Refresh, credentialIds: [Swift.String], didJwk: VCLDidJwk, remoteCryptoServicesToken: VCLToken? = nil)
+  public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Refresh, credentialIds: [Swift.String], didJwk: VCLDidJwk, did: Swift.String, remoteCryptoServicesToken: VCLToken? = nil)
+  public var did: Swift.String? {
+    get
+  }
   public func retrieveEndpoint() -> Swift.String?
   public func generateQueryParams() -> Swift.String?
 }
@@ -327,6 +330,17 @@ public struct VCLToken {
   }
 }
 public func == (lhs: VCLToken, rhs: VCLToken) -> Swift.Bool
+public struct VCLDidDocument {
+  public let payload: [Swift.String : Any]
+  public init(payload: [Swift.String : Any])
+  public init(payloadStr: Swift.String)
+  public struct CodingKeys {
+    public static let KeyId: Swift.String
+    public static let KeyAlsoKnownAs: Swift.String
+    public static let KeyVerificationMethod: Swift.String
+    public static let KeyPublicKeyJwk: Swift.String
+  }
+}
 public struct VCLCredentialTypeSchemas {
   public var all: [Swift.String : VCLCredentialTypeSchema]? {
     get
@@ -941,6 +955,8 @@ public struct VCLAuthToken {
   public enum CodingKeys {
   }
 }
+public func == (lhs: VCLAuthToken, rhs: VCLAuthToken) -> Swift.Bool
+public func != (lhs: VCLAuthToken, rhs: VCLAuthToken) -> Swift.Bool
 public protocol AuthTokenRepository {
   func getAuthToken(authTokenDescriptor: VCLAuthTokenDescriptor, completionBlock: @escaping (VCLResult<VCLAuthToken>) -> Swift.Void)
 }
@@ -996,17 +1012,18 @@ public struct VCLCredentialManifestDescriptorByService : VCLCredentialManifestDe
   public var issuingType: VCLIssuingType
   public var credentialTypes: [Swift.String]?
   public var pushDelegate: VCLPushDelegate?
-  public var did: Swift.String? {
-    get
-  }
   public var vendorOriginContext: Swift.String?
   public var deepLink: VCLDeepLink?
   public var didJwk: VCLDidJwk
+  public let didInput: Swift.String?
   public var remoteCryptoServicesToken: VCLToken?
   public var endpoint: Swift.String? {
     get
   }
-  public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil, didJwk: VCLDidJwk, remoteCryptoServicesToken: VCLToken? = nil)
+  public init(service: VCLService, issuingType: VCLIssuingType = VCLIssuingType.Career, credentialTypes: [Swift.String]? = nil, pushDelegate: VCLPushDelegate? = nil, didJwk: VCLDidJwk, did: Swift.String, remoteCryptoServicesToken: VCLToken? = nil)
+  public var did: Swift.String? {
+    get
+  }
   public func toPropsString() -> Swift.String
 }
 public protocol VCLJwtSignService {
@@ -1057,9 +1074,6 @@ public struct VCLCredentialManifestDescriptorByDeepLink : VCLCredentialManifestD
   public let issuingType: VCLIssuingType
   public let credentialTypes: [Swift.String]?
   public let pushDelegate: VCLPushDelegate?
-  public var did: Swift.String? {
-    get
-  }
   public let vendorOriginContext: Swift.String?
   public let deepLink: VCLDeepLink?
   public let didJwk: VCLDidJwk
@@ -1090,8 +1104,13 @@ public struct VCLOrganization : Any {
   public var serviceCredentialAgentIssuers: [VCLService] {
     get
   }
+  public var did: Swift.String {
+    get
+  }
   public struct CodingKeys {
     public static let KeyService: Swift.String
+    public static let KeyId: Swift.String
+    public static let KeyAlsoKnownAs: Swift.String
   }
 }
 public struct VCLJwtVerifiableCredentials {
