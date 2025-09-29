@@ -22289,6 +22289,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "VCLCryptoServicesDescriptor",
         "printedName": "VCLCryptoServicesDescriptor",
@@ -39578,6 +39588,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "VCToken",
         "printedName": "VCToken",
         "declKind": "Import",
@@ -43137,6 +43157,16 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -49791,14 +49821,28 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/InitializationWatcher.swift",
       "kind": "IntegerLiteral",
-      "offset": 268,
+      "offset": 276,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/InitializationWatcher.swift",
+      "kind": "Array",
+      "offset": 316,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/InitializationWatcher.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 29,
+      "value": "\"InitializationWatcher.queue\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/InitializationWatcher.swift",
       "kind": "BooleanLiteral",
-      "offset": 474,
+      "offset": 662,
       "length": 5,
       "value": "false"
     },
@@ -50176,7 +50220,7 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 22106,
+      "offset": 22000,
       "length": 2,
       "value": "\"\""
     },
@@ -50273,22 +50317,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/Request.swift",
-      "kind": "IntegerLiteral",
-      "offset": 660,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/Request.swift",
       "kind": "StringLiteral",
-      "offset": 785,
+      "offset": 731,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/infrastructure\/network\/Request.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 1200,
       "length": 2,
       "value": "\"\""
     },
@@ -50596,9 +50633,16 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypeSchemasUseCaseImpl.swift",
       "kind": "Dictionary",
-      "offset": 328,
+      "offset": 334,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/usecases\/CredentialTypeSchemasUseCaseImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 39,
+      "value": "\"CredentialTypeSchemasMapStorage.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLGenerateOffersDescriptor.swift",
@@ -50627,6 +50671,20 @@
       "offset": 1594,
       "length": 13,
       "value": "\"offerHashes\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/IsCredentialVerifiedStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 276,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/IsCredentialVerifiedStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 327,
+      "length": 34,
+      "value": "\"IsCredentialVerifiedStorageQueue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/initialization\/VCLInitializationDescriptor.swift",
@@ -52596,6 +52654,13 @@
       "value": "\"keyId\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CompleteContextsStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 328,
+      "length": 30,
+      "value": "\"CompleteContextsStorageQueue\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/extensions\/ECPublicJwkExtension.swift",
       "kind": "StringLiteral",
       "offset": 637,
@@ -52722,6 +52787,13 @@
       "value": "\"issuer\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/GlobalErrorStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 307,
+      "length": 25,
+      "value": "\"GlobalErrorStorageQueue\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLOrganization.swift",
       "kind": "StringLiteral",
       "offset": 1220,
@@ -52841,65 +52913,79 @@
       "value": "\"2.0\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 817,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 491,
+      "length": 39,
+      "value": "\"io.velocitycareerlabs.contexts.verify\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16825,
+      "offset": 666,
+      "length": 38,
+      "value": "\"io.velocitycareerlabs.contexts.fetch\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 39,
+      "value": "\"io.velocitycareerlabs.contexts.checks\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 12957,
       "length": 4,
       "value": "\"vc\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16859,
+      "offset": 12991,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16917,
+      "offset": 13049,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16969,
+      "offset": 13101,
       "length": 10,
       "value": "\"@context\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17007,
+      "offset": 13139,
       "length": 5,
       "value": "\"@id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17048,
+      "offset": 13180,
       "length": 12,
       "value": "\"identifier\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17126,
+      "offset": 13246,
       "length": 65,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/CredentialIssuerVerifierImpl.swift",
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17249,
+      "offset": 13357,
       "length": 66,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primarySourceProfile\""
     },
