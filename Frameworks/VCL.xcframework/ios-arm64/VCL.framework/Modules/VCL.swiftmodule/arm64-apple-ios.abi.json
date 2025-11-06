@@ -16725,6 +16725,80 @@
           },
           {
             "kind": "Var",
+            "name": "NotaryWorkPermitIssuer",
+            "printedName": "NotaryWorkPermitIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO22NotaryWorkPermitIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO22NotaryWorkPermitIssueryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "WorkPermitIssuer",
+            "printedName": "WorkPermitIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLServiceType.Type) -> VCL.VCLServiceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLServiceType",
+                    "printedName": "VCL.VCLServiceType",
+                    "usr": "s:3VCL14VCLServiceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLServiceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLServiceType",
+                        "printedName": "VCL.VCLServiceType",
+                        "usr": "s:3VCL14VCLServiceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL14VCLServiceTypeO16WorkPermitIssueryA2CmF",
+            "mangledName": "$s3VCL14VCLServiceTypeO16WorkPermitIssueryA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
             "name": "Undefined",
             "printedName": "Undefined",
             "children": [
@@ -50297,7 +50371,21 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
       "kind": "StringLiteral",
-      "offset": 657,
+      "offset": 670,
+      "length": 24,
+      "value": "\"NotaryWorkPermitIssuer\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 723,
+      "length": 18,
+      "value": "\"WorkPermitIssuer\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
       "length": 11,
       "value": "\"Undefined\""
     },
@@ -52936,56 +53024,56 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12957,
+      "offset": 13288,
       "length": 4,
       "value": "\"vc\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12991,
+      "offset": 13322,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13049,
+      "offset": 13380,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13101,
+      "offset": 13432,
       "length": 10,
       "value": "\"@context\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13139,
+      "offset": 13470,
       "length": 5,
       "value": "\"@id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13180,
+      "offset": 13511,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13246,
+      "offset": 13577,
       "length": 65,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13357,
+      "offset": 13688,
       "length": 66,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primarySourceProfile\""
     },

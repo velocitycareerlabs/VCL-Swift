@@ -479,6 +479,8 @@ public enum VCLServiceType : Swift.String {
   case NotaryIdDocumentIssuer
   case ContactIssuer
   case NotaryContactIssuer
+  case NotaryWorkPermitIssuer
+  case WorkPermitIssuer
   case Undefined
   public static func fromString(value: Swift.String) -> VCLServiceType
   public init?(rawValue: Swift.String)
