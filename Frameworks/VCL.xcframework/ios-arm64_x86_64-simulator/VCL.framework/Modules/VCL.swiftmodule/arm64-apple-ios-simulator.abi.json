@@ -49370,42 +49370,42 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2618,
+      "offset": 2609,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2665,
+      "offset": 2656,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2714,
+      "offset": 2705,
       "length": 11,
       "value": "\"errorCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2767,
+      "offset": 2758,
       "length": 11,
       "value": "\"requestId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2818,
+      "offset": 2809,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 2870,
+      "offset": 2861,
       "length": 12,
       "value": "\"statusCode\""
     },
@@ -53024,56 +53024,56 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13288,
+      "offset": 14124,
       "length": 4,
       "value": "\"vc\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13322,
+      "offset": 14158,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13380,
+      "offset": 14216,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13432,
+      "offset": 14268,
       "length": 10,
       "value": "\"@context\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13470,
+      "offset": 14306,
       "length": 5,
       "value": "\"@id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13511,
+      "offset": 14347,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13577,
+      "offset": 14413,
       "length": 65,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13688,
+      "offset": 14524,
       "length": 66,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primarySourceProfile\""
     },
