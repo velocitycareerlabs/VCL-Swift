@@ -37,6 +37,7 @@ public struct VCLError : Swift.Error {
     public static let KeyRequestId: Swift.String
     public static let KeyMessage: Swift.String
     public static let KeyStatusCode: Swift.String
+    public static let KeyCallStackSymbols: Swift.String
   }
 }
 public struct VCLClaims : VCToken.Claims, Swift.Decodable, Swift.Encodable {

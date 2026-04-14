@@ -1313,6 +1313,53 @@
                     "accessorKind": "get"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyCallStackSymbols",
+                "printedName": "KeyCallStackSymbols",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLErrorV10CodingKeysV19KeyCallStackSymbolsSSvpZ",
+                "mangledName": "$s3VCL8VCLErrorV10CodingKeysV19KeyCallStackSymbolsSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLErrorV10CodingKeysV19KeyCallStackSymbolsSSvgZ",
+                    "mangledName": "$s3VCL8VCLErrorV10CodingKeysV19KeyCallStackSymbolsSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
             "declKind": "Struct",
@@ -49445,44 +49492,51 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3069,
+      "offset": 3131,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3116,
+      "offset": 3178,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3165,
+      "offset": 3227,
       "length": 11,
       "value": "\"errorCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3218,
+      "offset": 3280,
       "length": 11,
       "value": "\"requestId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3269,
+      "offset": 3331,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3321,
+      "offset": 3383,
       "length": 12,
       "value": "\"statusCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
+      "kind": "StringLiteral",
+      "offset": 3444,
+      "length": 18,
+      "value": "\"callStackSymbols\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLAuthTokenDescriptor.swift",
