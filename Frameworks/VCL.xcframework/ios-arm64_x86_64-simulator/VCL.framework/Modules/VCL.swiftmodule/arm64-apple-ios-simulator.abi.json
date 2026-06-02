@@ -701,6 +701,306 @@
           },
           {
             "kind": "Var",
+            "name": "sourceErrorCode",
+            "printedName": "sourceErrorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLErrorV15sourceErrorCodeSSSgvp",
+            "mangledName": "$s3VCL8VCLErrorV15sourceErrorCodeSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLErrorV15sourceErrorCodeSSSgvg",
+                "mangledName": "$s3VCL8VCLErrorV15sourceErrorCodeSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "validationPhase",
+            "printedName": "validationPhase",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLErrorV15validationPhaseSSSgvp",
+            "mangledName": "$s3VCL8VCLErrorV15validationPhaseSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLErrorV15validationPhaseSSSgvg",
+                "mangledName": "$s3VCL8VCLErrorV15validationPhaseSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestDid",
+            "printedName": "requestDid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLErrorV10requestDidSSSgvp",
+            "mangledName": "$s3VCL8VCLErrorV10requestDidSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLErrorV10requestDidSSSgvg",
+                "mangledName": "$s3VCL8VCLErrorV10requestDidSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestUri",
+            "printedName": "requestUri",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLErrorV10requestUriSSSgvp",
+            "mangledName": "$s3VCL8VCLErrorV10requestUriSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLErrorV10requestUriSSSgvg",
+                "mangledName": "$s3VCL8VCLErrorV10requestUriSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestKind",
+            "printedName": "requestKind",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL8VCLErrorV11requestKindSSSgvp",
+            "mangledName": "$s3VCL8VCLErrorV11requestKindSSSgvp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL8VCLErrorV11requestKindSSSgvg",
+                "mangledName": "$s3VCL8VCLErrorV11requestKindSSSgvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "cause",
             "printedName": "cause",
             "children": [
@@ -762,7 +1062,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(payload:error:errorCode:requestId:message:statusCode:cause:)",
+            "printedName": "init(payload:error:errorCode:requestId:message:statusCode:sourceErrorCode:validationPhase:requestDid:requestUri:requestKind:cause:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -855,6 +1155,81 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "(any Swift.Error)?",
                 "children": [
                   {
@@ -869,8 +1244,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL8VCLErrorV7payload5error0D4Code9requestId7message06statusE05causeACSSSg_AKSSA2KSiSgs5Error_pSgtcfc",
-            "mangledName": "$s3VCL8VCLErrorV7payload5error0D4Code9requestId7message06statusE05causeACSSSg_AKSSA2KSiSgs5Error_pSgtcfc",
+            "usr": "s:3VCL8VCLErrorV7payload5error0D4Code9requestId7message06statusE0011sourceErrorE015validationPhase0F3Did0F3Uri0F4Kind5causeACSSSg_APSSA2PSiSgA5Ps0K0_pSgtcfc",
+            "mangledName": "$s3VCL8VCLErrorV7payload5error0D4Code9requestId7message06statusE0011sourceErrorE015validationPhase0F3Did0F3Uri0F4Kind5causeACSSSg_APSSA2PSiSgA5Ps0K0_pSgtcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -1307,6 +1682,241 @@
                     "declKind": "Accessor",
                     "usr": "s:3VCL8VCLErrorV10CodingKeysV13KeyStatusCodeSSvgZ",
                     "mangledName": "$s3VCL8VCLErrorV10CodingKeysV13KeyStatusCodeSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeySourceErrorCode",
+                "printedName": "KeySourceErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLErrorV10CodingKeysV18KeySourceErrorCodeSSvpZ",
+                "mangledName": "$s3VCL8VCLErrorV10CodingKeysV18KeySourceErrorCodeSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLErrorV10CodingKeysV18KeySourceErrorCodeSSvgZ",
+                    "mangledName": "$s3VCL8VCLErrorV10CodingKeysV18KeySourceErrorCodeSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyValidationPhase",
+                "printedName": "KeyValidationPhase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLErrorV10CodingKeysV18KeyValidationPhaseSSvpZ",
+                "mangledName": "$s3VCL8VCLErrorV10CodingKeysV18KeyValidationPhaseSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLErrorV10CodingKeysV18KeyValidationPhaseSSvgZ",
+                    "mangledName": "$s3VCL8VCLErrorV10CodingKeysV18KeyValidationPhaseSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyRequestDid",
+                "printedName": "KeyRequestDid",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLErrorV10CodingKeysV13KeyRequestDidSSvpZ",
+                "mangledName": "$s3VCL8VCLErrorV10CodingKeysV13KeyRequestDidSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLErrorV10CodingKeysV13KeyRequestDidSSvgZ",
+                    "mangledName": "$s3VCL8VCLErrorV10CodingKeysV13KeyRequestDidSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyRequestUri",
+                "printedName": "KeyRequestUri",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLErrorV10CodingKeysV13KeyRequestUriSSvpZ",
+                "mangledName": "$s3VCL8VCLErrorV10CodingKeysV13KeyRequestUriSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLErrorV10CodingKeysV13KeyRequestUriSSvgZ",
+                    "mangledName": "$s3VCL8VCLErrorV10CodingKeysV13KeyRequestUriSSvgZ",
+                    "moduleName": "VCL",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "KeyRequestKind",
+                "printedName": "KeyRequestKind",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3VCL8VCLErrorV10CodingKeysV14KeyRequestKindSSvpZ",
+                "mangledName": "$s3VCL8VCLErrorV10CodingKeysV14KeyRequestKindSSvpZ",
+                "moduleName": "VCL",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3VCL8VCLErrorV10CodingKeysV14KeyRequestKindSSvgZ",
+                    "mangledName": "$s3VCL8VCLErrorV10CodingKeysV14KeyRequestKindSSvgZ",
                     "moduleName": "VCL",
                     "static": true,
                     "implicit": true,
@@ -14025,12 +14635,41 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL6VCLJwtV10encodedJwtACSS_tcfc",
-            "mangledName": "$s3VCL6VCLJwtV10encodedJwtACSS_tcfc",
+            "usr": "s:3VCL6VCLJwtV10encodedJwtACSS_tKcfc",
+            "mangledName": "$s3VCL6VCLJwtV10encodedJwtACSS_tKcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
             ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(validatedEncodedJwt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLJwt",
+                "printedName": "VCL.VCLJwt",
+                "usr": "s:3VCL6VCLJwtV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL6VCLJwtV19validatedEncodedJwtACSS_tKcfc",
+            "mangledName": "$s3VCL6VCLJwtV19validatedEncodedJwtACSS_tKcfc",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
             "init_kind": "Designated"
           },
           {
@@ -17945,6 +18584,490 @@
           },
           {
             "kind": "Var",
+            "name": "InvalidLink",
+            "printedName": "InvalidLink",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO11InvalidLinkyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO11InvalidLinkyA2CmF",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ConnectivityFailure",
+            "printedName": "ConnectivityFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO19ConnectivityFailureyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO19ConnectivityFailureyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "ClientRequestUnauthorized",
+            "printedName": "ClientRequestUnauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO25ClientRequestUnauthorizedyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO25ClientRequestUnauthorizedyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "ClientRequestRejected",
+            "printedName": "ClientRequestRejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO21ClientRequestRejectedyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO21ClientRequestRejectedyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "IssuerDidUnresolvable",
+            "printedName": "IssuerDidUnresolvable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO21IssuerDidUnresolvableyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO21IssuerDidUnresolvableyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "VerifierDidUnresolvable",
+            "printedName": "VerifierDidUnresolvable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO23VerifierDidUnresolvableyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO23VerifierDidUnresolvableyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "IssuerNotRegistered",
+            "printedName": "IssuerNotRegistered",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO19IssuerNotRegisteredyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO19IssuerNotRegisteredyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "VerifierNotRegistered",
+            "printedName": "VerifierNotRegistered",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO21VerifierNotRegisteredyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO21VerifierNotRegisteredyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "RegistrationCheckInconclusive",
+            "printedName": "RegistrationCheckInconclusive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO29RegistrationCheckInconclusiveyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO29RegistrationCheckInconclusiveyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "IssuerRequestInvalid",
+            "printedName": "IssuerRequestInvalid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO20IssuerRequestInvalidyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO20IssuerRequestInvalidyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "VerifierRequestInvalid",
+            "printedName": "VerifierRequestInvalid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO22VerifierRequestInvalidyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO22VerifierRequestInvalidyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "IssuerRequestUnauthorized",
+            "printedName": "IssuerRequestUnauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO25IssuerRequestUnauthorizedyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO25IssuerRequestUnauthorizedyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "VerifierRequestUnauthorized",
+            "printedName": "VerifierRequestUnauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCode.Type) -> VCL.VCLErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCode",
+                    "printedName": "VCL.VCLErrorCode",
+                    "usr": "s:3VCL12VCLErrorCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCode",
+                        "printedName": "VCL.VCLErrorCode",
+                        "usr": "s:3VCL12VCLErrorCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL12VCLErrorCodeO27VerifierRequestUnauthorizedyA2CmF",
+            "mangledName": "$s3VCL12VCLErrorCodeO27VerifierRequestUnauthorizedyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
             "children": [
@@ -20877,6 +22000,46 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "VCLGenerateOffersDescriptor",
         "printedName": "VCLGenerateOffersDescriptor",
@@ -23103,9 +24266,53 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "errorCodeCompatibilityMode",
+            "printedName": "errorCodeCompatibilityMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VCLErrorCodeCompatibilityMode",
+                "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL27VCLInitializationDescriptorV26errorCodeCompatibilityModeAA08VCLErrorefG0Ovp",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV26errorCodeCompatibilityModeAA08VCLErrorefG0Ovp",
+            "moduleName": "VCL",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCodeCompatibilityMode",
+                    "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                    "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL27VCLInitializationDescriptorV26errorCodeCompatibilityModeAA08VCLErrorefG0Ovg",
+                "mangledName": "$s3VCL27VCLInitializationDescriptorV26errorCodeCompatibilityModeAA08VCLErrorefG0Ovg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:xVnfProtocolVersion:cacheSequence:keycahinAccessGroupIdentifier:isDebugOn:cryptoServicesDescriptor:isDirectIssuerCheckOn:)",
+            "printedName": "init(environment:xVnfProtocolVersion:cacheSequence:keycahinAccessGroupIdentifier:isDebugOn:cryptoServicesDescriptor:isDirectIssuerCheckOn:errorCodeCompatibilityMode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23169,11 +24376,18 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VCLErrorCodeCompatibilityMode",
+                "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                "hasDefaultArg": true,
+                "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:3VCL27VCLInitializationDescriptorV11environment19xVnfProtocolVersion13cacheSequence29keycahinAccessGroupIdentifier9isDebugOn014cryptoServicesC00n17DirectIssuerCheckP0AcA14VCLEnvironmentO_AA07VCLXVnffG0OSiSSSgSbAA09VCLCryptorC0VSbtcfc",
-            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environment19xVnfProtocolVersion13cacheSequence29keycahinAccessGroupIdentifier9isDebugOn014cryptoServicesC00n17DirectIssuerCheckP0AcA14VCLEnvironmentO_AA07VCLXVnffG0OSiSSSgSbAA09VCLCryptorC0VSbtcfc",
+            "usr": "s:3VCL27VCLInitializationDescriptorV11environment19xVnfProtocolVersion13cacheSequence29keycahinAccessGroupIdentifier9isDebugOn014cryptoServicesC00n17DirectIssuerCheckP026errorCodeCompatibilityModeAcA14VCLEnvironmentO_AA07VCLXVnffG0OSiSSSgSbAA09VCLCryptorC0VSbAA08VCLErrorwxY0Otcfc",
+            "mangledName": "$s3VCL27VCLInitializationDescriptorV11environment19xVnfProtocolVersion13cacheSequence29keycahinAccessGroupIdentifier9isDebugOn014cryptoServicesC00n17DirectIssuerCheckP026errorCodeCompatibilityModeAcA14VCLEnvironmentO_AA07VCLXVnffG0OSiSSSgSbAA09VCLCryptorC0VSbAA08VCLErrorwxY0Otcfc",
             "moduleName": "VCL",
             "declAttributes": [
               "AccessControl"
@@ -23202,6 +24416,229 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VCLErrorCodeCompatibilityMode",
+        "printedName": "VCLErrorCodeCompatibilityMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "Taxonomy",
+            "printedName": "Taxonomy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCodeCompatibilityMode.Type) -> VCL.VCLErrorCodeCompatibilityMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCodeCompatibilityMode",
+                    "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                    "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCodeCompatibilityMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCodeCompatibilityMode",
+                        "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                        "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO8TaxonomyyA2CmF",
+            "mangledName": "$s3VCL29VCLErrorCodeCompatibilityModeO8TaxonomyyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Var",
+            "name": "Legacy",
+            "printedName": "Legacy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VCL.VCLErrorCodeCompatibilityMode.Type) -> VCL.VCLErrorCodeCompatibilityMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCodeCompatibilityMode",
+                    "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                    "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VCL.VCLErrorCodeCompatibilityMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VCLErrorCodeCompatibilityMode",
+                        "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                        "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO6LegacyyA2CmF",
+            "mangledName": "$s3VCL29VCLErrorCodeCompatibilityModeO6LegacyyA2CmF",
+            "moduleName": "VCL"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VCL.VCLErrorCodeCompatibilityMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VCLErrorCodeCompatibilityMode",
+                    "printedName": "VCL.VCLErrorCodeCompatibilityMode",
+                    "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s3VCL29VCLErrorCodeCompatibilityModeO8rawValueACSgSS_tcfc",
+            "moduleName": "VCL",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO8rawValueSSvp",
+            "mangledName": "$s3VCL29VCLErrorCodeCompatibilityModeO8rawValueSSvp",
+            "moduleName": "VCL",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO8rawValueSSvg",
+                "mangledName": "$s3VCL29VCLErrorCodeCompatibilityModeO8rawValueSSvg",
+                "moduleName": "VCL",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3VCL29VCLErrorCodeCompatibilityModeO",
+        "mangledName": "$s3VCL29VCLErrorCodeCompatibilityModeO",
+        "moduleName": "VCL",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -49492,49 +50929,84 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3131,
+      "offset": 5716,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3178,
+      "offset": 5763,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3227,
+      "offset": 5812,
       "length": 11,
       "value": "\"errorCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3280,
+      "offset": 5865,
       "length": 11,
       "value": "\"requestId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3331,
+      "offset": 5916,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3383,
+      "offset": 5968,
       "length": 12,
       "value": "\"statusCode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
       "kind": "StringLiteral",
-      "offset": 3444,
+      "offset": 6028,
+      "length": 17,
+      "value": "\"sourceErrorCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
+      "kind": "StringLiteral",
+      "offset": 6093,
+      "length": 17,
+      "value": "\"validationPhase\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
+      "kind": "StringLiteral",
+      "offset": 6153,
+      "length": 12,
+      "value": "\"requestDid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
+      "kind": "StringLiteral",
+      "offset": 6208,
+      "length": 12,
+      "value": "\"requestUri\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
+      "kind": "StringLiteral",
+      "offset": 6264,
+      "length": 13,
+      "value": "\"requestKind\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLError.swift",
+      "kind": "StringLiteral",
+      "offset": 6326,
       "length": 18,
       "value": "\"callStackSymbols\""
     },
@@ -50052,35 +51524,35 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLToken.swift",
       "kind": "StringLiteral",
-      "offset": 827,
+      "offset": 964,
       "length": 5,
       "value": "\"exp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidDocument.swift",
       "kind": "StringLiteral",
-      "offset": 1518,
+      "offset": 1752,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidDocument.swift",
       "kind": "StringLiteral",
-      "offset": 1566,
+      "offset": 1800,
       "length": 13,
       "value": "\"alsoKnownAs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidDocument.swift",
       "kind": "StringLiteral",
-      "offset": 1630,
+      "offset": 1864,
       "length": 20,
       "value": "\"verificationMethod\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDidDocument.swift",
       "kind": "StringLiteral",
-      "offset": 1695,
+      "offset": 1929,
       "length": 14,
       "value": "\"publicKeyJwk\""
     },
@@ -50290,126 +51762,126 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 452,
+      "offset": 450,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 1724,
+      "offset": 2333,
       "length": 5,
       "value": "\"typ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 1765,
+      "offset": 2374,
       "length": 5,
       "value": "\"alg\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 1806,
+      "offset": 2415,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 1847,
+      "offset": 2456,
       "length": 5,
       "value": "\"jwk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 1895,
+      "offset": 2496,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 1932,
+      "offset": 2533,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 2576,
       "length": 8,
       "value": "\"header\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2031,
+      "offset": 2624,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2082,
+      "offset": 2675,
       "length": 11,
       "value": "\"signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2138,
+      "offset": 2723,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 2764,
       "length": 5,
       "value": "\"aud\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2220,
+      "offset": 2805,
       "length": 5,
       "value": "\"sub\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2261,
+      "offset": 2846,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 2887,
       "length": 5,
       "value": "\"iat\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2343,
+      "offset": 2928,
       "length": 5,
       "value": "\"nbf\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2384,
+      "offset": 2969,
       "length": 5,
       "value": "\"exp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLJwt.swift",
       "kind": "StringLiteral",
-      "offset": 2427,
+      "offset": 3012,
       "length": 7,
       "value": "\"nonce\""
     },
@@ -50423,7 +51895,35 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
       "kind": "StringLiteral",
-      "offset": 22000,
+      "offset": 1875,
+      "length": 9,
+      "value": "\"inspect\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1915,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 2168,
+      "length": 7,
+      "value": "\"issue\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2206,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/VCLImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 25978,
       "length": 2,
       "value": "\"\""
     },
@@ -50638,6 +52138,97 @@
       "value": "\"sdk_error\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1357,
+      "length": 14,
+      "value": "\"invalid_link\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1403,
+      "length": 22,
+      "value": "\"connectivity_failure\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1463,
+      "length": 29,
+      "value": "\"client_request_unauthorized\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1526,
+      "length": 25,
+      "value": "\"client_request_rejected\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1585,
+      "length": 25,
+      "value": "\"issuer_did_unresolvable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1646,
+      "length": 27,
+      "value": "\"verifier_did_unresolvable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1705,
+      "length": 23,
+      "value": "\"issuer_not_registered\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1762,
+      "length": 25,
+      "value": "\"verifier_not_registered\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1829,
+      "length": 33,
+      "value": "\"registration_check_inconclusive\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1895,
+      "length": 24,
+      "value": "\"issuer_request_invalid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 1954,
+      "length": 26,
+      "value": "\"verifier_request_invalid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 2018,
+      "length": 29,
+      "value": "\"issuer_request_unauthorized\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/error\/VCLErrorCode.swift",
+      "kind": "StringLiteral",
+      "offset": 2087,
+      "length": 31,
+      "value": "\"verifier_request_unauthorized\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLRegion.swift",
       "kind": "StringLiteral",
       "offset": 541,
@@ -50710,119 +52301,119 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2977,
+      "offset": 2981,
       "length": 7,
       "value": "\"keyId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3020,
+      "offset": 3024,
       "length": 5,
       "value": "\"jwk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3061,
+      "offset": 3065,
       "length": 5,
       "value": "\"kid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3102,
+      "offset": 3106,
       "length": 5,
       "value": "\"iss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3143,
+      "offset": 3147,
       "length": 5,
       "value": "\"aud\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3184,
+      "offset": 3188,
       "length": 5,
       "value": "\"jti\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3227,
+      "offset": 3231,
       "length": 7,
       "value": "\"nonce\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3274,
+      "offset": 3278,
       "length": 8,
       "value": "\"header\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3322,
+      "offset": 3326,
       "length": 9,
       "value": "\"options\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3371,
+      "offset": 3375,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/jwt\/remote\/VCLJwtSignServiceRemoteImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3424,
+      "offset": 3428,
       "length": 12,
       "value": "\"compactJwt\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "BooleanLiteral",
-      "offset": 900,
+      "offset": 1611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 1762,
+      "offset": 2775,
       "length": 6,
       "value": "\"did:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 1811,
+      "offset": 2824,
       "length": 13,
       "value": "\"request_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 1876,
+      "offset": 2889,
       "length": 21,
       "value": "\"vendorOriginContext\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 1939,
+      "offset": 2952,
       "length": 11,
       "value": "\"issuerDid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 1995,
+      "offset": 3008,
       "length": 14,
       "value": "\"inspectorDid\""
     },
@@ -50860,6 +52451,118 @@
       "offset": 383,
       "length": 39,
       "value": "\"CredentialTypeSchemasMapStorage.queue\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ProfileServiceTypeVerifier.swift",
+      "kind": "StringLiteral",
+      "offset": 285,
+      "length": 20,
+      "value": "\"wrong_service_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 17,
+      "value": "\"link_validation\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 22,
+      "value": "\"client_request_fetch\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 16,
+      "value": "\"did_resolution\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 20,
+      "value": "\"registration_check\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 437,
+      "length": 20,
+      "value": "\"request_validation\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 23,
+      "value": "\"request_authorization\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 566,
+      "length": 17,
+      "value": "\"issuing_request\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomy.swift",
+      "kind": "StringLiteral",
+      "offset": 625,
+      "length": 22,
+      "value": "\"presentation_request\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VelocityDeepLinkValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 34,
+      "value": "\"invalid_link_unparseable_payload\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VelocityDeepLinkValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 40,
+      "value": "\"invalid_link_unsupported_velocity_link\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VelocityDeepLinkValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 403,
+      "length": 37,
+      "value": "\"invalid_link_invalid_or_missing_did\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VelocityDeepLinkValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 491,
+      "length": 45,
+      "value": "\"invalid_link_invalid_or_missing_request_uri\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VelocityDeepLinkValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 50,
+      "value": "\"invalid_link_invalid_or_missing_request_endpoint\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/VelocityDeepLinkValidator.swift",
+      "kind": "Array",
+      "offset": 696,
+      "length": 105,
+      "value": "[\"velocity-network\", \"velocity-network-devnet\", \"velocity-network-testnet\"]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/utils\/ErrorTaxonomyCompatibilityMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4360,
+      "length": 36,
+      "value": "\"did was not found in Velocity link\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLGenerateOffersDescriptor.swift",
@@ -50906,23 +52609,37 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/initialization\/VCLInitializationDescriptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 755,
+      "offset": 828,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/initialization\/VCLInitializationDescriptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 838,
+      "offset": 911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/initialization\/VCLInitializationDescriptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 978,
+      "offset": 1051,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/initialization\/VCLErrorCodeCompatibilityMode.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 10,
+      "value": "\"taxonomy\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/initialization\/VCLErrorCodeCompatibilityMode.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 8,
+      "value": "\"legacy\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequest.swift",

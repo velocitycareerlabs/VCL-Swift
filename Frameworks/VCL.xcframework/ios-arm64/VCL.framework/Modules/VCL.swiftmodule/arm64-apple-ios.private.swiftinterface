@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VCL
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Swift
 import VCCrypto
@@ -25,8 +25,13 @@ public struct VCLError : Swift.Error {
   public let requestId: Swift.String?
   public let message: Swift.String?
   public let statusCode: Swift.Int?
+  public let sourceErrorCode: Swift.String?
+  public let validationPhase: Swift.String?
+  public let requestDid: Swift.String?
+  public let requestUri: Swift.String?
+  public let requestKind: Swift.String?
   public let cause: (any Swift.Error)?
-  public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, requestId: Swift.String? = nil, message: Swift.String? = nil, statusCode: Swift.Int? = nil, cause: (any Swift.Error)? = nil)
+  public init(payload: Swift.String? = nil, error: Swift.String? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, requestId: Swift.String? = nil, message: Swift.String? = nil, statusCode: Swift.Int? = nil, sourceErrorCode: Swift.String? = nil, validationPhase: Swift.String? = nil, requestDid: Swift.String? = nil, requestUri: Swift.String? = nil, requestKind: Swift.String? = nil, cause: (any Swift.Error)? = nil)
   public init(payload: Swift.String?, errorCode: Swift.String? = nil)
   public init(error: (any Swift.Error)? = nil, errorCode: Swift.String = VCLErrorCode.SdkError.rawValue, statusCode: Swift.Int? = nil)
   public func toDictionary() -> [Swift.String : Any?]
@@ -37,6 +42,11 @@ public struct VCLError : Swift.Error {
     public static let KeyRequestId: Swift.String
     public static let KeyMessage: Swift.String
     public static let KeyStatusCode: Swift.String
+    public static let KeySourceErrorCode: Swift.String
+    public static let KeyValidationPhase: Swift.String
+    public static let KeyRequestDid: Swift.String
+    public static let KeyRequestUri: Swift.String
+    public static let KeyRequestKind: Swift.String
     public static let KeyCallStackSymbols: Swift.String
   }
 }
@@ -406,7 +416,8 @@ public struct VCLJwt {
     get
   }
   public init(header: [Swift.String : Any]?, payload: [Swift.String : Any]?, signature: Swift.String?, encodedJwt: Swift.String)
-  public init(encodedJwt: Swift.String)
+  public init(encodedJwt: Swift.String) throws
+  public init(validatedEncodedJwt encodedJwt: Swift.String) throws
   public struct CodingKeys {
     public static let KeyTyp: Swift.String
     public static let KeyAlg: Swift.String
@@ -514,6 +525,19 @@ public enum VCLErrorCode : Swift.String {
   case MismatchedCredentialIssuerDid
   case MismatchedPresentationRequestInspectorDid
   case SdkError
+  case InvalidLink
+  case ConnectivityFailure
+  case ClientRequestUnauthorized
+  case ClientRequestRejected
+  case IssuerDidUnresolvable
+  case VerifierDidUnresolvable
+  case IssuerNotRegistered
+  case VerifierNotRegistered
+  case RegistrationCheckInconclusive
+  case IssuerRequestInvalid
+  case VerifierRequestInvalid
+  case IssuerRequestUnauthorized
+  case VerifierRequestUnauthorized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -645,7 +669,17 @@ public struct VCLInitializationDescriptor {
   public let isDebugOn: Swift.Bool
   public let cryptoServicesDescriptor: VCLCryptoServicesDescriptor
   public let isDirectIssuerCheckOn: Swift.Bool
-  public init(environment: VCLEnvironment = .Prod, xVnfProtocolVersion: VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil, isDebugOn: Swift.Bool = false, cryptoServicesDescriptor: VCLCryptoServicesDescriptor = VCLCryptoServicesDescriptor(), isDirectIssuerCheckOn: Swift.Bool = true)
+  public let errorCodeCompatibilityMode: VCLErrorCodeCompatibilityMode
+  public init(environment: VCLEnvironment = .Prod, xVnfProtocolVersion: VCLXVnfProtocolVersion = .XVnfProtocolVersion1, cacheSequence: Swift.Int = 0, keycahinAccessGroupIdentifier: Swift.String? = nil, isDebugOn: Swift.Bool = false, cryptoServicesDescriptor: VCLCryptoServicesDescriptor = VCLCryptoServicesDescriptor(), isDirectIssuerCheckOn: Swift.Bool = true, errorCodeCompatibilityMode: VCLErrorCodeCompatibilityMode = .Taxonomy)
+}
+public enum VCLErrorCodeCompatibilityMode : Swift.String {
+  case Taxonomy
+  case Legacy
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct VCLPresentationRequest {
   public let jwt: VCLJwt
@@ -1286,6 +1320,9 @@ extension VCLErrorCode : Swift.RawRepresentable {}
 extension VCLCryptoServiceType : Swift.Equatable {}
 extension VCLCryptoServiceType : Swift.Hashable {}
 extension VCLCryptoServiceType : Swift.RawRepresentable {}
+extension VCLErrorCodeCompatibilityMode : Swift.Equatable {}
+extension VCLErrorCodeCompatibilityMode : Swift.Hashable {}
+extension VCLErrorCodeCompatibilityMode : Swift.RawRepresentable {}
 extension VCLStatusCode : Swift.Equatable {}
 extension VCLStatusCode : Swift.Hashable {}
 extension VCLStatusCode : Swift.RawRepresentable {}
