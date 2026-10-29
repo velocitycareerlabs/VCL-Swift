@@ -54870,56 +54870,56 @@
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14124,
+      "offset": 13924,
       "length": 4,
       "value": "\"vc\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14158,
+      "offset": 13958,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14216,
+      "offset": 14016,
       "length": 19,
       "value": "\"credentialSubject\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14268,
+      "offset": 14068,
       "length": 10,
       "value": "\"@context\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14306,
+      "offset": 14106,
       "length": 5,
       "value": "\"@id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14347,
+      "offset": 14147,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14413,
+      "offset": 14213,
       "length": 65,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primaryOrganization\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/data\/verifiers\/directissuerverification\/CredentialIssuerVerifierImpl.swift",
       "kind": "StringLiteral",
-      "offset": 14524,
+      "offset": 14324,
       "length": 66,
       "value": "\"https:\/\/velocitynetwork.foundation\/contexts#primarySourceProfile\""
     },
