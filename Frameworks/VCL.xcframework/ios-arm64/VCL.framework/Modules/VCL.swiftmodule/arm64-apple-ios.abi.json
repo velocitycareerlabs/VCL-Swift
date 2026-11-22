@@ -51200,6 +51200,20 @@
       "value": "\"Bearer\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6609,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/impl\/extensions\/StringExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 8948,
+      "length": 84,
+      "value": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~!$&'()*+,;=:@\/?%\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLPresentationRequestDescriptor.swift",
       "kind": "StringLiteral",
       "offset": 1543,
@@ -52377,43 +52391,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1611,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 2775,
+      "offset": 4176,
       "length": 6,
       "value": "\"did:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 2824,
+      "offset": 4225,
       "length": 13,
       "value": "\"request_uri\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 2889,
+      "offset": 4290,
       "length": 21,
       "value": "\"vendorOriginContext\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 2952,
+      "offset": 4353,
       "length": 11,
       "value": "\"issuerDid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/WalletIOS\/WalletIOS\/VCL\/VCL\/api\/entities\/VCLDeepLink.swift",
       "kind": "StringLiteral",
-      "offset": 3008,
+      "offset": 4409,
       "length": 14,
       "value": "\"inspectorDid\""
     },
